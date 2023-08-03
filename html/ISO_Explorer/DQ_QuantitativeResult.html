@@ -1,0 +1,183 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/RecordType" title="wikilink">valueType</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The class or classes used for the value type(s).</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/UnitDefinition" title="wikilink">valueUnit</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Any system devised to quantify a value, such as length, time, angle, area, volume, velocity, or scale.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">errorStatistic</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The statistical method used to estimate error in the value.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>4</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/Record" title="wikilink">value</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The quantitative value(s) for the object measured.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>valueType</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td rowspan="4">
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>valueUnit</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>errorStatistic</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>value</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>valueType</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td rowspan="4">
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>valueUnit</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>errorStatistic</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>value</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+</table>
+<h3 id="more-information"><strong>More Information</strong></h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:DQ_DataQuality.png" title="wikilink">thumb|center</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Example</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><gmd:DQ_QuantitativeResult> <gmd:valueUnit> <gml:BaseUnit gml:id="ID001"> <gml:identifier codeSpace="SI">meters</gml:identifer> <gml:unitsSystem xlink:href="http://www.bipm.org/en/si/"/> </gml:BaseUnit> </gmd:valueUnit> <gmd:value> <gco:Record>2</gco:Record> </gmd:value> </gmd:DQ_QuantitativeResult></p>
+</td>
+</tr>
+</table>

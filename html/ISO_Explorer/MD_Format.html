@@ -1,0 +1,260 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">name</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Name of the resource format. <strong><em>Examples:</em></strong></p>
+<ul>
+<li><code>ASCII</code></li>
+<li><code>NetCDF</code></li>
+<li><code>HDF5</code></i>
+</td></li>
+</ul>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">version</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Version of the format. Use gco:nilReason attribute if version is unknown. <em><strong>Examples</strong>:</em></p>
+<ul>
+<li><code>4</code></li>
+<li><gmd:version gco:nilReason="inapplicable"/></i>
+</td></li>
+</ul>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">amendmentNumber</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Amendment number of the format version.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">specification</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Name of a subset, profile, or product specification of the format. Identify the name of the specification. Do not include URL to specification. Provide full citation in the <a href="/MD_AggregateInformation" title="wikilink">MD_AggregateInformation</a> section. <strong>Example</strong>:<code>NCEI NetCDF Templates v2.0</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">fileDecompressionTechnique</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Algorithms or processes that can be applied to read or expand resources to which compression techniques have been applied. <strong>Example:</strong> <code>ZIP</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Distributor" title="wikilink">formatDistributor</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the distributor’s format.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="6">
+<p>NOAA Completeness Rubric V2 Access Category</p>
+</td>
+<td>
+<p>name</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>version</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+<p>nilReason attribute is accepted</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>amendmentNumber</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>specification</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileDecompressionTechnique</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>formatDistributor</p>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Mandatory if no <a href="/MD_Distribution" title="wikilink">MD_Distribution</a>/distributionFormat</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="6">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>name</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td rowspan="6">
+<p>Same as Rubric</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>version</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>amendmentNumber</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>specification</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileDecompressionTechnique</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>formatDistributor</p>
+</td>
+<td align="center">
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:MD_DistributionInformation.png" title="wikilink">thumb|center</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Distribution_Information" title="wikilink">ISO Distribution Information</a>
+</td>
+</tr></li>
+</ul>
+</table>

@@ -1,0 +1,202 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">unitsOfDistribution</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF>
+<i>Tiles, layers, geographic areas, etc. in which the data is available.</i>
+
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+2
+
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">transferSize</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF>
+<i>Estimated size of the transfer unit in the specified format, expressed in megabytes. This information is not usually available for resource collections that have variable options for download.</i>
+
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+3
+
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_OnlineResource" title="wikilink">onLine</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF>
+<i>Information about the online access locations where the resource may be obtained. Use functionCodes: 'download' for direct access, 'search' for discovery environments and 'order' for ordering environments. </i>
+
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+4
+
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Medium" title="wikilink">offLine</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<p>&lt;td bgcolor="FFFFFF&gt; <i>Information about the offline distribution media.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>NOAA Completeness Rubric V2 Access Category</p>
+</td>
+<td>
+<p>unitsOfDistribution</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>transferSize</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>onLine</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>offLine</p>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard.</p>
+</td>
+</tr>
+<tr>
+<th colspan="4">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>unitsOfDistribution</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>transferSize</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>onLine</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>offLine</p>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard.</p>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:MD_DistributionInformation.png" title="wikilink">thumb|left</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Distribution_Information" title="wikilink">ISO_Distribution_Information</a>
+</td>
+</tr></li>
+</ul>
+<tr>
+<th>
+<p>Examples</p>
+</th>
+<td bgcolor="FFFFFF">
+<p>onLine: (CI_OnlineResource) linkage: http://www.ngdc.noaa.gov/dem/ squareCellGrid/getArchive/592?gridFormat=ESRI+Arc+ASCII name: Bar Harbor, Maine Coastal Digital Elevation Model ASCII DEM description: Download DEM, metadata and readme file. function: (CI_OnLineFunctionCode) download</p>
+</td>
+</tr>
+</table>

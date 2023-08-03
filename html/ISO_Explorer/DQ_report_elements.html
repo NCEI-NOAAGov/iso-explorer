@@ -1,0 +1,288 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">nameOfMeasure</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Name of the test applied to assure quality.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Identifier" title="wikilink">measureIdentification</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Code which identifies a registered standard quality procedure.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">measureDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Description of the measure applied to assure quality.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#DQ_EvaluationMethodTypeCode" title="wikilink">evaluationMethodType</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">evaluationMethodDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Description of the evaluation method applied.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_Citation" title="wikilink">evaluationProcedure</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Citation for the evaluation procedure.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>7</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/DateTime" title="wikilink">dateTime</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>8</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/DQ_Result" title="wikilink">result</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1..2</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Value(s) obtained from quality test or outcome from applying quality measure against a specified/acceptable quality conformance level. Use the gco:nilReason attribute when results can not be documented.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="8">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>nameOfMeasure</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="7">
+<p>Same requirements as the ISO standard.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>measureIdentification</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>measureDescription</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationMethodType</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationMethodDescription</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationProcedure</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateTime</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>result</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields. Use the gco:nilReason attribute when results can not be documented and this will be counted as extra credit by the Rubric.</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="8">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>nameOfMeasure</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="7">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>measureIdentification</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>measureDescription</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationMethodType</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationMethodDescription</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>evaluationProcedure</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateTime</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>result</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields. Use the gco:nilReason attribute when results can not be documented and this will be counted as extra credit by the Rubric.</p>
+</td>
+</tr>
+<tr>
+</table>
+<h3 id="more-information"><strong>More Information</strong></h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:DQ_DataQuality.png" title="wikilink">thumb|left|DQ DataQuality.png</a></p>
+</td>
+</tr>
+</table>

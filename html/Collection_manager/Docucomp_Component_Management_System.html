@@ -1,0 +1,56 @@
+<p><a href="/Category:Metadata_Tools" title="wikilink">Category:Metadata Tools</a> <a href="/Category:Collection_Manager" title="wikilink">Category:Collection Manager</a></p>
+<p><a href="http://www.ngdc.noaa.gov/docucomp" class="uri">http://www.ngdc.noaa.gov/docucomp</a></p>
+<p>Docucomp is a web application for managing XML <a href="/ISO_Components" title="wikilink">components</a> as part of an <a href="/Enterprise_Documentation_Architecture" title="wikilink">Enterprise Documentation Architecture</a>. A component is a snippet of XML describing a specific piece of metadata content. They are stored in a database and managed with <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">REST</a> web services. The REST services support insert, search, update and delete operations.</p>
+<h2 id="presentations">Presentations</h2>
+<p><a href="/File:DocucompHowTo.ppt" title="wikilink">&lt;File:DocucompHowTo.ppt&gt;</a></p>
+<h2 id="insert-component">Insert Component</h2>
+<p>The component library is a collection of components stored in the Docucomp database. Below are the steps for adding a component to the Library.</p>
+<ol style="list-style-type: decimal">
+<li>Prepare component for insert:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>Make sure component is <a href="http://en.wikipedia.org/wiki/XML#Well-formedness_and_error-handling">well-formed</a> XML.</p></li>
+<li><p>Make sure component includes a <a href="/ISO_Namespaces" title="wikilink">namespace</a> declaration for each namespace used in the component.</p></li>
+<li><p>Components are identified using <a href="http://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUIDs</a>. If you wish to assign a UUID to the component, it must be included in the root element of the component. If it is not included, Docucomp will assign a UUID constructed by the underlying database system..</p></li>
+</ol>
+<p>The UUID and namespace declarations are added to the root element of the component. Components do not require a header XML declaration. A sample component is shown below. Note how the gmd and gco namespaces and a UUID are declared in the root element of the component.</p>
+<pre><code>&lt;gmd:CI_OnlineResource
+  xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot;
+  xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot;
+  uuid=&quot;e38c87c0-4404-11df-9d12-0002a5d5c51b&quot;&gt;
+  &lt;gmd:linkage&gt;
+    &lt;gmd:URL&gt;http://uhslc.soest.hawaii.edu/uhslc/jasl.html&lt;/gmd:URL&gt;
+  &lt;/gmd:linkage&gt;
+  &lt;gmd:name&gt;
+    &lt;gco:CharacterString&gt;University of Hawaii Sea Level Center JASL Home Page&lt;/gco:CharacterString&gt;
+  &lt;/gmd:name&gt;
+  &lt;gmd:function&gt;
+    &lt;gmd:CI_OnLineFunctionCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode&quot; codeListValue=&quot;information&quot;&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;
+  &lt;/gmd:function&gt;
+&lt;/gmd:CI_OnlineResource&gt;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Insert Process: To insert a component into the database go to <a href="http://www.ngdc.noaa.gov/docucomp">Docucomp</a> web interface. <a href="/Image:create1.jpg" title="wikilink">thumb|Create component page</a></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>Log In to Docucomp. If you are not a Docucomp user, visit the <a href="/Docucomp_Account_Setup_Page" title="wikilink">Docucomp Account Setup Page</a> for ‘New User’ Instructions.</p></li>
+<li><p>Click on the ‘Insert New Component’ link (upper right)</p></li>
+<li><p>Paste the component into the ‘XML’ text box and click the ‘create’ button.</p></li>
+<li><p>If Potential Duplicate components are presented, see the <a href="/Docucomp_Component_Management_System#Duplicate_Components" title="wikilink">Duplicate Components</a> section below.</p></li>
+<li><p>When the component is successfully inserted, the ‘Show Component’ page will be returned.</p></li>
+</ol>
+<ul>
+<li><p>During the submission process the service ensures the component is well formed and contains the required namespaces.</p></li>
+<li><p>If the component is not well formed or is missing required namespaces an error message will be returned. The user must fix the error before resubmitting.</p></li>
+</ul>
+<ol start="5" style="list-style-type: lower-alpha">
+<li>To fix an xml error, click the back button to return to the XML display page. Edit the component XML and recreate the component. An xml editor such as ‘Oxygen’ or ‘Xml Spy’ is ideal for finding and fixing XML errors.</li>
+</ol>
+<h2 id="duplicate-components">Duplicate Components</h2>
+<p>During the component insert process Docucomp checks to see if the component being inserted already exists in the database. If similar components are found they are presented to the user as ‘Potential Duplicates’. The user then has the option to ‘Keep’ or ‘Cancel’ the operation. If the component is determined to be unique the user should click the ‘Keep’ button to complete the insert process. If a duplicate component is discovered the user should click the ‘Cancel’ button to cancel the insert process, and continue to use the found, pre existing component. This service is a warning system to prevent duplicate components from being inserted into the Docucomp database.</p>
+<h2 id="search-for-components">Search for Components</h2>
+<p><a href="/Image:search1.jpg" title="wikilink">thumb|Search for component</a> Docucomp search options include; component xml (Content), component identifier (UUID), <a href="/ISO_Components" title="wikilink">Component Type</a> and <a href="/Enterprise_Documentation_Glossary" title="wikilink">Record Set</a>. These search options are accessible from the Docucomp Home Page. 1. Enter a string in the ‘Content’ search field to return components containing the search string 2. Enter a component UUID in the ‘UUID’ search field to return a component by UUID 3. Select a Record Set from the drop down menu to filter your search results by the selected Record Set 4. Select a Component Type from the drop down menu to filter your search results by the selected Component Type 5. Your search results will be presented in the ‘Component List’ page, where searches can be modifed or filtered.</p>
+<h2 id="update-a-component">Update a Component</h2>
+<p><a href="/Image:edit1.jpg" title="wikilink">thumb|Edit component page</a> Docucomp users must be registered in order to perform edit operations. 1. Log In to Docucomp. If you are not a Docucomp user, visit the <a href="/Docucomp_Account_Setup_Page" title="wikilink">Docucomp Account Setup Page</a> for ‘New User’ Instructions. 2. <a href="/Docucomp_Component_Management_System#Search_for_Components" title="wikilink">Search</a> for the component you want to update. 3. Search results will be displayed in the ‘Component List’ page. Click the ‘Edit’ button to the left of the component you want to edit to access the ‘Edit Component’ page. 4. Edit the ‘XML’ field and click the Update button. 5. Upon update the edit results are presented in the ‘Show Component’ page. Note: Component xml must be well formed and contain the required namespaces in order to update. If a component fails to update make sure the XML is well formed and contains all the required namespaces. An XML editor such ‘Oxygen’ or ‘Xml Spy’ is ideal for this purpose.</p>
+<h2 id="delete-a-component">Delete a Component</h2>
+<p>Docucomp users must be registered in order to delete a component 1. Log In to Docucomp. If you are not a Docucomp user, visit the <a href="/Docucomp_Account_Setup_Page" title="wikilink">Docucomp Account Setup Page</a> for ‘New User’ Instructions. 2. <a href="/Docucomp_Component_Management_System#Search_for_Components" title="wikilink">Search</a> for the component you want to update. 3. Search results will be displayed in the ‘Component List’ page. Click the ‘Edit’ button to the left of the component you want to edit to access the ‘Edit Component’ page. 4. Click the ‘Delete’ button from the ‘Edit Component’ page to remove the component from the Docucomp database.</p>
+<p><a href="/Category:Collection_Manager" title="wikilink">Category:Collection Manager</a></p>

@@ -1,0 +1,493 @@
+<p>CI_Citation is used throughout the standard to provide information about scientific articles, reports, books, user guides, manuals, and other sources that refer or provide cite-able information about the resource (a dataset, service). Go to: <a href="/CI_Citation_for_MD_DataIdentification" title="wikilink">CI_Citation for MD_DataIdentification</a> for specific guidance on how to use this section for documenting a resource in MD_DataIdentification.</p>
+<table class="wikitable">
+<tr>
+<th valign="top" align="left" colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">title</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Name by which the cited resource is known.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">alternateTitle</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Short name or other language name by which the cited information is known.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>3</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CI_Date" title="wikilink">date</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Date of publication, creation or revision. If the publication or creation date is “unknown” or “inapplicable” then use the gco:nilReason attribute instead of gco:Date. Whenever possible, also include both creation date and revision date. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">edition</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Current version of the cited resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>editionDate <i>(choose one)</i></p>
+<ul>
+<li><a href="/Date" title="wikilink">Date</a></li>
+<li><a href="/DateTime" title="wikilink">DateTime</a></li>
+</ul>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Date or Date and Time of the version.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Identifier" title="wikilink">identifier</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Unique identifier used to reference the data, such as a DOI. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>7</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_ResponsibleParty" title="wikilink">citedResponsibleParty</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Individual or organization that is responsible for publishing the resource and URL to resource. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>8</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#CI_PresentationFormCode" title="wikilink">presentationForm</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The physical or digital form in which the resource is available.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>9</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_Series" title="wikilink">series</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the series or collection of which the resource is a part. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>10</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">otherCitationDetails</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Other information required to complete the citation that is not recorded elsewhere.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>11</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">collectiveTitle</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the combined resource if which the resource is a part. The description may include information on other volumes which are also available.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>12</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">ISBN</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>International Standard Book Number</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>13</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">ISSN</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>International Standard Serial Number</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-resources">Community Resources</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<p><font color="red">Draft</font></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="13">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>title</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td rowspan="5">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>alternateTitle</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>date</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>edition</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>editionDate</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>identifier</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td rowspan="2">
+<p>Extra credit for recommended field</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>citedResponsibleParty</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>presentationForm</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="6">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>series</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>otherCitationDetails</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>collectiveTitle</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>ISBN</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>ISSN</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="13">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>title</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td rowspan="5">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>alternateTitle</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>date</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>edition</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>editionDate</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>identifier</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td rowspan="2">
+<p>Extra credit for recommended field</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>citedResponsibleParty</p>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>presentationForm</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="6">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>series</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>otherCitationDetails</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>collectiveTitle</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>ISBN</p>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>ISSN</p>
+</td>
+<td align="center">
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable>
+<tr>
+<td colspan="3">
+**UML**
+
+</td>
+<td bgcolor="FFFFFF">
+[thumb|left](/Image:CI_Citation.png "wikilink")
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+**Links**
+
+</td>
+<td bgcolor="FFFFFF">
+-   [md_identifier example](/md_identifier_example "wikilink")
+-   [ISO Citations](/ISO_Citations "wikilink")
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+**Examples**
+
+</td>
+<td bgcolor="FFFFFF">
+`   Date: `
+
+    date:  (CI_Date)
+    date:  2004-03
+    dateType:  (CI_DateTypeCode) publication
+
+`   Edition: `
+
+    Volume 85, Issue 3
+
+`   citedResponsibleParty: `
+
+     (CI_ResponsibleParty)
+    organisationName:  Bulletin of the American Meteorological Society
+    role:  (CI_RoleCode) publisher
+    citedResponsibleParty:  (CI_ResponsibleParty)
+    organisationName: (missing)
+    contactInfo:  (CI_Contact)
+    onlineResource:  (CI_OnlineResource)
+    linkage: http://dx.doi.org/10.1175/BAMS-85-3-409
+    name:  SEAFLUX
+    description:  A science paper about a high-resolution satellite-based dataset
+    of surface turbulent fluxes over the global oceans to complement the existing
+    products for surface radiation fluxes and precipitation.
+    function:  (CI_OnLineFunctionCode) information
+    role: (missing)
+
+</td>
+</tr>
+</table>

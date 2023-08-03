@@ -1,0 +1,334 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_MaintenanceFrequencyCode" title="wikilink">maintenanceAndUpdateFrequency</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Frequency of changes and additions made to the resource or metadata after the initial completion.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>dateOfNextUpdate <em>(choose one)</em> *<a href="/Date" title="wikilink">Date</a></p>
+<ul>
+<li><a href="/DateTime" title="wikilink">DateTime</a>
+</td></li>
+</ul>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The scheduled revision date for the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/TM_PeriodDuration" title="wikilink">userDefinedMaintenanceFrequency</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The maintenance period other than those defined. Recommend providing if the update frequency is less than 1 day. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ScopeCode" title="wikilink">updateScope</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Scope of resource to which maintenance is applied. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_ScopeDescription" title="wikilink">updateScopeDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Additional information about the range or extent of the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">maintenanceNote</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information regarding specific requirements for maintaining the resource or recent changes.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>7</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_ResponsibleParty" title="wikilink">contact</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Individuals and/or organizations available for maintaining the resource or the metadata. </i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="7">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>maintenanceAndUpdateFrequency</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="5">
+<p>Same requirements as standard.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateOfNextUpdate</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>userDefinedMaintenanceFrequency</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>updateScope</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>updateScopeDescription</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>maintenanceNote</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>contact</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+<p>Same requirements as standard.</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="24">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>maintenanceAndUpdateFrequency</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="7">
+<p>Same requirements as standard.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateOfNextUpdate</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>userDefinedMaintenanceFrequency</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>updateScope</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>updateScopeDescription</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>maintenanceNote</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>contact</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:MD_MaintenanceInformation.png" title="wikilink">thumb|left</a></p>
+</td>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_19115_Metadata_Maintenance" title="wikilink">ISO 19115 Metadata Maintenance</a></li>
+</ul>
+</td>
+</tr>
+</table>

@@ -1,0 +1,947 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CI_Citation_for_MD_DataIdentification" title="wikilink">citation</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Citation for the resource, includes name, publication date, identifiers, originators and publishers.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">abstract</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Brief narrative summary of the resource. This is different than a scientific abstract. Limit information in the abstract to the specific resource that is being described. Provide descriptive information in a clear, concise and human readable manner. Describe the contents of the resource and the key aspects and/or attributes that are represented. Briefly explain what is unique about this resource and, if appropriate how it differs from similar resources. Ensure contextual information important to the use of the resource are explained, e.g. formats, recommended tools, related resources, or limitations. Avoid citing external sources to this resource. </i> See <a href="/abstract_Other_Recommendations" title="wikilink">abstract Other Recommendations</a></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">purpose</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Summary of intentions for which the resource was developed. See <a href="/purpose_examples" title="wikilink">purpose_examples</a></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">credit</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Recognition of those who contributed to the dataset. Do not include URLs here. Provide full citations in <a href="/MD_AggregateInformation" title="wikilink">MD_AggregateInformation</a> section. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode" title="wikilink">status</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Status of resource development. Most common status values to use are ‘completed’, ‘ongoing’, ‘planned’ or ‘underDevelopment’. Highly recommend populating this field. See <a href="/Status_Examples" title="wikilink">Status Examples</a></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_ResponsibleParty" title="wikilink">pointOfContact</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Individuals and/or organizations available for questions about the resource. Use roleCode=“pointOfContact”. This should be a person at an archive or the originator of the resource. Provide contact details, such address, phone and email. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>7</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_MaintenanceInformation" title="wikilink">resourceMaintenance</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the frequency, scope, and responsible party for the updating of the resource. See <a href="/MD_MaintenanceInformation_Examples" title="wikilink">MD_MaintenanceInformation Examples</a></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>8</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_BrowseGraphic" title="wikilink">graphicOverview</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>A small image that exemplifies the collective resource. The graphic file should be less than 500KB and 1000x1000 pixels. Provide URL to an image that can be rendered in browsers. See <a href="/MD_BrowseGraphic_Examples" title="wikilink">MD_BrowseGraphic Examples</a></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>9</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Format" title="wikilink">resourceFormat</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the formats of the resource. This is independant of the distribution details and is useful to provide when the resource has a status of ‘planned’ or ‘underDevelopment’. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>10</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Keywords" title="wikilink">descriptiveKeywords</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Commonly used words or phrases which describe the dataset. Optionally, the keyword type and a citation for the authoritative or registered resource of the keywords are also provided.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>11</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Usage" title="wikilink">resourceSpecificUsage</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Basic information about specific application(s) for which the resource(s) has been or is being used by different users.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>12</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Constraints" title="wikilink">resourceConstraints</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The limitations or constraints on the use of or access to the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>13</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_AggregateInformation" title="wikilink">aggregationInfo</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The citations and identifiers of associated resources, such as projects and documents.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>14</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode" title="wikilink">spatialRepresentationType</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Object(s) used to represent the geographic information.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>15</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_Resolution" title="wikilink">spatialResolution</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The level of detail of the dataset expressed as equivalent scale or ground distance.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>16</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">language</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Languages of the dataset using standard ISO three-letter codes. Best Practice: <code>eng; USA</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFF99">
+<p>17</p>
+</td>
+<td bgcolor="CCFF99">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_CharacterSetCode" title="wikilink">characterSet</a></p>
+</td>
+<td bgcolor="CCFF99">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Character coding standard in the dataset.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFF99">
+<p>18</p>
+</td>
+<td bgcolor="CCFF99">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode" title="wikilink">topicCategory</a></p>
+</td>
+<td bgcolor="CCFF99">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>High-level thematic classifications to assist in the grouping and searching of data. Required when the hierarchyLevelName scopeCode is ‘dataset’. Recommended when hierarchyLevelName scopeCode is ‘series’, ‘fieldSession’, or ‘nonGeographicDataset’. The most applicable topics in NOAA are usually geoscientificInformation, climatologyMeteorologyAtmosphere, oceans or elevation. Repeat if more than one category is applicable. Keep the capitalization and spacing of the terms. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>19</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">environmentDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Describes the dataset’s processing environment. Includes information, such as software, computer operating system, filename, and dataset size. Provide full citations in the <a href="/LI_Lineage" title="wikilink">LI_Lineage</a> section.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>20</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/EX_Extent" title="wikilink">extent</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about the spatial, horizontal and/or vertical, and the temporal coverage of the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>21</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">supplementalInformation</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Other descriptive information about the resource.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="21">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>citation</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>abstract</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>purpose</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>credit</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>status</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>pointOfContact</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceMaintenance</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td rowspan="2">
+<p>Extra credit for recommended fields.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>graphicOverview</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceFormat</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>descriptiveKeywords</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceSpecificUsage</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceConstraints</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>aggregationInfo</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>spatialRepresentationType</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>spatialResolution</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>language</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>characterSet</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>topicCategory</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>environmentDescription</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>extent</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Only geographicExtent is conditional.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>supplementalInformation</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="24">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>citation</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>abstract</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>purpose</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>credit</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>status</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>pointOfContact</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceMaintenance</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>graphicOverview</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceFormat</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>descriptiveKeywords</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Mandatory for OneStop Collection records. Not mandatory for Granule level records.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceSpecificUsage</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>resourceConstraints</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>aggregationInfo</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>spatialRepresentationType</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>spatialResolution</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>language</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>characterSet</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>topicCategory</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>environmentDescription</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>extent</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Only geographicExtent is conditional.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>supplementalInformation</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:Description.MD_DataIdentification.png" title="wikilink">thumb|center</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/Documentation_Spirals#Identification" title="wikilink">Documentation Spirals#Identification</a>
+</td>
+</tr></li>
+</ul>
+</table>

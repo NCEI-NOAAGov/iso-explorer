@@ -1,0 +1,288 @@
+<p>The definitions in this section stray significantly from the definitions in the published ISO 19115:2003 standard, because this section has evolved significantly to be more meaningful and useful in 19115-1:2014.</p>
+<p>MI_Band extends MD_Band by adding elements listed in rows 14-18.</p>
+<table class="wikitable">
+<tr>
+<th valign="top" align="left" colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MemberName" title="wikilink">sequenceIdentifier</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Unique name or number that identifies attributes included in the coverage.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">descriptor</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Description of the attribute.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">maxValue</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Maximum value of data values in each dimension included in the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">minValue</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Minimum value of data values in each dimension included in the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>5</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/units" title="wikilink">units</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Units of data in each dimension included in the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>6</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">peakResponse</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Wavelength at which the response is the highest. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>7</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Integer" title="wikilink">bitsPerValue</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Maximum number of significant bits in the uncompressed representation for the value in each band of each pixel.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>8</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Integer" title="wikilink">toneGradation</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Number of discrete numerical values in the data. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>9</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">scaleFactor</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Scale factor which has been applied to the cell value.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>10</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">offset</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The physical value corresponding to a cell value of zero.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>11</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">meanValue</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Mean value of data values in each dimension included in the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>12</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Integer" title="wikilink">numberOfValues</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The number of values used in a thematicClassification resource. For example, the number of classes in a Land Cover Type coverage or the number of cells with data in other types of coverages.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>13</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">standardDeviation</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Standard deviation of data values in each dimension included in the resource.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>14</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_BandDefinition" title="wikilink">bandBoundaryDefinition</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Designation of criterion for defining maximum and minimum wavelengths for a spectral band. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>15</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Real" title="wikilink">nominalSpatialResolution</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Smallest distance between which separate points can be distinguished, as specified in instrument design. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>16</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_TransferFunctionTypeCode" title="wikilink">transferFunctionType</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Type of transfer function to be used when scaling a physical value for a given element. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>17</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_PolarizationOrientationCode" title="wikilink">transmittedPolarisation</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Polarization of the radiation transmitted. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>18</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_PolarizationOrientationCode" title="wikilink">detectedPolarisation</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Polarization of the radiation detected. Applicable to range of wavelengths in the electromagnetic spectrum.</i></p>
+</td>
+</tr>
+</table>
+<p><strong>More Information</strong></p>
+<table class="wikitable>
+<tr>
+<th>
+UML
+
+</th>
+<td bgcolor="FFFFFF">
+[thumb|left](/File:MI_Band.png "wikilink")
+
+</td>
+</tr>
+<tr>
+<th>
+Links
+
+</th>
+<td bgcolor="FFFFFF">
+-   [ISO Content Information](/ISO_Content_Information "wikilink")
+-   [Coverages_and_ISO_Metadata](/Coverages_and_ISO_Metadata "wikilink")
+-   [Documentation_Spirals\#Content](/Documentation_Spirals#Content "wikilink")
+
+</tr>
+</table>

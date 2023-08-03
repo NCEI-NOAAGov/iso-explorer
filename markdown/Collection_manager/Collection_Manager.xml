@@ -1,0 +1,923 @@
+﻿<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+	<siteinfo>
+		<sitename>NOAA Environmental Data Management Wiki</sitename>
+		<dbname>noscwiki_prod</dbname>
+		<base>http://geo-ide.noaa.gov/wiki/index.php?title=Main_Page</base>
+		<generator>MediaWiki 1.27.3</generator>
+		<case>first-letter</case>
+		<namespaces>
+			<namespace key="-2" case="first-letter">Media</namespace>
+			<namespace key="-1" case="first-letter">Special</namespace>
+			<namespace key="0" case="first-letter"/>
+			<namespace key="1" case="first-letter">Talk</namespace>
+			<namespace key="2" case="first-letter">User</namespace>
+			<namespace key="3" case="first-letter">User talk</namespace>
+			<namespace key="4" case="first-letter">NOAA Environmental Data Management Wiki</namespace>
+			<namespace key="5" case="first-letter">NOAA Environmental Data Management Wiki talk</namespace>
+			<namespace key="6" case="first-letter">File</namespace>
+			<namespace key="7" case="first-letter">File talk</namespace>
+			<namespace key="8" case="first-letter">MediaWiki</namespace>
+			<namespace key="9" case="first-letter">MediaWiki talk</namespace>
+			<namespace key="10" case="first-letter">Template</namespace>
+			<namespace key="11" case="first-letter">Template talk</namespace>
+			<namespace key="12" case="first-letter">Help</namespace>
+			<namespace key="13" case="first-letter">Help talk</namespace>
+			<namespace key="14" case="first-letter">Category</namespace>
+			<namespace key="15" case="first-letter">Category talk</namespace>
+		</namespaces>
+	</siteinfo>
+	<page>
+		<title>Template:DocucompFooter</title>
+		<ns>10</ns>
+		<id>2531</id>
+		<revision>
+			<id>17481</id>
+			<parentid>17479</parentid>
+			<timestamp>2019-07-12T19:02:24Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="119">&lt;hr/&gt;&lt;hr/&gt;
+* Contact: [mailto:ncei.collection-manager.support@noaa.gov Support Email] 
+
+[[Category:Collection Manager]]</text>
+			<sha1>8er2zzkqacijfm3t6bk3x9ghm6c0w4k</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Collection Manager</title>
+		<ns>0</ns>
+		<id>3150</id>
+		<revision>
+			<id>17488</id>
+			<parentid>17486</parentid>
+			<timestamp>2019-07-12T19:13:32Z</timestamp>
+			<contributor>
+				<username>Fozzard</username>
+				<id>99</id>
+			</contributor>
+			<minor/>
+			<comment>Move WAFs to top</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="959">=== Collection Metadata Editing Tool (CoMET) ===
+https://data.noaa.gov/comet
+* Import, Create, Edit, Validate and Publish ISO metadata records
+* Fill out a Data Stewardship Maturity Questionnaire (DSMQ)
+
+=== Web Accessible Folders (WAFs) ===
+https://data.noaa.gov/waf/
+* Folders with ISO XML metadata records, quality and completeness reports, and various human- and machine-readable views of the metadata
+
+=== Docucomp ===
+https://data.noaa.gov/docucomp
+* Insert or edit &quot;components&quot;, i.e. snippets of XML that are meant to be referenced by an xlink in your metadata. E.g. a &lt;gmd:contact&gt; element
+
+=== Metaserver ===
+https://data.noaa.gov/metaserver
+* Assessing individual records with RecordServices
+* Process records with WAF On Demand
+* View Record Sources and Collection Sources
+* Metrics DB for quality/completeness
+
+=== Metaview ===
+https://data.noaa.gov/metaview
+* Transform Engine - no login
+
+
+[[Category:Metadata Tools]]
+
+{{template:DocucompFooter}}</text>
+			<sha1>oswzue3ati0z5sav9luk5gacipzhdnb</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Docucomp Component Management System</title>
+		<ns>0</ns>
+		<id>1886</id>
+		<revision>
+			<id>17714</id>
+			<parentid>17699</parentid>
+			<timestamp>2019-11-25T21:12:31Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="6768">[[Category:Metadata Tools]]
+[[Category:Collection Manager]]
+ 
+http://www.ngdc.noaa.gov/docucomp
+
+Docucomp is a web application for managing XML [[ISO_Components|components]] as part of an [[Enterprise Documentation Architecture]]. A component is a snippet of XML describing a specific piece of metadata content. They are stored in a database and managed with [http://en.wikipedia.org/wiki/Representational_State_Transfer REST] web services.  The REST services support insert, search, update and delete operations.  
+
+== Presentations ==
+[[File:DocucompHowTo.ppt]]
+
+==Insert Component==
+The component library is a collection of components stored in the Docucomp database. Below are the steps for adding a component to the Library. 
+
+1. Prepare component for insert:  
+:a. Make sure component is [http://en.wikipedia.org/wiki/XML#Well-formedness_and_error-handling well-formed] XML.
+:b. Make sure component includes a [[ISO Namespaces |namespace]] declaration for each namespace used in the component. 
+:c. Components are identified using [http://en.wikipedia.org/wiki/Universally_Unique_Identifier UUIDs]. If you wish to assign a UUID to the component, it must be included in the root element of the component. If it is not included, Docucomp will assign a UUID constructed by the underlying database system..
+ 
+The UUID and namespace declarations are added to the root element of the component. Components do not require a header XML declaration. A sample component is shown below. Note how the gmd and gco namespaces and a UUID are declared in the root element of the component.  
+
+&lt;pre&gt;
+&lt;gmd:CI_OnlineResource 
+  xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+  xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+  uuid=&quot;e38c87c0-4404-11df-9d12-0002a5d5c51b&quot;&gt;
+  &lt;gmd:linkage&gt;
+    &lt;gmd:URL&gt;http://uhslc.soest.hawaii.edu/uhslc/jasl.html&lt;/gmd:URL&gt;
+  &lt;/gmd:linkage&gt;
+  &lt;gmd:name&gt;
+    &lt;gco:CharacterString&gt;University of Hawaii Sea Level Center JASL Home Page&lt;/gco:CharacterString&gt;
+  &lt;/gmd:name&gt;
+  &lt;gmd:function&gt;
+    &lt;gmd:CI_OnLineFunctionCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode&quot; codeListValue=&quot;information&quot;&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;
+  &lt;/gmd:function&gt;
+&lt;/gmd:CI_OnlineResource&gt;
+&lt;/pre&gt;
+
+2. Insert Process: To insert a component into the database go to [http://www.ngdc.noaa.gov/docucomp Docucomp] web interface.
+[[Image:create1.jpg|thumb|Create component page]] 
+:a. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.
+:b. Click on the 'Insert New Component' link (upper right)
+:c. Paste the component into the 'XML' text box and click the 'create' button. 
+:d. If Potential Duplicate components are presented, see the [[Docucomp_Component_Management_System#Duplicate_Components|Duplicate Components]] section below.
+:e. When the component is successfully inserted, the 'Show Component' page will be returned.
+::- During the submission process the service ensures the component is well formed and contains the required namespaces.   
+::- If the component is not well formed or is missing required namespaces an error message will be returned.  The user must fix the error before resubmitting.  
+:e. To fix an xml error, click the back button to return to the XML display page. Edit the component XML and recreate the component. An xml editor such as 'Oxygen' or 'Xml Spy' is ideal for finding and fixing XML errors.
+
+==Duplicate Components==
+
+During the component insert process Docucomp checks to see if the component being inserted already exists in the database.  If similar components are found they are presented to the user as 'Potential Duplicates'.  The user then has the option to 'Keep' or 'Cancel' the operation.  If the component is determined to be unique the user should click the 'Keep' button to complete the insert process.  If a duplicate component is discovered the user should click the 'Cancel' button to cancel the insert process, and continue to use the found, pre existing component. This service is a warning system to prevent duplicate components from being inserted into the Docucomp database.
+
+==Search for Components==
+[[Image:search1.jpg|thumb|Search for component]]
+Docucomp search options include; component xml (Content), component identifier (UUID), [[ISO_Components|Component Type]] and [[Enterprise_Documentation_Glossary|Record Set]]. 
+These search options are accessible from the Docucomp Home Page.&lt;br/&gt;
+1. Enter a string in the 'Content' search field to return components containing the search string&lt;br/&gt;
+2. Enter a component UUID in the 'UUID' search field to return a component by UUID&lt;br/&gt; 
+3. Select a Record Set from the drop down menu to filter your search results by the selected Record Set&lt;br/&gt;
+4. Select a Component Type from the drop down menu to filter your search results by the selected Component Type
+5. Your search results will be presented in the 'Component List' page, where searches can be modifed or filtered.
+
+==Update a Component==
+[[Image:edit1.jpg|thumb|Edit component page]]
+Docucomp users must be registered in order to perform edit operations.&lt;br/&gt;
+1. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.&lt;br/&gt;
+2. [[Docucomp_Component_Management_System#Search_for_Components|Search]] for the component you want to update.&lt;br/&gt;
+3. Search results will be displayed in the 'Component List' page.  Click the 'Edit' button to the left of the component you want to edit to access the 'Edit Component' page.&lt;br/&gt;
+4. Edit the 'XML' field and click the Update button.&lt;br/&gt; 
+5. Upon update the edit results are presented in the 'Show Component' page.&lt;br/&gt;
+Note:  Component xml must be well formed and contain the required namespaces in order to update. If a component fails to update make sure the XML is well formed and contains all the required namespaces.  An XML editor such 'Oxygen' or 'Xml Spy' is ideal for this purpose.
+
+==Delete a Component==
+Docucomp users must be registered in order to delete a component&lt;br/&gt;
+1. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.&lt;br/&gt;
+2. [[Docucomp_Component_Management_System#Search_for_Components|Search]] for the component you want to update.&lt;br/&gt;
+3. Search results will be displayed in the 'Component List' page.  Click the 'Edit' button to the left of the component you want to edit to access the 'Edit Component' page.&lt;br/&gt;
+4. Click the 'Delete' button from the 'Edit Component' page to remove the component from the Docucomp database.
+
+
+{{template:DocucompFooter}}
+[[Category:Collection Manager]]</text>
+			<sha1>0shmlnwv0q30z9h4g35301unc1b4i6u</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Enterprise Documentation Metrics</title>
+		<ns>0</ns>
+		<id>2465</id>
+		<revision>
+			<id>17739</id>
+			<parentid>10696</parentid>
+			<timestamp>2019-11-25T21:34:49Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="8713">The [[Data Documentation PD | NOAA Documentation Directive Directive]] recognizes the importance of [[Enterprise Documentation Architecture | tools]] for evaluating NOAA metadata and quantitatively measuring improvements over time. The Environmental Data Management Committee is developing a set of metrics to support that effort. The metrics are calculated over metadata that are available in [[Web Accessible Folder | Web Accessible Folders]]. Metrics are currently available for metadata completeness scores and for various metadata problems.
+
+=Metadata Completeness=
+The metadata completeness scores are calculated using a rubric built on the idea of [[Documentation Spirals]] which break the metadata content into sets of attributes related to common documentation needs. Rubric scores are calculated for each record in a WAF. 
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:DemGraph.jpg|thumb|center|500px|DemGraph.jpg|Completeness Score (threshold) ]] 
+| [[Image:ScoreStatisticsTime.png|thumb|center|500px|Completeness Score Range]]
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The upper bound of the colored area shows the total number of records in the WAF as a function of time. 
+* gray: count of invalid records
+* red: count of records with scores less than 20
+* green: count of records with scores between 21 and 24
+* blue: count of records with scores between 25 and 41
+This figure shows a WAF with a dramatic improvement in scores late in 2012. See [[Digital Elevation Models Improvement]] for the story of this metadata improvement. 
+| valign=&quot;top&quot; align=&quot;left&quot; | 
+This plot tracks the minimum, mean and maximum completeness scores across an entire WAF over time. 
+|}
+
+Completion Scores are also available in a text file for each WAF. These files are accessed using the Rubric Scores link in the WAF Table of Contents ([http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/STP/Solar/iso/reports/isoRubricScores.txt example]). The fields in these files are delimited by | and are: &lt;br/&gt;
+&lt;pre&gt;rubric version | test date | WAF title | record title | record update date | record identifier | rubric score | maximum possible score&lt;/pre&gt;
+
+=Metadata Problems=
+Metadata records are long-lived information resources that are edited as part of on-going documentation improvement projects. As such, they can develop problems related to age or to editing mistakes. A number of these problems are tracked by the system.
+==Valid and Invalid Records==
+The metadata records managed in EMMA are compliant with the ISO 19115-2 standard. This compliance is checked by the system using the ISO 19139 XML schema for this standard (http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd). As metadata records are edited and new information is added, it is possible that errors are introduced that can result in the record being invalid. All records in the WAFs are checked against the schema and invalid records are listed in the validation report.
+
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:validationPlot.jpg|thumb|center|500px|Valid and Invalid Graph]]
+| [[Image:validationReport.jpg|thumb|center|300px|Valid and Invalid Report]]
+
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The red line indicates the total count of invalid records over time. The black line indicates the total count of valid records over time.
+| valign=&quot;top&quot; align=&quot;left&quot; | This report indicates the most recent total count of invalid records and validation reports for each record. Invalid records do no complete processing and remain in the iso_u directory. 
+|}
+
+== Broken URLs ==
+This report will check all URLs in '''//gmd:URL''' Xpaths and will list the invalid links. It does not check URLs in '''//gco:CharacterString''' elements.
+
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:brokenURLPlot.jpg|thumb|center|500px|Broken URLs Graph]]
+| [[File:InvalidURLs.jpg|thumbcenter|300px|Broken URLs Report]]
+
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The black line indicates the count of unique URLs. The blue line indicates the total count of all unique URLs reused. 
+| valign=&quot;top&quot; align=&quot;left&quot; | This report lists each broken URL and the number of times it is reused.
+|}
+
+If the ftp link is to an ftp directory, then there must be a backslash at the end. Note: browsers automatically put a backslash at the end if it is not there, which makes it ''appear'' to be valid.
+
+* '''valid'''
+&lt;nowiki&gt;ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/SOLAR_UV/&lt;/nowiki&gt;
+* '''invalid'''
+&lt;nowiki&gt;ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/SOLAR_UV&lt;/nowiki&gt;
+
+== Broken XLinks ==
+Many metadata records use the [http://en.wikipedia.org/wiki/XLink XLink] standard to refer to external content located on the Web that needs to be included in the metadata record. This approach to reuse is at the heart of the [[ISO Components | component]] idea supported by the [http://www.ngdc.noaa.gov/docucomp Docucomp] tools. Of course the XLinks are URLs, so they must be checked to ensure that they are resolved correctly. 
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:brokenXLinksPlot.jpg|thumb|center|500px|Broken XLinks Graph]]
+| [[Image:brokenXLinks.jpg|thumb|center|300px|Broken XLinks Report]]
+
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The black line indicates the count of unique Broken XLinks. The blue line indicates total count of Broken XLinks reused.
+| valign=&quot;top&quot; align=&quot;left&quot; | This report lists each broken XLink and the number of times each is reused.
+|}
+
+== Other XLinks ==
+Other XLinks  may represent any type of valid URL found in an xlink:href attribute that does not return well formed XML. If this is purposeful, then also include xlink:actuate=&quot;onRequest&quot; attribute to indicate that it should NOT be a resolve-able component. 
+
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:otherXLinksPlot.jpg|thumb|center|500px|Other XLinks Graph]]
+| [[Image:otherXLinks.jpg|thumb|center|300px|Other XLinks Report]]
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The black line indicates the count of unique Other XLinks. The blue line indicates the total count of Other XLinks reused. 
+| valign=&quot;top&quot; align=&quot;left&quot; | This report lists the Other XLinks and the number of times each is reused.
+|}
+
+=Component Count/Reuse=
+Metadata collections tend to include the same content in many records. Components support maintaining this content once and reusing it 
+throughout the collection. This approach to reuse is at the heart of the [[ISO Components | component]] idea supported by the [http://www.ngdc.noaa.gov/docucomp Docucomp] tools. EMMA identifies components being used in a collection and counts the number of times each is used. 
+
+{| width=&quot;800&quot; align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;10&quot;
+|-
+| [[Image:componentReusePlot.jpg|thumb|center|500px|Components Graph]]
+| [[Image:componentReuseTable.jpg|thumb|center|300px|Components Report]]
+|-
+| valign=&quot;top&quot; align=&quot;left&quot; | The black line indicates count of unique components. The green line indicates total count of Components reused. The blue line indicates the average reuse of all components. 
+| valign=&quot;top&quot; align=&quot;left&quot; | This report lists all components and the number of times each is reused.
+|}
+
+=Metadata Consistency=
+We tend to look at metadata records as single units which works well for evaluating a single record but makes it difficult to identify inconsistencies across a collection. To do that we must be able to look at a particular metadata element in all of the records in the collection to identify inconsistent values. We provide this capability generally for a number of metadata elements and for specific responsibilities in the record.
+
+==Consistency Checker Report ==
+The general Consistency Checker Report shows selected content from unique connections (online resources), people, citations, services, service types, keywords, and process steps collected from all records in a WAF. It also lists the number of times each of these unique items are repeated in the collection. This information can be used to assess and improve consistency across the collection. More detailed information is also available about people and organizations referenced from the collection in the ''Responsible Party Details'' report.
+
+=Visualizing Documentation Progress=
+Many of the proposed metrics can be viewed as time series and those views are available. We are also exploring displays that demonstrate progress along multiple dimensions simultaneously. One such display plots metadata completeness against the number of records. Increases in either of these measures move points towards the upper-right corner of the plot.
+[[File:DocumentationMetricLandscape.png|thumb|center|500px|Metric Landscape]]
+
+{{Template:DocucompFooter}}</text>
+			<sha1>jk2xf3vfxevopxuwxjgbnq3frq3vw9d</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Enterprise Documentation Architecture</title>
+		<ns>0</ns>
+		<id>1876</id>
+		<revision>
+			<id>10740</id>
+			<parentid>10739</parentid>
+			<timestamp>2014-04-30T19:54:50Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<comment>/* Reports and Dashboards */</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="5493">[[Image:EnterpriseMetadataArchitecture.png|thumb|Enterprise Documentation Architecture]]
+The Enterprise Data Systems Group at NOAA's National Geophysical Data Center has developed a system for managing and sharing documentation in multiple dialects. This Figure shows the major components in the system and how they are connected. The components are described below.&lt;hr/&gt;
+=Desktop XML Editor=
+Full-featured desktop XML editors include many capabilities that are required for creating and editing modern metadata records. They are schema aware, so they know the valid choices at any place in the file, can offer tool tips from the schema while editing and can validate records using schema and schematron. They can translate records using XSLT which is very helpful for evaluating completeness and checking content as it is edited. They can operate on single files or directories full of files and can do batch search and replace. They can compare multiple files, connect to web services for content and to subversion for version control. In short, they offer a comprehensive collection of features that is very difficult to match in a web environment. Two great choices are [http://www.oxygenxml.com/ Oxygen] and [http://www.altova.com/xmlspy.html XMLSpy] both have free 30-day trials. There are certainly others.
+
+=Subversion=
+[http://subversion.apache.org/ Subversion] is an open-source version control system supported as part of the Apache Software Foundation. It keeps track of versions of metadata records. The system includes two Subversion Repositories: the Workspace Repository is used internally by metadata editors and is accessed through various clients. Records in the Workspace Repository can contain references to external content ([http://www.w3.org/TR/xlink/ XLinks]). The Published Subversion Repository provides version control of published records which generally do not include external references.
+
+Records can be checked in to the Workspace Repository using a variety of free clients or command line tools. The external connection to the Workspace Repository shown in the Figure is not functional at present.
+
+=Component Library=
+Most large documentation collections include content that is repeated in many records. It is useful to manage only one copy of these components that can be used in many records. At NGDC, that is done in the Component Library in the [[Docucomp Component Management System]].
+
+The Component Library is accessible using a [http://en.wikipedia.org/wiki/Representational_State_Transfer REST] interface that supports Creation, Read, Update, and Delete operations for components. This interface is available to web and desktop clients.
+
+=Web Accessible Folders=
+[[Web Accessible Folder | Web Accessible Folders (WAFs)]] are directories that are accessible using an http or web interface. They are used throughout the system to hold collections of related records and to make those records available to the outside world. Many of the tools developed to manage and transform records operate on directories or Web Accessible Folders.
+
+The system includes several WAFs. The UWAF is created and maintained by regularly scheduled checkouts of records from the Workspace Subversion Repository. These records can contain references to external content ([http://www.w3.org/TR/xlink/ XLinks]). They are referred to as unresolved records and they are in the Unresolved WAF (UWAF).
+
+The ISO WAF contains published records in various ISO dialects (19115-2, 19119, ...). It is created and maintained by regularly scheduled checkouts of records from the UWAF Subversion Repository. The ISO WAF is the source for sharing content in a variety of views.
+
+The system Figure shows an FGDC WAFgenerated as an output from the ISO WAF. The FGDC WAF serves as a source of records for external systems that are still based on the FGDC metadata standard. The FGDC WAF is seen as a temporary element that will be phased out as the external systems transition to the ISO Standards.
+
+=Reports and Dashboards=
+Each ISO WAF has reports documenting the quality and completeness of the set of records. 
+* [[ISO Metadata Reports]]
+
+'''Graphical dashboards''' &lt;br/&gt;
+WAF Table Of Contents pages now have charts and reports showing various metrics, including quantity and completeness of metadata. For example:
+* http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/DEM/iso/
+or for Groups of WAFs:
+* http://www.ngdc.noaa.gov/docucomp/transform?view=WafGroupsTable&amp;title=Docucomp+Collection+Groups+Report
+
+=Views=
+The system includes views created from the unprocessed WAFs and processed WAFs using [http://en.wikipedia.org/wiki/XSLT XSLTs]. These views support a variety of documentation dialects and applications. They are described in more detail on the [[Web Accessible Folder]] page.
+
+=Resolving XLinks in Metadata Records=
+Most large documentation collections include [[ISO Components | components]] that are repeated in multiple records. Connections between components and composite records can be maintained using ([http://www.w3.org/TR/xlink/ XLinks]) that need to be resolved in order to produce a complete metadata record. This is accomplished using the &quot;[[Metadata Resolver Quick Start Guide |Resolver]]&quot; as part of the automated update of the ISO WAF from the UWAF.
+
+=Portal Support=
+The system supports portals and metadata access systems that can harvest metadata records directly from the ISO WAF. 
+
+[[Category: Metadata Tools]]
+
+{{template:DocucompFooter}}</text>
+			<sha1>5gbxat3c50rdccsosxr2jtlyvw3fr77</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Setup Accounts for Collection Manager Tools</title>
+		<ns>0</ns>
+		<id>2300</id>
+		<revision>
+			<id>17690</id>
+			<parentid>17586</parentid>
+			<timestamp>2019-11-25T20:53:28Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="1034">==Registration Instructions==
+Send email to [mailto:ncei.collection-manager.support@noaa.gov ncei.collection-manager.support@noaa.gov] with the following details
+# Subject: 'New User for [CoMET, Docucomp, and/or Metaserver] for &lt;i&gt;your name&lt;/i&gt;'
+# Your contact information 
+# Your associated program or agency
+# Intended usage 
+
+Once you are set up, your login name will be your email (without the @noaa.gov) and the password will be the same as your email password.
+
+=== CoMET===
+* Create, edit and import ISO records 
+* Fill out a Data Stewardship Maturity Questionnaire (DSMQ)
+
+=== Docucomp ===
+* insert or edit components
+
+
+=== Metaserver ===
+* Assess individual records with Record Services
+* Process WAFs with Collection Services
+
+
+'''Note: Login is currently limited to users with a NOAA email, but external access is planned for a future release cycle. Send in a request if you'd like to be informed when this capability is available.'''
+
+[[Category:Metadata Tools]]
+[[Category:Collection Manager]]
+{{template:DocucompFooter}}</text>
+			<sha1>j7w1zfgq2s2r6t1ztle8qy58f56a40j</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>About Collection Metadata Editing Tool</title>
+		<ns>0</ns>
+		<id>2862</id>
+		<revision>
+			<id>17669</id>
+			<parentid>17566</parentid>
+			<timestamp>2019-11-25T18:55:59Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="23859">[[Category:Collection Manager]]
+
+This guidance is for v1.0.0 of the Collection Metadata Enterprise Tool (CoMET). CoMET is a metadata editor built using the CEdit web application.  
+== Logging In ==
+To log on, a user points a web browser to https://data.noaa.gov/comet.
+
+The login page asks for username and password. Use your NOAA email username and password. If your email address is john.doe@noaa.gov, the username would be john.doe.
+
+For those who were not previously registered with CEdit, only READ-ONLY access is granted and the following message is shown:
+[[File: CoMET_1_ReadOnlyAccess.png|center|frame|alt=Message text for users with READ-ONLY access|Figure 1.1  The above message is shown when a user logins with READ-ONLY access.]]
+If you need to edit records in CoMET, please send an email as described in the above message.
+
+Once logged in, click the “View Forms” button to start working with metadata records. The web application will display the Form List page. Look for a selector with “-- FormManagers --” text and select “CoMET” from the list.
+[[File: CoMET_1_FormManagerSelection.png|center|frame|alt=Form Manager Selector|Figure 1.2 The dropdown menu for selecting a form manager]]
+First 10 records (that are managed by CoMET) will be listed. Now you are ready to work with metadata.
+
+== Creating Metadata ==
+=== Importing Existing Metadata ===
+Users with metadata editing access can import existing metadata records external to CoMET. Two types of metadata records can be imported. They are ISO 19115-2 and NCML metadata in XML file format. With “CoMET” selected as described at the end of Section 1, locate and click the “Import New Form” button on top right corner:
+[[File: CoMET_2_ImportNewFormButton.png|center|frame|alt=The Import New Form button|Figure 2.1 The Import New Form button.]]
+
+The web application will present an import screen:
+[[File: CoMET_2_UploadContents.png|center|frame|alt=The Import user interface|Figure 2.2 The Import user interface. The user uploads a file or provides a URL.]]
+
+There are two options to specify where the record for import is located. Use the upload function if the record is on your computer disk. If the record is available from a web server, a ftp server, etc., use the input field for a URL. If an upload file and a URL are provided, the application will use the URL only.
+
+==== Importing Metadata in ISO ====
+CoMET stores a metadata record in a standards-neutral format that is compatible with the ISO 19115-2 format. In order to import an ISO record, a format converter needs to be selected. Select the “convert-iso19115-2-to-comet” view. When the converter is selected, a description text will appear below the selector:
+[[File: CoMET_2_ImportViews.png|center|frame|alt=Selection of an import view|Figure 2.3 Selection of an import view. The example in the above shows an ISO record is to be imported.]]
+
+Click the “Save Import” button. The web application will apply the format converter and convert the ISO record into the standards-neutral format. If the conversion is completed without an error, the “Form Content: Create” page will be shown. The screen capture below shows a Digital Elevation Model record:
+[[File: CoMET_2_CreateFormContent.png|center|frame||alt=Example view of creating a new form content|Figure 2.4 The Form Content Create page. The above example shows creating a Digital Elevation Model record.]]
+
+Enter the title of the record to be imported to the “Description” field. If none is entered, the default title of “-Enter Description Here-” will be used instead.
+
+Input fields are organized by tabs. When CoMET opens a record, the “Identification” tab is shown by default. Explore all tabs and edit the record as necessary. Almost all features described in Section 5 for “Updating Metadata” are applicable here. Keyword autocompletion and component selection might prove useful. If everything looks good, click the “Create” button. The program will check if all mandatory input fields are populated. If one or more required input fields are empty or they are not in an expected format, a popup dialog will appear as shown in Figure 2.4a:
+[[File: CoMET_2_InputValidationErrorPopupDialog.png|center|frame||alt=Example popup dialog showing input field errors|Figure 2.4a The Input Validation Error Popup Dialog.]]
+
+The popup dialog provides two buttons, namely, the Cancel button and the OK button. If the Cancel button is clicked, the program will go back to the edit mode so that the user could fix the issues. However, if the OK button is clicked, the program will ignore the input validation errors and will create a record. Then a list of metadata records will be shown.
+
+==== Importing Metadata in NCML ====
+Importing an NCML record is not much different from bringing in an ISO. However, it involves one more step. It is necessary to transform an NCML into ISO. The resulting ISO record is imported as described in the previous subsection. Read next paragraph on how to “daisy-chain” converters.
+
+Choose a file to upload or enter a URL. Select the “convert-ncml-to-iso19115-2” view that turns an NCML record into ISO. To add a second transform (or view), click the “Add Import View.” A selector will be added. Now select the “convert-iso19115-2-to-comet” view. The screen should look like:
+[[File: CoMET_2_DaisyChainingImportViews.png|center|frame|alt=Daisy-chaining import views to import an NCML record|Figure 2.5 Connecting two views to import an NCML record. Note that the first view transforms an NCML record into ISO and the second ISO to the internal storage format of CoMET.]]
+
+The appearance order of the import views is important as they are applied in the same order. If the order of the converters are inadvertently switched, the “convert-iso19115-2-to-comet” view is listed above the “convert-ncml-to-iso19115-2” view, an error will likely occur or the Create page will not properly prefill input fields.
+
+Once both conversions are applied, the “Form Content: Create” page will be presented. As described in Subsection 2.1.1, enter a proper record title to the “Description” field, review the record by navigating various tabs, and click the “Create” button. A record will be created and the “Form Content: List” page will be shown.
+
+=== Bulk Import Using RESTful Web API ===
+CoMET provides a number of REST Web API endpoints. For details, see a separate document entitled “CoMET RESTful API” available at https://docs.google.com/document/d/1ejIiZ5Dj8A0p820wmuU9a2eFZoFSWc1nnFIFw8u6ZY8. (The API document requires NOAA login.)
+
+
+For bulk import, the “import metadata API” at the /cedit/metadata/CoMET endpoint is used. There are many different ways of calling a RESTful endpoint. Here, we assume that users are using a Linux computer and they are using bash shell scripts and the curl command.
+
+
+Since the “import metadata API” requires user authentication, a shell script for user authentication comes first. Let’s name it to “auth.sh.” The authentication script will ask username and password and it will call the login API. If authentication succeeds, it will create a“cookies.txt” file that can be used for subsequent API calls. The cookie file contains a session information. The session expires after inactivity of 30 minutes. With an expired session, API calls will fail. In such case, it is necessary to delete the cookie file and start over.
+&lt;pre&gt;
+#!/bin/bash
+
+export COMET_URL=&quot;https://data.noaa.gov/cedit&quot;
+
+if [ ! -r cookies.txt ]; then
+    echo -n &quot;Enter username: &quot;
+    read USERNAME
+
+    echo -n &quot;Enter password for $USERNAME: &quot;
+    read -s PASSWORD
+    echo &quot;&quot;
+
+    CREDENTIALS=&quot;username=$USERNAME&amp;password=$PASSWORD&quot;
+    curl --data &quot;$CREDENTIALS&quot; -k &quot;$COMET_URL/login&quot; --cookie-jar cookies.txt
+    echo &quot;&quot;
+fi
+&lt;/pre&gt;
+
+Below is the “import.sh” script that imports an ISO record:
+&lt;pre&gt;
+#!/bin/bash
+
+source auth.sh
+
+IMPORT_FILE=&quot;$1&quot;
+IMPORT_TITLE=&quot;$2&quot;
+
+curl --cookie cookies.txt \
+    -X &quot;POST&quot; \
+    -H &quot;Content-Type: application/xml&quot; \
+    --data-binary @&quot;$IMPORT_FILE&quot; \
+    &quot;$COMET_URL/metadata/CoMET?description=$IMPORT_TITLE&amp;transform=convert-iso19115-2-to-comet&amp;format=xml&quot;
+&lt;/pre&gt;
+
+The script takes two arguments, the name of an ISO metadata file and its title. Both arguments needs to be URL encoded. For example, to import a file named “a.xml” with title “TEST TITLE”, one would run:
+&lt;pre&gt;
+$ ./import.sh a.xml “TEST%20TITLE”
+&lt;/pre&gt;
+
+The script may be modified to process many files using a loop.
+
+=== Copying Existing Metadata ===
+If a new record to be created is similar to an existing one, making a few changes to a copy would be efficient. The “Form List” page shows ten records at a time. Each record has three buttons, namely, “View”, “Edit”, and “Copy:”
+[[File: CoMET_2_ViewEditCopyButtons.png|center|frame|alt=The View, Edit, and Copy buttons appearing on a list of form contents|Figure 2.6 The View, Edit, and Copy buttons shown for each record on the Form List page.]]
+
+Click the “Copy” button. The application will show the “Form Content: Create” page with a copy of the existing record. Make necessary changes and enter the record title to the Description field. Click the “Create” button. A new record will be created and the “Form Content: List” page will be shown.
+
+== Viewing Metadata ==
+On the “Form List” page, each metadata record is shown with three action buttons. Click the “View” button for the record of interest:
+[[File: CoMET_2_ViewEditCopyButtons.png|center|frame|alt=The View, Edit, and Copy buttons|Figure 3.1 The View, Edit, and Copy buttons. They appear on each line for a record in the Form List page. The image here is the same as Figure 2.6 and it is repeated for convenience.]]
+
+The application will show a “View” page that looks like:
+[[File: CoMET_3_ShowRecord.png|center|frame|alt=The View page of an example record|Figure 3.2 The screen capture shows an example record. The title, dates, version, etc. are shown. The XML content of the record is displayed when the &quot;show/hide xml&quot; button is clicked.]]
+
+Notice a long button with the “View As Other Format…” label. Click it. It will expand to look:
+[[File: CoMET_3_InitialViewAs.png|center|frame|alt=The View As Other Format Panel|Figure 3.3 The View As Other Format panel. Up to three export views can be connected. No export view is selected in the example above.]]
+
+It is ready to view the record in ISO, Landing Page, etc. Proceed to Subsection 3.1 or 3.2.
+
+=== Viewing as ISO XML ===
+From the “View As Other Format…” panel, locate the selector with “-- Views --.” Using the selector, choose the “convert-comet-to-iso19115-2” option. When the option is selected, a descriptive text appears below the selector:
+[[File: CoMET_3_ViewAsISO.png|center|frame|alt=This example shows how to export a record to an ISO format|Figure 3.4 The View As Other Format panel with a selection. The example above shows that a record will be exported in the ISO format.]]
+
+With the converter selected, click the “View As” button. The web browser will show the record in the ISO XML format. To go back to the previous page, use the “go back” button on your web browser.
+
+=== Viewing as Landing Page HTML ===
+To check how the landing page would look from a CoMET record, two export views are required. As described in Section 3.1, first select the “convert-comet-to-iso19115-2” view. The view is used to transform a CoMET record to ISO. From the “View As Other Format…” panel, click the “Add Export View” button. It will show a second view selector below the first one. Choose the “convert-iso19115-2-to-landingPage” view. It would look like:
+[[File: CoMET_3_ViewAsLandingPage.png|center|frame|alt=The View As Other Format Panel with two export views selected|Figure 3.5 Two export views are selected in the above. The record will be transformed to ISO and the resulting ISO record will be turned into a landing page.]]
+
+Click the “View As” button. The application will perform two transforms and will present a landing page in HTML. To go back from the landing page, use the “go back” button on your web browser.
+
+== Validating Metadata ==
+=== ISO Validation ===
+With CEdit, a metadata record can be validated using the XML Schema Definition (XSD) schema. Validation is available on the record “View” page. From the “Form Content: List” page, click the “View” button associated with the record of interest. The record “View” page appears as described in Section 3. At the bottom of the page, locate the “ISO Validate” button and click it. When a validation run finishes, the “Validate” page is shown. If the record is compliant with the ISO XSD schema and thus no issue is found, the “Validation Result:” field display “true:”
+[[File: CoMET_4_IsoValidationResults.png|center|frame|alt=Result of an ISO validation run|Figure 4.1 The result of an ISO validation test on a record. The example record shows no validation error and it is fully compliant with ISO.]]
+
+However, if the record is not compliant with ISO, error messages are shown with line numbers:
+[[File: CoMET_4_ISOValidationErrorMessages.png|center|frame|alt=Result of an ISO validation of a non-compliant record|Figure 4.2 Error messages are listed when an ISO validation run fails. Line numbers and error messages are listed.]]
+
+An error message line is a link and it is clickable. Click a message line. The metadata record in the ISO format will be shown under the “XML” field:
+[[File: CoMET_4_ISOValidationErrorMessagesLinked.png|center|frame|alt=When an error message is clicked, the corresponding part in the ISO record is highlighted|Figure 4.3 Line 68 is highlighted with a dashed rectangle. When an error message listed next to the Validation Summary and below, the corresponding line is highlighted on the XML view.]]
+
+The screenshot in the above is taken after clicking the the first error message on line 68. Notice that line 68 on the panel showing the ISO record is highlighted with dashed border. Try to click another error message. The panel will scroll automatically to show the corresponding line if the line is outside the panel view. To go back to the record “View” page, click the “View” button at the bottom:
+[[File: CoMET_4_ViewButton.png|center|frame|alt=The View button|Figure 4.4 The View button.]]
+
+=== NOAA Rubric V2 Analysis ===
+Rubric V2 analysis is a tool to see if a record is adherent to NOAA metadata best practices. Like ISO validation, Rubric V2 analysis is launched from the record “View” page. From the “View” page, click the “ISO Rubric V2” button. Once the analysis finishes, the web browser shows the overall completeness score as well as scores for each category. To go back to the record “View” page, use the “go back” button on the web browser.
+
+== Updating Metadata ==
+A metadata record is opened for updating by clicking an “Edit” button:
+[[File: CoMET_5_EditButton.png]]
+or
+[[File: CoMET_5_SmallerEditButton.png]]
+
+There are a few pages that contains an “Edit” button. The “Form Content: List” page is the easiest place to find one. Find the record to be updated by using the “Search content” input field or by using the page navigation bar appearing at the end of the record list. Click the “Edit” button associated with the record.
+
+As mentioned in an earlier Section, input fields are organized by tabs. When CoMET opens a record, the “Identification” tab is shown by default. Make necessary changes across all tabs. Once editing is completed, click the “Save” or “Commit” button appearing top right corner or near the bottom (but above the footer):
+[[File: CoMET_5_SaveCommitButtons.png|center|frame|alt=The Save and Commit Buttons|Figure 5.1 The Save and Commit buttons. See text for the difference between the two buttons.]]
+
+Both buttons would save the record. The difference is that, when a record is committed, a dialogue appears to collect “Reason for Change.” The Reason for Change is saved along with the record and a flag indicating this particular version is committed.
+
+=== Keyword Autocompletion ===
+Keywords are listed under the “Keywords” tab. To help users to easily enter keywords, CoMET provides the keyword autocompletion feature. The GCMD keywords are provided by default. The keyword input field uses light blue for its background color when the autocompletion is enabled. When the autocompletion is not supported for a vocabulary, the background color changes to white. The screenshot below shows a keyword input field with autocompletion enabled. Note that the background color of the input field is light blue:
+[[File: CoMET_5_KeywordAutocompletion.png|center|frame|alt=Keyword entry with autocompletion|Figure 5.2 An input field for entering a keyword. The background color of the input field is light blue, indicating autocompletion is enabled.]]
+
+Let’s say we want to enter the “NITRATE PARTICLES” keyword. Type “NIT” and pause for a few seconds. CoMET searches keywords within the given vocabulary and displays first 20 keywords containing “NIT.” Continue typing so that the input field contains “NITRATE.” There are only four keywords containing the word:
+[[File: CoMET_5_KeywordAutocompletionExample.png|center|frame|alt=Autocompletion feature showing keywords containing search terms that the user entered|Figure 5.3 When the user enters one or more search terms, the autocompletion feature shows keywords containing the search terms.]]
+
+At this point, you can place your mouse cursor over the “NITRATE PARTICLES” option and click it. Or add another word to the input field to narrow the search. The input field shows the selected keyword:
+[[File: CoMET_5_KeywordAutocompletionDone.png|center|frame|alt=An input field for keyword entry after a keyword is selected|Figure 5.4 When a keyword is selected from a dropdown menu returned by the autocompletion feature, the keyword is entered to the input field and the dropdown menu disappears.]]
+
+=== Using DocuComp Components ===
+Component selection works much like the keyword autocompletion described in Subsection 5.1. In CoMET, there are many clickable links starting with “+ Add External Reference to .…” One example is where responsible party information is entered. There are three links below:
+[[File: CoMET_5_AddLinks.png|center|frame|alt=Three links to add a responsible party section, a component via external reference, and a nil reason|Figure 5.5 Three possible ways of documenting a responsible party.]] 
+
+The second one is used to enter a DocuComp component. Click the link. It adds a component lookup UI:
+[[File: CoMET_5_ComponentAutocompletion.png|center|frame|alt=An input field for entering a component|Figure 5.6 An input field for entering a reference to a component. Autocompletion is enabled.]] 
+
+Search is done by using the brief column of DocuComp. Enter any combination of words appearing in the brief of a component you want to use. An example search with “bob” responded with a dropdown:
+[[File: CoMET_5_ComponentAutocompletionExample.png|center|frame|alt=A dropdown menu containing matches to search terms is shown|Figure 5.7 When one or more search terms are entered, the autocompletion feature makes a query to an external database and shows matches on a dropdown menu.]] 
+
+When an entity from the dropdown is selected, the component lookup UI displays its title and URL:
+[[File: CoMET_5_ComponentAutocompletionDone.png|center|frame|alt=Three links to add a responsible party section, a component via external reference, and a nil reason|Figure 5.8 When a component is selected from a dropdown menu shown by the autocompletion feature, reference to the selected component is automatically entered.]]
+
+=== Specifying a “Nil Reason” ===
+ISO metadata format allows to specify a reason when the value of a field is empty. The specification is done by using the “gco:nilReason” attribute. CoMET provides a mechanism to enter a nil reason. For example, let’s say the contact information of a responsible party is not provided because it is withheld (by user request, for example). An empty box for entering a Responsible Party looks like:
+[[File: CoMET_5_NilReasonEnabled.png|center|frame|alt=Editing a Responsible Party with Nil Reason specifier enabled|Figure 5.9 A blank section for editing a responsible party. Each input field shown here has a clickable icon to specify a nil reason.]]
+
+At the bottom of the box, there is the “+ Add Reason for Nil Contact Information” link. Click the link. It adds a box within the Responsible Party:
+[[File: CoMET_5_NilReasonSelector.png|center|frame|alt=Nil reason selector|Figure 5.10 The nil reason selector. The dropdown contains a list of predefined values for a nil reason.]]
+
+The selector lists all options supported by ISO. Use the selector to choose the “withheld” option for this example.
+
+== Undoing a Change Using Revision History ==
+Whenever a record is updated from the “Edit” page by using the “Save” or “Commit” button, the prior version is saved using the revision history feature. In fact, CoMET keeps all updates. It is possible to recall an earlier version and to make it the current version. For example, let’s say a record has 10 versions. The version numbers would be 1 through 10 with 10 being the lastest. If version 9 is recalled, a copy of version 9 becomes version 11. Next time when the record is edited, version 11 will be used.
+
+In order to view the revision history of a record, go to the “View” page of a record. This is done from the “Form Content: List” page by clicking the “View” button for the record of interest.
+[[File: CoMET_6_RecordWithRevisions.png|center|frame|alt=An example record with multiple revisions|Figure 6.1 An example record with three revisions.]]
+
+Note, in the above example, the version field shows “3” which is the current version. From this we know there are three versions of the record. Locate the “Revision History” button at the bottom and click it. Now the “Revision History” page is shown:
+[[File: CoMET_6_RevisionHistory.png|center|frame|alt=Revision history of a record|Figure 6.2 The Revision History page of a record. The example shown in the above has three versions. Note that the Revert buttons appear for all versions except for the latest.]]
+
+Version 1, 2, and 3 are shown with their respective timestamps. Under the “Action” column, the “Revert” button appear per version except for the latest one. Click the “Revert” button of the version to be restored. The application asks for a confirmation to avoid an accidental click. If you confirm the revert, a copy of the selected version is made and the copy becomes the most recent version. The web browser refreshes and shows the record “View” page.
+
+== Deleting Metadata ==
+A metadata record may be deleted from CEdit. A “Delete” button is available from several pages. The obvious choice is the record “View” page. To get there, click the “View” button for the record of interest from the “Form Content: List” page. A “Delete” button looks as follows:
+[[File: CoMET_7_DeleteButton.png|center|frame|alt=The Delete Button|Figure 7.1 The Delete button.]]
+
+When the “Delete” button is clicked, the application asks for a confirmation with “Cancel” or “OK”:
+[[File: CoMET_7_DeleteConfirmation.png|center|frame|alt=The Delete Button|Figure 7.2 The Delete Confirmation dialog.]]
+
+The confirmation dialogue is to prevent a record from being accidentally deleted. When the “OK” button is clicked, the record is deleted and the web browser changes to the “Form Content: List” page.
+
+[[Category:Metadata Tools]]</text>
+			<sha1>6rcvly60fft10vkcdn24gye1n38evm2</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Completeness Rubric</title>
+		<ns>0</ns>
+		<id>2607</id>
+		<revision>
+			<id>17680</id>
+			<parentid>17630</parentid>
+			<timestamp>2019-11-25T20:29:42Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="5944">[[Category:Collection Manager]]
+== General Information/Requirements ==
+
+NOAA data providers are required, per the [https://nosc.noaa.gov/EDMC/PD.DD.php NOAA Data Documentation Procedural Directive], to document their datasets, models, observations and other earth science resources with ISO 19115:2005 and ISO 19115-2:2009 standards and represented as ISO 19139 compliant XML. However, there are many different ways to implement the standards and very little content is required to create a valid metadata record. Therefore, in addition to ISO compliance, this Completeness Rubric provides an extra level of assessment to help metadata authors provide more thorough descriptions.
+
+== Rubric Grading ==
+
+=== What are Categories? ===
+There are ten general types of information, called Categories, that are valuable when creating complete documentation. Including information will help users find, access and understand the resource.  Within each Category there are rows that identify particular sections or fields that are required, optional or highly recommended.
+
+&lt;br/&gt;
+''Note: Categories were previously called Spirals.''
+
+=== How your score is calculated. ===
+The rubric confirms whether or not an ISO tag exists for a given field, and whether there is content within that tag. The Rubric bases its score calculation on multiple criteria, which is outlined below. 
+
+Many calculations depend upon whether a given field is required, recommended, or optional. If content for those fields is not included, the Rubric will include a message under the “SCORE” specifying the condition, otherwise a score will display. The most points that can be gained for a given field is 1 point (unless Extra Credit can be applied).
+
+If multiple instances of a given element are repeatable within the ISO standard, such as CI_OnlineResource information, the Rubric will calculate the average of all required fields and give complete or partial credit, as defined in the XSL. The Rubric reports the number of instances a given element was found in the “Label (Count)” column. The score will not exceed 1 point (unless Extra Credit can be applied).
+
+To help users understand the content being graded, the “Metadata Content” column lists a subset of the content that was found within a given element. If there were multiple instances of a given elements, each instances is separated by a double bar ( || ) for clarity. In addition, the last column shows the XPath being graded and includes links to the ISO Explorer for more in-depth guidance.
+
+To ensure flexibility, there are some categories which are only graded (or not graded) if another field or characteristic exists elsewhere in the ISO XML record. For example, the Access Category is not applied if certain conditions are not met--if a dataset is still “planned” or the metadata describes only a “fieldSession” (commonly known as a cruise), it is unlikely that access links are available for the data being described. For this reason, the Rubric will not grade any Access links, but treat them as optional. In these unique cases, the Rubric references criteria that are not already outlined in the [https://geo-ide.noaa.gov/wiki/index.php?title=Category:ISO_Explorer ISO Explorer].
+
+====Table of required fields====
+This table provides a summary of which fields are Required, Recommended, and Optional:
+[https://docs.google.com/a/noaa.gov/document/d/1VaqOFVEuMtMaNaHtza0EjG7U_jDok3UJzUtK8--1yLQ/edit?usp=sharing Table of Required/Recommended/Optional fields]
+(NOAA access only)
+
+=== Extra Credit ===
+Most optional fields are scored as Extra Credit. For each instance of an optional element or attribute, the user will receive 1 extra credit point. While Extra Credit points do not affect the base “Completeness Score”, NOAA does consider this information to be valid and important, if available. Data providers are encouraged to strive for as many Extra Credit points as possible in order to fully and completely document their data.
+
+=== Limitations ===
+The content within these categories are the result of many conversations within the NOAA Metadata Working Group and there is more guidance on the [https://geo-ide.noaa.gov/wiki/index.php?title=Category:ISO_Explorer ISO Explorer] on NOAA’s Environmental Data  Management Wiki. The NOAA Metadata Working Group documents all of our most recent and up-to-date recommended practices discussed by this community within this wiki. All within NOAA are welcome to contribute use cases and examples. If you can identify use cases we’ve not covered, please contact us.
+
+The Rubric cannot judge the quality of the content within a given tag. However, if a data provider includes a comprehensive description of the data for any given field tested by the Rubric, NOAA will consider that record to be complete and of high quality.
+
+== Previous/Alternative Versions ==
+
+There are several rubrics available to check completeness of metadata.
+#Current version of the XSL
+## The current XSL is available at this link: https://data.noaa.gov/metaview/views/rubricv2/recordHTML.xsl. You may process your metadata in your own local environment or use the [https://data.noaa.gov/metaserver Record Services in Metaserver] (must login first).
+#The previous version of this rubric is available at this link: https://data.noaa.gov/metaview/views/isoRubricHTML.xsl. The NOAA Metadata Working Group does not recommend using this version of the XSL except in rare use cases.
+#For NOAA data providers who would like to mint a DOI for their data, the DOI Completeness Rubric at this link: https://data.noaa.gov/metaview/views/doiRubricHTML.xsl is also available.
+
+== Contact ==
+Please register any bugs, typos, or suggestions with this [http://goo.gl/forms/S39VtRIhqX Google Form].  
+
+You may contact [mailto:noaa.enterprise.metadata@noaa.gov NOAA Enterprise Email List] if you’d like to connect with our community. We’d love to have your involvement!</text>
+			<sha1>1udaxwbalt89pyps4hgobqi1o700hxl</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Data Stewardship Maturity Questionnaire (DSMQ) User’s Guide</title>
+		<ns>0</ns>
+		<id>3041</id>
+		<revision>
+			<id>17683</id>
+			<parentid>17636</parentid>
+			<timestamp>2019-11-25T20:30:35Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="12894">[[Category:Collection Manager]]
+== Background==
+
+The application of the Data Stewardship Maturity Matrix (DSMM) is an essential part of making NOAA data and metadata OneStop ready. It allows for greater transparency and contributes to the reproducibility of data sets. The DSMM assessment can be carried out either by using the DSMM template or by answering the Data Stewardship Maturity Questionnaire (DSMQ). This guide attempts to shed some light on commonly used terms in the DSMQ as well as answer some frequently asked questions by early beta testers. This is a living document and suggestions for improvement are encouraged and can be sent to the OneStop Metadata Content Editor Team ([mailto:robert.partee@noaa.gov Robert Partee];  [mailto:paul.lemieux@noaa.gov Paul Lemieux]; [mailto:raisa.ionin@noaa.gov Raisa Ionin])
+
+== Workflow==
+
+
+ 
+&lt;ol&gt;
+&lt;li&gt;Request   [https://data.noaa.gov/cedit CEdit] account if you do not already have one. Follow instructions [[Setup_Accounts_for_Collection_Manager_Tools| here.]]&lt;/li&gt;
+
+&lt;li&gt; When you log in, click &quot;View Records&quot;&lt;/li&gt;
+
+
+[[File:ViewRecords2.PNG|alt=View Records|View Records|center|frame]]
+
+&lt;li&gt;From the -- Record Groups -- drop down menu select, ''“CoMET”''&lt;/li&gt;
+
+
+[[File:RecordGroups.PNG|View Groups|alt=View Groups|center|frame]]
+
+
+[[File: RecordGroupsComet.PNG|Select Records from Groups|alt=Select Records from Groups|center|frame]]
+
+
+&lt;li&gt;If you want to create a new DSMQ click, &quot;''Create Record''&quot;. &lt;/li&gt;
+
+[[File: CreateRecord.PNG|Create Record|alt=Create Records|center|frame]]
+
+If you would like to create a new DSMQ by importing an already existing metadata record to pre-populate certain fields then click, “''Import Record.''”
+
+[[File: ImportRecord2.PNG|Import Record|alt=Import Record|center|frame]]
+
+
+If you have already created a DSMQ, and would like to pick up where you left off previously, then locate the form you want to edit and click, “''Edit.''”
+
+[[File:EditRecord.PNG|Edit Record|alt=Edit Record|center|frame]]
+
+&lt;li&gt;The form will load &quot;Select a Form&quot; option&lt;/li&gt;
+
+[[File:SelectForm.PNG|Select Form Menu View|alt=Select Form Menu View|center|frame]]
+
+&lt;li&gt;From the Drop-down menu, select the &quot;DSMQ&quot; option and click &quot;Next&quot;&lt;/li&gt;
+
+[[File:SelectFormDropDown.PNG|Form Drop Down View|alt=Form Drop Down|center|frame]]
+
+&lt;li&gt;Once the form loads your default view will show the, “''General''” tab. &lt;/li&gt;
+
+[[File:GeneralTab.PNG|General Tab|alt=General Tab|center|frame]]
+
+
+While you are free to complete the tabs in any order you choose, we recommend starting with “''General''” and working you way to the right through all the tabs in their displayed order.
+
+&lt;li&gt;Once a tab is completed to your satisfaction, you may advance to the next tab by simply selecting the tab or by clicking the '“ Next”'' button at the bottom of the page.&lt;/li&gt;
+
+[[File:PreservabilityTab.PNG|alt=Preservability Tab|Preservability Tab|center|frame]]
+
+&lt;center&gt;'''OR'''&lt;/center&gt;
+
+[[File:OrNext.PNG|Next Button|alt=Next|center|frame]]
+
+
+
+&lt;li&gt;If at any time you need to quit and return later, be sure to select, “''Save”'' at the top of the page. Hitting, “''Exit”'' will exit the editor without saving so be sure to save before you exit. &lt;/li&gt;
+
+[[File:SaveButton.PNG|Save Button|alt=Save|center|frame]]
+
+&lt;li&gt;Once the form is finished, click the, ''“Commit (will change to Complete)”'' button. This will save your form, baseline it, and return you to your form list view.&lt;/li&gt;
+
+[[File:Commit1.PNG|Commit Button|alt=Commit|center|frame]]
+
+&lt;/ol&gt;
+
+==Glossary of Terms==
+
+'''Checksum Technology''' - Checksum technology verifies data and confirms that those data are not corrupted during data ingest, storage, and dissemination procedures. Checksum files usually have .md5 extension. It implies that any user receives this file electronically, runs checksum and generates the same string of characters. If the file is identical to the original file, then it meets the integrity check standards. 
+
+'''Citability''' - Within the context of the DSMM, citability refers to whether or not a persistent identifier (i.e., DOI) is assigned to the dataset. Note however, that the existence of a DOI is not the sole determining factor of a dataset’s citability. A fully formed reference is necessary in order to track and monitor dataset use across other research spectrums.  
+
+'''Collection''' - A collection is a grouping of environmental data or products that share common characteristics, is represented by a single metadata record, and consists of one or more granules. Collections are also referred to as datasets.
+
+'''Configuration Management''' - A technical and management process applying appropriate resources, processes, and tools to establish and maintain consistency between the product requirements, the product, and associated product configuration information.
+
+'''Cross-Validation of Temporal and Spatial Characteristics''' - Refers to data being validated across different periods of time (temporal) or across different areas (spatial) or both areas (Information can be located in documentation and publications).
+
+'''Data Characterization''' - Characterization denotes spatial and temporal characteristics such as global or regional means; seasonal or annual means; decadal trends. May include power spectral density distributions of time series. May be captured in the metadata. 
+
+'''Data Customization''' - Customization revolves around being able to search data by temporal and/or spatial distributions, the ability to aggregate or disaggregate granules, and to be able to download data in multiple formats. The more customization options are available to the user the more mature the data set is considered to be.
+
+'''Data Integrity'''  - Maintenance of, and the assurance of the accuracy and consistency of, data over its entire life-cycle, and is a critical aspect to the design, implementation and usage of any system which stores, processes, or retrieves data. Checksum technology is applied to verify Data Integrity. Data integrity also refers to how the file is fixed, what proves that it is unchanged over time, and that the file is not corrupt during its transfer.
+
+'''Data Quality Assessment''' - Refers to the availability of data set assessment results online. For example, scholarly publications describing the algorithm theoretical basis, the research product and/or the operational product.
+
+'''Data Quality Assurance''' - A set of activities or procedures focused on defect prevention to be followed in order to ensure product quality during development (Peng et al, 2015). 
+
+'''Data Quality Assurance (DQA) Procedures''' - Information on error, error budget, quality flags and/or validation and the procedures to identify/quantify them. Usually found in Algorithm documents, user manuals, technical manuals, handbooks and other related documents.
+
+'''Data Quality Control/Monitoring''' - Monitoring for updates and generating reports in order to alert users about quality issues when those arise. (Could include issues with the quality flags).  The same documentation is used for Data Quality Control/Monitoring as for Data Quality Assurance. (Algorithm documents, user manuals, technical manuals, handbooks). In addition, quality monitor information could be found on other websites.
+
+'''Data Provenance''' - Provenance refers to data’s origin and history of entities, as well as people involved in producing a piece of data; and also refers to where they have moved over time to reach their current state; data lineage is one of the entities in the ISO 19115 metadata that can be used for this purpose. 
+
+'''Digital Object Identifier (DOI)''' - Persistent unique identifier assigned by an external organization and standardized by the International Organization for Standardization (ISO).
+
+'''Dissemination Report''' - An analysis of weblogs from ftp and web servers. These reports or logs document the number of times a given file or product was downloaded. Data dissemination information captures the statistics about the distribution or transmitting data to end users.  For example, data file download counts from ftp servers. These reports may also contain information on data download volume and/or unique data users.
+
+'''External Audit/Ranking''' - Ranking performed by outside organizations. It ranks data for being complete or useful. External ranking must rank the stewardship of the dataset and not just the usefulness of the dataset. No known NCEI data sets have any external ranking applied.
+
+'''Granule''' - A granule is the smallest aggregation of data that can be independently managed (described, inventoried, and retrieved) in the OneStop system. Granules are often referred to as inventory or file level metadata though granules can actually be pieces of files. Granules cannot exist without being associated with a collection. Granules may have a different metadata model than the parent collection in order to support values for additional attributes as needed for those granules
+
+'''National/International Monitoring Metrics''' - Statistical methods employed to identify defects according to national/international standards.  (Peng et al, 2015). 
+
+'''Open Archival Information System Reference Model (OAIS RM)''' - The OAIS is an archive consisting of an organization of people and systems, that has accepted the responsibility to preserve information and make it available for a designated community. NCEI follows the OAIS conceptual framework outlined by the OAIS Reference Model. 
+
+'''Operational Assessment''' - The difference between a research and an operational product lies in the maturity of the product (Peng et al, 2015). Common ways of assessing operational products are through technical reports or other scholarly literature that assesses the operational readiness of the product.
+
+'''Physical Consistency Checks''' - Internal consistency tests to identify values in the data that appear atypical when compared to values from the entire data set. Also compares current data with historical data to verify consistency over time. 
+
+'''Preservability''' - In the context of the DSMQ the focus of preservability is on assessing the practices associated with data storage requirements and compliance to community-accepted archive practices and metadata standards (Peng et al, 2015).
+
+'''Production Sustainability''' - Describes the various degrees of commitment for and associated requirements on the product (Peng et al, 2015).
+
+'''Quality Assurance Metadata''' - This special type of metadata may include but is not limited to, file level quality flags, and any other information included in the ISO 19115 data quality section that allows the user to recognize unreliable data in the collection.
+
+'''Quality Flag'''  - Information that is used to help identify non-nominal data as a result of poor-calibration, pixel saturation, and other data artifacts. Commonly found in NetCDF variables and can also be identified in ISO 19115 metadata in the &lt;contentInfo&gt; section.
+
+'''Quality Metadata for Data Quality Assessment''' - Data quality assessment metadata capture and provide information on methods or procedures used for evaluating and validating data products and the results from those analyses (Peng et al, 2015). 
+
+'''Quality Monitoring Metadata''' - Information in the metadata record specifically about the methods and/or results associated with the quality control/monitoring as it applies to the dataset. Usually found in ISO 19115 metadata or in an auxillary text file.
+
+'''Standard-Based Metrics for Data Quality Control''' - Data quality checks that employ statistical tools with well-established standard-based (e.g., AIMQ, SAS, etc…) metrics (e.g., accuracy, consistency, completeness, integrity, timeliness, etc...) for the user community.
+
+'''Traceability''' - Synonymous with provenance. Data provenance can be used to form assessment about its quality, reliability, or trustworthiness.
+
+'''Trackability''' - Data sets with OID’s and/or DOI’s are considered to have better overall trackability than data sets that do not have those unique identifiers.
+
+'''Unique Object Identifier (OID)'''  - OID’s are usually non-DOI numbers that are unique to an organization that are used to identify the data set in some way. DSI numbers are examples of OID’s used by NCEI. They are used to identify the location of the dataset within the archive.
+
+== References==
+
+Li., Y., Milan, A., and Jones, P., (2017). Light under ISOLite. 2017 NOAA Environmental Data Management Workshop, 9–10 January 2017, Bethesda, MD. [Available online at: https://nosc.noaa.gov/EDMW_2017/2017-EDMW-presentations/3B/3B.3%20EDMW-2017-NCEI-1.pptx]
+
+Peng, G., Privette, J. L., Kearns, E. J., Ritchey, N. A., &amp; Ansari, S. (2015). A unified framework for measuring stewardship practices applied to digital environmental datasets. ''Data Science Journal'', 13, 231-253.</text>
+			<sha1>n8vez8d8zj7c4gtlhx6n7q4z9t7eyg8</sha1>
+		</revision>
+	</page>
+	<page>
+		<title>Enterprise Documentation Glossary</title>
+		<ns>0</ns>
+		<id>1877</id>
+		<revision>
+			<id>17696</id>
+			<parentid>17685</parentid>
+			<timestamp>2019-11-25T20:58:06Z</timestamp>
+			<contributor>
+				<username>Amilan</username>
+				<id>5</id>
+			</contributor>
+			<minor/>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="3493">&lt;table align=&quot;top&quot; cellspacing=&quot;10&quot;&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Component:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;A snippet of XML describing a specific piece of metadata content such as information about people, websites, documents, archives, instruments, etc. A component is the finest level (atomic level) of granularity in a metadata record. Components are stored once and used as often as required within a metadata collection. Components provide significant storage and editing advantages over the traditional metadata management method of storing each record as a whole.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Composite:&lt;/b&gt;&lt;td&gt;A complete metadata record. A composite record can reference multiple [[ISO_Components|components]].&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Hierarchy Levels:&lt;/b&gt;&lt;td&gt;The ISO metadata standard enables metadata to be organized into a hierarchy structure similar to a computer directory structure. This is useful for representing relationships between metadata records.  For example, networks contain platforms which contain instruments/sensors that collect observations which become datasets.  Each of these levels are distinct from one another, yet they are related via organizational or physical structure.  ISO provides mechanisms for documenting these relationships through hierarchy levels.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Record Set:&lt;/b&gt;&lt;td&gt;A collection of related metadata records generally organized by program.  Record Sets are maintained in the EDMS subversion repository and NGDC [[Web Accessible Folder|Web Accessible Folders]].&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Resolver:&lt;/b&gt;&lt;td&gt;A tool for resolving [[ISO_Components|components]] to form a metadata record without references to remote content.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Resolved Record:&lt;/b&gt;&lt;td valign=&quot;top&quot;&gt;A metadata record that includes no links to external content, no references. The output of the resolver.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Unresolved Record:&lt;/b&gt;&lt;td&gt;A metadata record that contains references (usually [http://www.w3.org/TR/xlink/ xlinks]) to [[ISO_Components|components]], instead of the component content. The component content is added during the resolving process.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Unresolving:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;The process of creating an unresolved record from a composite record.  This process includes removing component XML pieces from the composite record and replacing the pieces with xlink references to the component database.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;UUID:&lt;/b&gt;&lt;td&gt;A Universally Unique Identifier.  UUIDs are used to reference components in an unresolved metadata record. The UUID tells the resolver what component to resolve.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;XLink:&lt;/b&gt;&lt;td&gt;An XML specification that provides methods for creating internal and external links within an XML document. [http://www.w3.org/TR/xlink/ Xlinks] can be used in metadata recoreds to reference specific [[ISO_Components|components]] using its unique identifier (UUID). During the resolve process the referenced component is retrieved and embedded in the record.  The xlink href attribute is used to reference a component and the xlink title attribute is used to provide a human understandable name for the component. Xlink references in docucomp take the following form: &lt;pre&gt;xlink:href=&quot;http://www.ngdc.noaa.gov/docucomp/iso/bb3bd940-5d51-11df-bb8e-0002a5d5c51b&quot; xlink:title=&quot;EPSG Resgistry&quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+[[Category:ISO 19115]]
+[[Category: Metadata Tools]]
+[[Category:Collection Manager]]</text>
+			<sha1>nvjlzqajmznkse30ebf7r7vy9wptdm8</sha1>
+		</revision>
+	</page>
+</mediawiki>

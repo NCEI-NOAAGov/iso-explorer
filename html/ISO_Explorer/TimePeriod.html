@@ -1,0 +1,152 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>description</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Textual description of the date and time documented.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>descriptionReference</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>identifier</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>name</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>5</p>
+</td>
+<td bgcolor="FFFF99">
+<p>beginPosition</p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The beginning date or date and time of the resource contents. Use the ISO 8601 extended standard: YYY-MM-DD or YYY-MM-DDThh:mm:ssZ. <strong>Example:</strong> <code>2010-06-05T12:00:17</code></i>. If you don’t know the start date, then use the indeterminatePosition attribute. <strong>Example:</strong><gml:beginPosition indeterminatePosition="unknown"/></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>6</p>
+</td>
+<td bgcolor="FFFF99">
+<p>endPosition</p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The ending date or date and time of the resource contents. Use the ISO 8601 extended standard: YYY-MM-DD or YYY-MM-DDThh:mm:ssZ . If the resource has a status of ‘ongoing’ then use the indeterminatePosition attribute without an end date value. <strong>Example</strong>: &lt;gml:beginPosition indeterminatePosition="unknown/&gt; <gml:endPosition indeterminatePosition="now"/> </code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFF99">
+<p>7</p>
+</td>
+<td bgcolor="CCFF99">
+<p>duration</p>
+</td>
+<td bgcolor="CCFF99">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Length of time between measurements. Use the ISO 8601 syntax for temporal length. Provide either duration or time interval if applicable. <strong>Example:</strong> <gml:duration><code>P1D</code></gml:duration> </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFF99">
+<p>8</p>
+</td>
+<td bgcolor="CCFF99">
+<p>timeInterval</p>
+</td>
+<td bgcolor="CCFF99">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Frequency between time events based on floating point values for temporal length. Provide either duration or time interval if applicable.</p>
+<p><strong><code>Example:</code></strong><code> </code><gml:timeInterval unit="hour"><code>6</code></gml:timeInterval></i></p>
+</td>
+</tr>
+</table>
+<p><strong>More Information</strong></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:EX_Extent.png" title="wikilink">thumb|left|EX Extent.png</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Extents" title="wikilink">ISO Extents</a></li>
+<li><a href="/GML_Guidance_for_ISO_Metadata" title="wikilink">GML Guidance for ISO Metadata</a>
+</td>
+</tr></li>
+</ul>
+<tr>
+<th>
+<p>Examples</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><gml:TimePeriod gml:id="ID006"> <gml:beginPosition>1846</gml:beginPosition> <gml:endPosition indeterminatePosition="now"/> </gml:TimePeriod></p>
+<p><gml:TimePeriod gml:id="ID003"> <gml:beginPosition>1992-01-01T00:00:00Z</gml:beginPosition> <gml:endPosition>2007-12-31T00:00:00Z</gml:endPosition> <gml:timeInterval unit="hour">6</gml:timeInterval> </gml:TimePeriod></p>
+</td>
+</tr>
+</table>
+<p><a href="/Category:GML" title="wikilink">Category:GML</a></p>

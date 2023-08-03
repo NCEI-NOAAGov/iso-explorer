@@ -1,0 +1,1061 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>NOAA Environmental Data Management Wiki</sitename>
+    <dbname>noscwiki_prod</dbname>
+    <base>http://geo-ide.noaa.gov/wiki/index.php?title=Main_Page</base>
+    <generator>MediaWiki 1.27.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">NOAA Environmental Data Management Wiki</namespace>
+      <namespace key="5" case="first-letter">NOAA Environmental Data Management Wiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>PD Language for Performance Plans</title>
+    <ns>0</ns>
+    <id>2331</id>
+    <revision>
+      <id>8469</id>
+      <parentid>8456</parentid>
+      <timestamp>2012-04-05T13:19:52Z</timestamp>
+      <contributor>
+        <username>Lewis.mcculloch</username>
+        <id>33</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="6192">'''Below are samples of boilerplate language for adapting Personal Performance Plans to support the implementation of Procedural Directives''' 
+
+Each Line Office is expected to develop their own PD Language for Performance Plans, but these examples are offered for those Line Offices which have not yet developed their own.&lt;br&gt;&lt;br&gt;
+
+== Language developed by NMFS  ==
+
+Regional and Headquarters Information Management Coordinators (IMCs) serve on the FIMAC and administer data management policy in their respective organizational components. Their functions, as endorsed by the NMFS Leadership Council in 2009 are: 
+
+*Representing the [FMC | Office] on the Fisheries Information Management Advisory Committee (FIMAC) 
+*Serving as principal point of contact in [FMC | Office] regarding information management issues. 
+*Overseeing the application of information management policy in the [FMC | Office] 
+*Overseeing the management and creation of metadata for informational assets. 
+*Developing strategy for maintaining and improving of regional/office staff capabilities in information management 
+*Serving as the principal point of contact in the (FMC | Office) for enterprise data management related data calls.
+
+&lt;br&gt;'''Regional Information Management Coordinator / Office Information Management Coordinator''' 
+
+'''Performance Plan element Proposed (ver 2.0)''' 
+
+'''Performance Element:''' Regional [Policy:Office] Information Management Coordinator 
+
+'''Weight:''' 20 (suggested) 
+
+'''Objective:''' To coordinate enterprise data management issues within the [Policy:FMC or office name] 
+
+Activities: 
+
+*Represent the [FMC | Policy:Office] on the Fisheries Information Management Advisory Committee (FIMAC) 
+*Serve as principal point of contact in [FMC | Policy:Office] regarding information management issues. 
+*Oversee the application of information management policy in the [FMC | Policy:Office] 
+*Oversee the management and creation of metadata for informational assets. 
+*Develop strategy for maintaining and improving of regional/office staff capabilities in information management 
+*Serve as principal point of contact in the (FMC | Office) for all data calls
+
+&lt;br&gt; 
+
+== Language developed by NOS  ==
+
+'''NOAA/NOS Fiscal Year Performance Plan Language''' 
+
+'''NOS Metadata Program and Policy Support''' 
+
+For NOS staff responsible for overseeing, managing and/or publishing geospatial metadata to meet the requirements of the NOS Metadata Policy, the following language is recommended for use in the “Activities” portion of an “Element” within an individual’s Performance Plan. 
+
+&lt;u&gt;NOS CIO&lt;/u&gt; 
+
+*Conducting and evaluating fiscal year NOS Annual Metadata Plans;&lt;br&gt;
+*Overseeing and evaluating NOS Metadata Manager for successful implementation of NOS Metadata Policy and annual metadata planning process.
+
+&lt;u&gt;Deputies &lt;/u&gt; 
+
+*Ensuring supervisors and data managers comply with the requirements outlined in the NOS Metadata Policy and NOS Annual IT Operational Plan plan/guidance document.&lt;br&gt;
+*Evaluating Program Office compliance to NOS Annual Metadata Plans.
+
+&lt;u&gt;Supervisors and/or Program Managers&lt;/u&gt; 
+
+*Ensuring appropriate staff and time are allocated for projects requiring metadata creation and/or maintaining updated metadata&lt;br&gt;
+*Ensuring staff include metadata tasks, roles and responsibilities are incorporated into their project planning process&lt;br&gt;
+*Ensuring staff are creating quality FGDC metadata that comply with federal, NOAA, and NOS standards and requirements, and publishing that metadata through federal, NOAA and NOS geospatial data portals (Note: Additional responsibilities include regular reviews and updates to existing inventories). and
+*Ensuring staff are distributing FGDC metadata with their data in the appropriate manner (i.e. downloadable through office/program websites with the data, data delivered via ftp sites, etc.).&lt;br&gt;
+*Use mid-year and annual performance reviews to ensure staff are following their Annual Metadata Plans and complying with NOS Metadata Policy.
+
+&lt;u&gt;NOS Metadata Manager&lt;/u&gt; 
+
+*Coordinating and communicating federal and agency-level geospatial metadata requirements based on policies driven by OMB, FGDC and/or NOAA or NOS (i.e. publishing all NOS metadata to federal and agency Geoportals, master catalog of services, websites, etc.)&lt;br&gt;
+*Overseeing implementation of NOS Program Office Annual Metadata Plans.&lt;br&gt;
+*Providing NOS data and metadata creators with guidance, documentation, resources, tools, and training on federal and international metadata standards.&lt;br&gt;
+*Periodically assess metadata quality and metadata management plans.&lt;br&gt;
+*Bi-annual reporting to NOS CIO for NOS Program Office Annual Metadata Plans for mid-year and annual performance reviews.&lt;br&gt;
+
+&lt;u&gt;Program Office Metadata Leads&lt;/u&gt; 
+
+*Develop, implement and maintain an operational Annual Metadata Plan for the entire office/program that outlines specific metadata requirements, training needs, and planned work for the FY.&lt;br&gt;
+*Create and maintain the program office’s master catalog of metadata (which includes existing/published metadata records, and identifies any planned data acquisitions, new geospatial tool/application development for the year that will require the creation and publication of new metadata to meet these needs.&lt;br&gt;
+*(Note- this includes a metadata maintenance plan and 1-3 year review cycle (per collection or record) for each office’s metadata catalog.&lt;br&gt;
+*Coordinate and communicate requirements to the NOS Metadata Manager for assistance and implementation of program office Annual Metadata Plans. This includes bi-annual reporting of accomplishments to NOS Metadata Manager for mid-year and annual performance plan reviews.&lt;br&gt;
+
+&lt;u&gt;Data Stewards and Metadata Creators&lt;/u&gt;
+
+*Creating planned metadata record(s) during any new geospatial project initiation phase.&lt;br&gt;
+*Creating quality FGDC metadata that meets NOS requirements and publishing metadata to the proper NOAA, NOS and federal repositories (i.e. NOS Geoportal, NOAA Data Center, Geo.data.gov, etc.).&lt;br&gt;
+*Maintaining metadata for all geospatial data throughout the data and/or project life cycle.
+
+&lt;br&gt;
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>8mnjkl4suyc4nagjhhbv7ppoy6chfve</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Documentation PD</title>
+    <ns>0</ns>
+    <id>2328</id>
+    <revision>
+      <id>11438</id>
+      <parentid>11437</parentid>
+      <timestamp>2016-10-25T01:19:25Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <comment>Added 2nd example of 100% complete metadata record.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1856">[https://nosc.noaa.gov/EDMC/PD.DD.php Download the Data Documentation PD] 
+
+The purpose of the NOAA Data Documentation Directive is to ensure that all NOAA environmental data are comprehensively described with machine-readable metadata based on International Standards, with limited exemptions for use of other widely-used legacy or domain-specific metadata standards.
+
+== Examples of Complete Metadata Record ==
+
+When creating metadata it is often helpful to have an example to follow. Some examples of data with 100% complete scores according to the NOAA Metadata Rubric will be referenced here.
+
+Dataset: Particle sizes of Pliocene and Pleistocene core sediments from IODP Expedition 323 in the Bering Sea
+* Landing page: https://doi.org/10.7289/V5RV0KMN (permanent URL)
+* ISO Metadata Record: http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Geology/iso/xml/Aielloiw201401.xml (URL subject to change, but should always be accessible from DOI URL above)
+* Completeness Score: https://www.ngdc.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Geology/iso/xml/Aielloiw201401.xml&amp;view=rubricv2/recordHTML&amp;header=none
+
+Dataset: Solar Features - Prominences and Filaments - Filaments 
+* HTML version of metadata: https://www.ngdc.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/STP/Solar/iso/xml/solar-features_solar-flares.xml&amp;view=xml2text/xml-to-text-ISO
+* ISO Metadata record: http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/STP/Solar/iso/xml/solar-features_prominences-filaments_filaments.xml
+* Completeness Score: https://www.ngdc.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/STP/Solar/iso/xml/solar-features_prominences-filaments_filaments.xml&amp;view=isoRubricHTML
+
+== Frequently Asked Questions ==
+
+Questions about this Directive may be sent to edmc@noaa.gov; answers will be posted here.
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>2jbmyd62tw4vggznswfq2yo4gb8h70g</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Sharing for NOAA Grants PD</title>
+    <ns>0</ns>
+    <id>2330</id>
+    <revision>
+      <id>11361</id>
+      <parentid>11333</parentid>
+      <timestamp>2016-03-15T17:43:24Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <comment>Added disclaimer about &quot;special FAQ&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="914">[https://nosc.noaa.gov/EDMC/PD.DSP.php Download the Data Sharing Directive for NOAA Grants, Cooperative Agreements, and Contracts] 
+
+'''Introduction to this Directive: '''All NOAA funding recipients must make data produced under a grant, cooperative agreement, or contract publicly accessible in a timely fashion, unless an exemption is granted by the Grant Program. Proposal submiters must describe how they will satisfy this requirement by including a Data Management Plan as part of the project narrative. 
+
+[[FAQ_for_Data_Sharing_for_NOAA_Grants_PD| Frequently Asked Questions (FAQ) for this directive]] 
+
+[[Progam_Officers_FAQ_for_Data_Sharing_for_NOAA_Grants_PD| Special version of the FAQ for Program Officers]] (NOTE: pertains to previous version and may need updating)
+
+[[Image:Data_Sharing_Directive_graphic.png|alt=Conceptual overview of Data Sharing Directive]]
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>dpxmuiiy6g18laeuy05zaf1ab1p244k</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>PD Implementation Team Rosters</title>
+    <ns>0</ns>
+    <id>2332</id>
+    <revision>
+      <id>8479</id>
+      <parentid>8468</parentid>
+      <timestamp>2012-04-05T15:43:01Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <minor/>
+      <comment>Corrected typo.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2725">Each NOAA Line Office is expected to assemble their own PD Implementation Team. The EDMC Principal for each Line Office will serve as the de facto Team Leader unless/until that role is delegated to someone else. The table below list the roster of Implementation Team leaders and members for each Line Office. &lt;br&gt;&lt;br&gt; '''NESDIS&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal
+| Scott Hausman 
+| scott.hausman@noaa.gov
+|-
+| EDMC Alternate 
+| Ingrid Guch 
+| ingrid.guch@noaa.gov
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; '''NMFS&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal 
+| Brion Cook 
+| brion.cook@noaa.gov
+|-
+| EDMC Alternate 
+| Tina Chang 
+| tina.chang@noaa.gov
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; '''NOS&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal 
+| Tony Lavoi 
+| tony.lavoi@noaa.gov
+|-
+| EDMC Alternate 
+| Kim Jenkins 
+| kim.jenkins@noaa.gov
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; '''NWS&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal
+| Harry Tabak 
+| harry.tabak@noaa.gov
+|-
+| EDMC Alternate 
+| LaTanya Burton 
+| latanya.burton@noaa.gov
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; '''OAR&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal
+| Darien Davis 
+| darien.l.davis@noaa.gov
+|-
+| EDMC Alternate 
+| vacant 
+| vacant
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; '''OMAO&amp;nbsp;PD Implementation Team'''&lt;br&gt; 
+
+{| cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; style=&quot;width: 500px; height: 50px;&quot;
+|-
+! scope=&quot;col&quot; | Role 
+! scope=&quot;col&quot; | Name 
+! scope=&quot;col&quot; | Email
+|-
+| EDMC Principal
+| Cecile Daniels 
+| cecile.daniels@noaa.gov
+|-
+| EDMC Alternate 
+| Nicole Manning 
+| nicole.manning@noaa.gov
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|-
+| Team Member 
+| 
+| 
+|}
+
+&lt;br&gt; 
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>3rtwwevrwlefxifppo7lfi02donj9p7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>PD Implementation Briefings</title>
+    <ns>0</ns>
+    <id>2333</id>
+    <revision>
+      <id>8467</id>
+      <parentid>8454</parentid>
+      <timestamp>2012-04-05T13:19:29Z</timestamp>
+      <contributor>
+        <username>Lewis.mcculloch</username>
+        <id>33</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="302">The following set of slides were developed by Jeff de La Beaujardière, Deputy Chair of the EDMC, to assist NOAA Line Offices in briefing their staff members about the implementation of NOAA Procedural Directives.
+
+[[File:EDMC Procedural Directives v1.ppt]]
+&lt;br&gt;
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>glwy0kvx69nqf9ougjr6du5dcq46owd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Progam Officers FAQ for Data Sharing for NOAA Grants PD</title>
+    <ns>0</ns>
+    <id>2343</id>
+    <revision>
+      <id>8470</id>
+      <parentid>8441</parentid>
+      <timestamp>2012-04-05T13:20:03Z</timestamp>
+      <contributor>
+        <username>Lewis.mcculloch</username>
+        <id>33</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="5927">[https://geo-ide.noaa.gov/wiki/index.php?title=Data_Sharing_for_NOAA_Grants_PD Return to the home page for this PD] &lt;br&gt; [https://geo-ide.noaa.gov/wiki/index.php?title=FAQ_for_Data_Sharing_for_NOAA_Grants_PD Return to the general version of the FAQ] 
+&lt;br&gt;&lt;br&gt;
+==Question: What is meant by &quot;environmental data&quot;?==
+
+'''Answer: '''Environmental data are recorded and derived observations and measurements of the physical, chemical, biological, geological, and geophysical properties and conditions of the oceans, atmosphere, space environment, sun, and solid earth, as well as correlative data, such as socio-economic data, related documentation, and metadata. Media, including voice recordings and photographs, may be included.
+&lt;br&gt;
+==Question: Who benefits from data sharing?==
+
+'''Answer: '''Everyone benefits, including investigators, funding agencies, the scientific community, and, most importantly, the public. Data sharing provides more effective use of NOAA resources by avoiding unnecessary duplication of data collection. It also conserves research funds to support more investigators. The initial investigator benefits, because as the data are used and published more broadly, the initial investigator's reputation grows.
+&lt;br&gt;
+==Question: How do I set up the Federal Funding Opportunity to include this requirement?==
+
+'''Answer: '''We are currently working with the DoC Federal Assistance Law Division to approve the standard language for both the FFO and the Special Award Condition contained in the data sharing policy. We expect this approval in time for July 2012 FFOs. If you produce an FFO prior to this language being approved than the resultant grants will not be under this new grants policy.
+&lt;br&gt;
+==Question: How will I know if my grantee intends to comply with the new sharing policy?==
+
+'''Answer: '''Unless otherwise indicated in the FFO, the grantee will supply a 2-page Data Sharing Plan as part of the project narrative. The Data Sharing Plan should convince you and other reviewers that the grantee will share their data successfully. A typical plan may include descriptions of the types of environmental data created during the course of the project; the standards to be used for data format and content; policies addressing data stewardship and preservation; and procedures for providing access, sharing, and security.
+&lt;br&gt;
+==Question: How should I determine if my grantee is complying with the new sharing policy?== 
+
+'''Answer: '''The Grantee should be doing what was outlined in their Data Sharing Plan and reporting on it in their progress reports. People who have asked for the data from the grantee should be able to obtain and understand it prior to the project end date.
+&lt;br&gt;
+==Question:&amp;nbsp;What do I do if my grantee is not complying with the new sharing policy?== 
+
+'''Answer: '''You may initiate enforcement actions such as freezing drawdown of funds, similar to when a progress report is late. The grantee may submit a formal request for an exemption from the sharing policy for NOAA consideration at any time.
+&lt;br&gt;
+==Question: What about the Information Quality Act?==
+
+'''Answer: '''In order to comply with the IQA, a special award condition will indicate that environmental data and information made available to the public must include the following statement: This environmental data has not been formally disseminated by NOAA, and does not represent and should not be construed to represent any agency determination, view, or policy.
+&lt;br&gt;
+==Question: What is considered &quot;timely&quot; data sharing?==
+
+'''Answer:''' In general, data that have potential usefulness to others are expected to be made available as soon as possible consistent with logistical considerations. Unless otherwise indicated in the FFO, data must be shared no later than 2-years after the date of observation. Documentation and metadata should clearly indicate the status of the dataset (initial raw data, draft data with only rudimentary quality controls, partial dataset, final data, etc).
+&lt;br&gt;
+==Question: Can I get additional funding for my grantees to share the data?==
+
+'''Answer:&amp;nbsp;'''Funding to address data sharing must be requested as part of the proposal to collect/create data. Indicate the priority of data sharing for your program in the solicitation to ensure the data sharing methods proposed are appropriate for the funds your program has available.
+&lt;br&gt;
+==Do my grantees have to share the data after the funded project period?==
+
+'''Answer: '''The grantee should follow their data sharing plan.
+&lt;br&gt;
+==Question:&amp;nbsp;I already require an extensive Data Management Plan. Do I still need to require a Data Sharing Plan?==
+
+'''Answer:&amp;nbsp;'''No, just indicate that a Data Sharing Plan is not required in the federal funding announcement.
+&lt;br&gt;
+==Question: I am the manager of a large [Cooperative Institute|Sea Grant/similar] program funded by an omnibus grant which in turn manages a number of individual research projects. Must every individual project have its own data sharing plan?==
+
+'''Answer:''' Not necessarily, the omnibus grant recipient may comply with the policy using a single Program-wide data sharing plan or requiring individual plans for individual projects (or something in between) as long as all the relevant data generated is covered under some data sharing plan.
+&lt;br&gt;
+==Question: My question wasn’t on this list, is there a person I can call or email?== 
+
+'''Answer:''' Questions about specific sharing plans, grants, or RFPs should go to your Federal Program Officer or the contact listed in the specific Federal Funding Opportunity announcement of interest. More general questions can go to members of the [https://www.nosc.noaa.gov/EDMC/membership.php NOAA Environmental Data Management Committee]. Specifically the chair or deputy chair will take your general questions and work to answer them and add them to this list.&lt;br&gt;
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>aggdnkh8etr3l6c6skjpv2dceh54zb7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>EDMC Schedule of PD Implementation Milestones</title>
+    <ns>0</ns>
+    <id>2348</id>
+    <revision>
+      <id>8465</id>
+      <parentid>8453</parentid>
+      <timestamp>2012-04-05T13:19:02Z</timestamp>
+      <contributor>
+        <username>Lewis.mcculloch</username>
+        <id>33</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="761">==Line Offices are requested to meet the following milestones established in the EDMC 2012 Work Plan:==
+
+*'''By February 19''' (in time for the March EDMC Meeting): Meet with your NOSC and CIO Representatives to determine the best way to implement the PDs within your Line Office. 
+*'''By May 4''' (in time for the EDM Conference): Perform initial assessment of current state of compliance with the goals of each PD.
+*'''By August 31:&amp;nbsp;'''Report progress to the EDMC Ongoing: As questions come in from the field, EDMC Principals forward them to EDMC Exec Sec.
+&lt;br&gt;
+[https://docs.google.com/a/noaa.gov/document/d/1CSfbGMJwTnICuxm1cGkizBQhqKnW6SDpb2EtychaEDM/edit Link to the EDMC 2012 Work Plan on GoogleDocs]
+&lt;br&gt;&lt;br&gt;
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>42ms5ft5q2o7bg003gmncwpeqj3r0e2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Procedure for Scientific Records Appraisal and Archive Approval</title>
+    <ns>0</ns>
+    <id>2350</id>
+    <revision>
+      <id>9299</id>
+      <parentid>8474</parentid>
+      <timestamp>2012-09-04T17:37:26Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <minor/>
+      <comment>Typo.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="726">[https://www.nosc.noaa.gov/EDMC/documents/NOAA_Procedure_document_final_12-16-1.pdf Download the NOAA Procedure for Scientific Records Appraisal and Archive Approval]&lt;br&gt; 
+
+'''Introduction to this PD:''' NOAA Administrative Order (NAO) 212‐15, Management of Environmental Data and Information, states that environmental data are to be managed based upon a lifecycle that includes determining what environmental data are required to be preserved for the long term and how preservation will be accomplished. The purpose of this procedural directive is to define the process that NOAA will use to identify, appraise, and decide what scientific records are preserved in a NOAA archive.  
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>g2b9zechynq1iaa1i03nvciyvmqnq1q</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>File:EDMC Procedural Directives v1.ppt</title>
+    <ns>6</ns>
+    <id>2337</id>
+    <revision>
+      <id>8476</id>
+      <parentid>8323</parentid>
+      <timestamp>2012-04-05T13:44:14Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <minor/>
+      <comment>Added category.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="39">[[Category:NOAA Procedural Directives]]</text>
+      <sha1>6vcgvh1wcchgilm7p828bcxy6yjc3kz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>File:Data Sharing Policy for NOAA Grants general information.ppt</title>
+    <ns>6</ns>
+    <id>2387</id>
+    <revision>
+      <id>8991</id>
+      <parentid>8990</parentid>
+      <timestamp>2012-06-06T14:34:48Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <minor/>
+      <comment>Added category.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="155">General information about the Data Sharing policy that applies to applicants and recipients of NOAA grant funding.
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>idl79mn6ldosov4k699zkp0xgah7zf7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Citation PD</title>
+    <ns>0</ns>
+    <id>2590</id>
+    <revision>
+      <id>10943</id>
+      <parentid>10942</parentid>
+      <timestamp>2015-05-19T17:12:44Z</timestamp>
+      <contributor>
+        <username>Adam.steckel</username>
+        <id>144</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="916">'''NOTE: The Data Citation Procedural Directive was first approved by NOAA's Environmental Data Management Committee (EDMC) on May 15, 2015.
+'''
+
+[https://www.nosc.noaa.gov/EDMC/PD.DC.php Go to the official download page for the document] 
+
+==Overview==
+This Procedural Directive (PD) establishes the procedure for obtaining persistent identifiers for datasets archived at the NOAA National Data Centers, the creation of dataset information and access &quot;landing pages&quot;, and the citation of a datasets used in published papers, derived products, and other results.
+
+* [[Data Citation FAQ]]
+* [[Data Citation Granularity]]
+* [[Data Citation and Versioning]]
+* [[DOI Minting Procedure]] - ''For NOAA Data Center personnel''
+
+==NOAA DOIs issued to date==
+ 
+* HTML: http://search.datacite.org/ui?q=10.7289
+* API: http://search.datacite.org/api?q=10.7289
+
+
+[[Category:NOAA_Procedural_Directives]]
+[[Category:Data Citation]]</text>
+      <sha1>ew7x001vy0yngs683ticu79nqjtyuvv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Access PD</title>
+    <ns>0</ns>
+    <id>2594</id>
+    <revision>
+      <id>17710</id>
+      <parentid>10930</parentid>
+      <timestamp>2019-11-25T21:09:09Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="632">[https://www.nosc.noaa.gov/EDMC/PD.DA.php Download the Data Access PD] 
+
+==Overview==
+
+The NOAA Data Access Procedural Directive was approved by NOAA's Environmental Data Management Committee (EDMC) on February 11, 2015. The purpose of this Procedural Directive is to declare that all NOAA environmental data (with limited exceptions) shall be made discoverable through the NOAA Data Catalog and accessible via the Internet. This Wiki provides recommended practices regarding appropriate data access services and formats.
+
+* [[Data Access Technical Recommendations]]
+* [[Data Access PD FAQ]]
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>gs34cqrfahsqr788x6hykz4bgi6agff</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Access PD FAQ</title>
+    <ns>0</ns>
+    <id>2595</id>
+    <revision>
+      <id>17709</id>
+      <parentid>10891</parentid>
+      <timestamp>2019-11-25T21:08:59Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="126">==Overview==
+
+Questions and answers about the [[Data Access PD]] will be posted here.
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>mb9xk23lcknh5dtafipfhcj2kny1ln2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Access Technical Recommendations</title>
+    <ns>0</ns>
+    <id>2596</id>
+    <revision>
+      <id>17706</id>
+      <parentid>10931</parentid>
+      <timestamp>2019-11-25T21:08:46Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="4894">=Recommended Data Formats=
+
+Machine-readable digital data formats are required. Open-standard, non-proprietary formats are recommended. This appendix enumerates recommended formats for various classes of data. 
+
+== Regularly gridded data ==
+
+*NetCDF with CF conventions 
+*HDF 
+*GRIB(?) 
+*GeoTIFF 
+*JPEG 2000
+
+== Irregularly gridded data ==
+
+*NetCDF with CF conventions 
+*HDF
+
+== Unstructured Grids ==
+
+*NetCDF with UGRID and CF Conventions 
+*HDF
+
+== In situ data at one or more stations ==
+
+*NetCDF with CF 1.6 discrete sampling geometries 
+*OGC WaterML 2.0 (profile of GML) 
+*OGC SWE Common 
+*Comma- or Tab-separated Values (CSV or TSV) with labeled columns for time, location, and elevation or depth. 
+*GeoJSON? 
+*OGC GeoPackage?
+
+== In situ data from moving sensors ==
+
+*NetCDF with CF 1.6 discrete sampling geometries 
+*OGC SWE Common 
+*Comma- or Tab-separated Values (CSV or TSV) with labeled columns for time, location, and elevation or depth.
+
+== Geographic features (political boundaries, roads, etc.) ==
+
+*OGC Geography Markup Language 
+*KML/KMZ 
+*Esri shapefile 
+*GeoJSON 
+*OGC GeoPackage
+
+== Video ==
+
+*no recommendation at this time
+
+
+=Recommended Data Access Services=
+
+Internet-accessible web services or APIs are required. Open-standard, non-proprietary services are recommended. This appendix enumerates recommended services for various classes of data, and also lists specific software implementations of some services.
+
+'''Note:''' It is recommended to aggregate related observations as a single service, rather than only providing separate access to individual components of a larger dataset. Any group of datasets or granules that differ only by time, location, or elevation/depth, and for which the time and space dimensions can be represented by well-defined coordinate axes and are suitably continuous (i.e., not episodic or geographically scattered observations) should be aggregated using a data access service that allows retrieval of data subsets along the appropriate axes. For episodic or scattered observations (such as buoys, or vessel cruises, or human observations at various places and times), a data access protocol such as OGC Sensor Observation Service can be used to describe the sampling regime and serve data from one or more of the collection points.
+
+==Raster imagery==
+* OGC Web Map Service 1.3 (ISO 19128)
+''Note: implementation must include support for time-dependent data''
+
+==Regularly gridded data==
+* Data Access Protocol (DAP)
+* OGC Web Coverage Service (WCS)
+* OGC Web Coverage Service - Earth Observations Profile (WCS-EO)
+
+==Irregularly gridded data==
+* Data Access Protocol (DAP)
+
+==In situ data at one or more stations==
+* Data Access Protocol (DAP)
+* OGC Sensor Observation Service (SOS)
+* OGC Web Feature Service (WFS)
+
+==In situ data from moving sensors==
+* Data Access Protocol (DAP)
+* OGC Sensor Observation Service (SOS)
+
+==Geographic features (political boundaries, roads, etc.)==
+* OGC Web Feature Service
+* OGC Web Map Service
+* Esri ArcGIS
+
+==Tabular data==
+* ERDDAP
+
+Video:
+*no recommendation at this time
+
+=Software implementations=
+
+==Data Access Protocol (DAP)==
+* THREDDS Data Server (http://www.unidata.ucar.edu/software/thredds/current/tds/) - free
+* Hyrax Data Server (http://www.opendap.org/download/hyrax) - free
+* ERDDAP (http://coastwatch.pfeg.noaa.gov/erddap/) - free
+
+==Sensor Observation Service==
+* 52north.org SOS server with IOOS modifications for moving sensors (https://github.com/ioos/i52n-sos)
+* ncSOS: SOS plugin for the THREDDS Data Server (https://github.com/asascience-open/ncSOS)
+
+==Web Map Service==
+* MapServer (http://mapserver.org/) - free
+* ERDDAP (http://coastwatch.pfeg.noaa.gov/erddap/) - free
+* Geoserver (http://geoserver.org/) - free
+* Boundless OpenGeo Suite (http://boundlessgeo.com/solutions/opengeo-suite/) - not free; includes GeoServer and other components.
+* THREDDS with ncWMS
+* Esri ArcGIS Server - proprietary
+
+==Web Feature Service==
+* GeoServer
+* MapServer
+* Esri ArcGIS Server
+* Sensor Observation Service
+* Axiom implementation for IOOS (URL?) - free(?)
+* ERDDAP (http://coastwatch.pfeg.noaa.gov/erddap/) - free
+
+==Web Coverage Service - Earth Observations Profile (WCS-EO)==
+* GeoServer 2.6+
+
+=Available Data and Metadata Hosting Services=
+
+This section indicates some available data hosting services, usable by Programs that do not have the resources to operate their own services.
+
+* The NOAA National Data Centers provide hosting for all data approved for archiving.
+* The National Weather Service (NWS) Integrated Dissemination Program is implementing a shared hosting service that can be used by programs in other line offices.
+* SWFSC Environmental Research Division for fisheries related data, and other environmental data relevant to protected species and marine resource management.
+* NOAA GeoPlatform(? - need current status)
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>kjizvyimbqda6f1ik0azygexsa1ecpv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FAQ for Data Sharing for NOAA Grants PD</title>
+    <ns>0</ns>
+    <id>2335</id>
+    <revision>
+      <id>11334</id>
+      <parentid>11326</parentid>
+      <timestamp>2016-02-12T20:51:17Z</timestamp>
+      <contributor>
+        <username>Jeff.deLaBeaujardiere</username>
+        <id>46</id>
+      </contributor>
+      <comment>Removed obsolete FAQ.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="18271">[https://geo-ide.noaa.gov/wiki/index.php?title=Data_Sharing_for_NOAA_Grants_PD Return to the home page for this PD] &lt;br&gt; [https://geo-ide.noaa.gov/wiki/index.php?title=Progam_Officers_FAQ_for_Data_Sharing_for_NOAA_Grants_PD&amp;action=edit&amp;redlink=1 Go to a special version of this FAQ for Program Officers ]&lt;br&gt;&lt;br&gt; 
+
+==Q What is meant by &quot;environmental data&quot;?==
+
+'''A:''' Environmental data are recorded and derived observations and measurements of the physical, chemical, biological, geological, and geophysical properties and conditions of the oceans, atmosphere, space environment, sun, and solid earth, as well as correlative data, such as socio-economic data, related documentation, and metadata. Media, including voice recordings and photographs, may be included.
+
+==Q What is meant by “sharing”?==
+
+'''A:''' Sharing data refers to making data visible, accessible, and independently understandable to users in a timely manner at minimal cost, except where limited by law, regulation, policy or by security requirements. NOAA facilities that archive data and make the data openly available should be considered for the disposition of the data.
+
+==Q What is considered &quot;timely&quot; data sharing?==
+
+'''A:''' *In general, unless otherwise indicated in the FFO, data must be shared no later than time of publication of a research paper based on the data, or no later than 2 years after data collection is complete, or no later than 2 years after the original end date of the grant (not including extensions), whichever is earliest. Documentation and metadata should clearly indicate the status of the dataset (initial raw data, draft data with only rudimentary quality controls, partial dataset, final data, etc).
+Specific requirements may depend on the program awarding the grant or cooperative agreement, and the nature of the research project conducted. Time requirements for data sharing will generally be spelled out in the Federal Funding Opportunity (FFO) announcement. 
+*In general, data that have potential usefulness to others are expected to be made available as soon as possible consistent with logistical considerations. Data from small studies can be analyzed and ready for publication and sharing relatively quickly. If data from large studies are collected over several discrete time periods or waves, data should be released in waves as they become available or main findings from waves of the data are published. 
+*NOAA recognizes that the investigators who collected the data have a legitimate interest in benefiting from their investment of time and effort. NOAA continues to expect that the initial investigators may benefit from being the first user of the data, but not from prolonged or indefinite exclusive use. 
+
+==Q: How are funding recipients, especially small or poorly-funded ones, supposed to share their data? ==
+
+'''A:''' There are several options, including submitting data for archiving and access to NOAA NCEI (which may charge a fee depending on size or complexity of the data), using a web hosting service operated by the recipient's institution, using a project-specific web server, or using one of the Data Repositories now being established in various domains, such as:
+
+* Dryad - http://datadryad.org/
+* Figshare - http://figshare.com/
+* DataVerse - http://dataverse.org/
+* Pangaea - http://www.pangaea.de/
+* Acadis (for Arctic data) - https://www.aoncadis.org/ 
+* Merritt (for University of California) - https://merritt.cdlib.org/ 
+
+==Q: What is the difference between the Data Management Guidance and the Data Management Plan? ==
+
+'''A:''' The Data Management Guidance is written by the NOAA Program and included or referenced in the FFO Announcement or Contract Solicitation. The Data Management Plan is written by the author of a submitted proposal, and should be responsive to the recommendations provided in the Data Management Guidance.
+
+==Q: Will training be available to NOAA personnel responsible for implementing this directive? ==
+
+'''A:''' Yes. Briefing materials will be provided on the EDMC web site; to arrange for a briefing contact your EDMC representative listed at https://www.nosc.noaa.gov/EDMC/edmc-membership.php.
+
+==Q: Does this Directive '''only''' apply to research awards? ==
+
+'''A:''' No, as stated in §II this Directive applies both to research awards '''and''' to any other awards that fund the production of environmental data or peer-reviewed publications.
+
+==Q: How do we evaluate or check the data prior to making it publicly available? Who decides what data is appropriate to post or not? ==
+
+'''A:''' We (NOAA) do not necessarily check the data or make it available -- it is incumbent on the award recipient to make the data available. Funding recipients should use their professional discretion and follow their institutional and domain guidelines regarding how to disseminate data. NOAA Programs may choose to support the evaluation or distribution of data.
+
+==Q: Is it acceptable to post only summarized data and products? ==
+
+'''A:''' In general, no, it is not acceptable to post only summarized data. Data are to be made available in a form that would permit further analysis or reuse. In particular, all data that are used to support the conclusions of a peer-reviewed publication must be made available in a form that permits verification and reproducibility of the results. However, in some circumstances (e.g., to remove personally-identifiable information) some level of summarization may be necessary.
+
+==Q: What are some of the valid reasons for permitting a funding recipient not to share their data? ==
+
+'''A:''' Data sharing could be limited by law, regulation, policy, security requirements, commercial or international agreements, or valid technical considerations.
+
+==Q: Who decides what data is worthy of long-term preservation? ==
+
+'''A:''' Generally speaking, all quality-controlled observations, and all data used to support the conclusions of a peer-reviewed publication, should be archived for long-term preservation. In practice, this decision is based on a combination of factors, including the NOAA Program's assessment of the data's potential value, the funding recipient's assessment based on successful project execution, and NCEI based on the [https://nosc.noaa.gov/EDMC/documents/NOAA_Procedure_document_final_12-16-1.pdf NOAA Procedure for Scientific Records Appraisal and Archive Approval].
+
+==Q: By sharing all publications generated through NOAA research awards, are we violating copyright rules? If the publisher charges for access to the article, how can we provide access to the same article for free? ==
+
+'''A:''' NOAA will make available, after a one-year embargo, only a copy of the final pre-publication manuscript, along with a link to the publisher's copyrighted version of record. 
+
+==Q: Who enforces submission of manuscripts to Institutional Repository, NOAA Library or the funding Program? ==
+
+'''A:''' Programs are responsible for enforcing compliance by grant or contract recipients. NOAA Library will report on compliance but cannot enforce compliance. NOAA Library will enable Programs to see what manuscripts have been submitted.
+
+[https://geo-ide.noaa.gov/wiki/index.php?title=Data_Sharing_for_NOAA_Grants_PD Return to the home page for this PD] &lt;br&gt; [https://geo-ide.noaa.gov/wiki/index.php?title=Progam_Officers_FAQ_for_Data_Sharing_for_NOAA_Grants_PD&amp;action=edit&amp;redlink=1 Go to a special version of this FAQ for Program Officers ]&lt;br&gt;&lt;br&gt; 
+
+==Q What is meant by “independently understandable”?==
+
+'''A:''' The data must be accompanied with documentation, metadata and, if needed, tools to read the data that allow a user to interpret the data properly. If there are concerns with understandability, they can be reported to NOAA, who will do an independent check.
+
+==Q Who will determine if my data are visible, accessible and independently understandable?==
+
+'''A:''' The person generating the data will have first responsibility for determining this. Common data quality standards in your scientific discipline may help you decide if the data are understandable. Ultimately, others who use your data will know whether they are visible, accessible and understandable to them. If there are concerns with data access or understandability, they can be reported to NOAA, who will do an independent check.
+
+==Q What are examples of law, regulation, policies or security requirements that may limit my ability to share data?==
+
+'''A:''' Policies applicable to protection of personally identifiable information, critical infrastructure information or proprietary trade information as well as regulations related to export control may impact your ability to share data, among other items.
+
+==Q Why share data?==
+
+'''A:''' The greater the availability of the data, the more quickly and effectively user communities can develop innovative practical applications for public benefit. In many cases these applications will be in areas not originally anticipated by the principal investigator. In addition, NOT making data available that supports scientific findings may provide reason to doubt the validity of the findings and limit their usefulness. More information about data sharing concerns are in a [http://www.gao.gov/new.items/d071172.pdf 2007 GAO Report], “Climate Change Research: Agencies Have Data-Sharing Policies but Could Do More to Enhance the Availability of Data from Federally Funded Research.” The GAO report specifically recommends NOAA consider evaluating data sharing plans as part of the grant review process. 
+*Data sharing is widely accepted as a good practice. National scientific organizations have made a commitment to the sharing and archiving of data through their ethical codes (e.g., the American Sociological Association) or publication policies (e.g., the American Psychological Association). More than 15 years ago, the National Academy of Sciences described the [http://books.nap.edu/catalog/2033.html benefits of sharing data]. For many years, the National Science Foundation (NSF) Economics Program has required data underlying an article arising from an NSF grant to be placed in a public archive. Similar expectations exist at the National Institute of Health, and the National Institute of Justice. Moreover, many scientific journals require that authors make available the data included in their publications.
+
+==Q How must data be shared?==
+
+'''A:''' This depends on the nature of the project and the data, and will be proposed by the investigator himself. Grant and cooperative agreement proposals will need to include a Data Sharing Plan as part of the Project Narrative. A typical plan may include descriptions of the types of environmental data created during the course of the project; the standards to be used for data format and content; policies addressing data stewardship and preservation; and timelines and procedures for providing access, sharing, and security. Data sharing can be accomplished through:
+
+#'''Data Archive: '''place where data are acquired, manipulated, documented, and distributed. NOAA facilities that archive data and make the data openly available should be considered. 
+#'''Data Enclave: '''controlled, secure environment in which eligible researchers can perform analyses using data resources 
+#'''Publishing:''' articles in scientific publications 
+#'''Researcher’s Efforts:''' investigator responds directly to data requests (e.g., posting data on a Web site)
+
+*Environmental data and information made available to the public by the grantee must include the following statement: These environmental data have not been formally disseminated by NOAA, and does not represent and should not be construed to represent any agency determination, view, or policy. In order to remove this disclaimer NOAA must verify that the data meets NOAA Information Quality Act guidelines and approve the dissemination of the data to the public.
+
+==Q Who benefits from data sharing?==
+
+'''A:''' Everyone benefits, including investigators, funding agencies, the scientific community, and, most importantly, the public. Data sharing provides more effective use of NOAA resources by avoiding unnecessary duplication of data collection. It also conserves research funds to support more investigators. The initial investigator benefits, because as the data are used and published more broadly, the initial investigator's reputation grows.
+
+==Q Does data sharing pertain only to published data?==
+
+'''A:''' No. Data-sharing plans should encompass all data from funded research that can be shared without compromising individual subjects' rights and privacy, regardless of whether the data have been used in a publication. Furthermore, data sharing prior to the publication of major results is encouraged in many instances, for example, when data are collected to provide a resource for the scientific community (as in the case of many large surveys).
+
+==Q Is data sharing the same as data archiving?==
+
+'''A:''' No, an archive is one way to share data but not the only way (see “How must data be shared?” above). For more information about archiving at NOAA refer to the [https://www.nosc.noaa.gov/EDMC/documents/NOAA_Procedure_document_final_12-16-1.pdf “NOAA Procedure for Scientific Records Appraisal and Archive Approval.”]
+
+==Q Data from my studies are generated from a very small number of experimental samples, and I publish the final data. Am I expected to provide these data to other investigators as well?==
+
+'''A:''' Publishing these final data can constitute an acceptable mechanism for sharing data. If only some of the final data are published, however, you would need another mechanism to share the remaining data.
+
+==Q Can I get an exemption?==
+
+'''A:''' If you determine it is impractical or not possible to share data according to NOAA policy you may include a request for an exemption of this requirement in your original proposal to collect/create data. If your proposal is funded verify the special award conditions indicate you are exempt from the data sharing requirement prior to accepting the award. If you determine post-award you require an exemption you may submit a request with an explanation as a post-award action request to the NOAA Federal Program Officer for consideration. You do not need to request an exemption when data sharing is limited by law, regulation, policy or security requirements. You do need to request an exemption if you are holding onto data until publication well after the project end date.
+
+==Q What if I don't want to share my data?==
+
+'''A:''' Data sharing plans will become a part of every new research grant and cooperative agreement proposal to NOAA. By accepting a grant award, you are agreeing to perform the work proposed, including the data sharing. If you fail to share your data as you proposed, you could be subject to a number of sanctions, including denial of future grant awards, freezing of funds in your current award, or in extreme cases even being forced to repay the grant award to the government.
+
+==Q Can I share data with colleagues under my own auspices?==
+
+'''A:''' Yes. Your data-sharing plans should indicate the criteria for deciding who can receive your data and whether or not you will place any conditions on their use. Data should be made as widely and freely available as possible while safeguarding the confidentiality of the data and privacy of participants. You should not place limits on the questions or methods others might pursue nor should you require co-authorship as a condition for receiving the data.
+
+==Q I'm a busy investigator. I don't have time to process requests for my data. What should I do?== 
+
+'''A:''' In addition to publishing small datasets, there are several alternatives to responding to each separate request to share data (e.g., putting data in an archive or restricted access facility, and setting up a web site for data access). Archives and data enclaves provide technical assistance for users with questions or problems and may spare busy investigators time.
+
+==Q Can I get additional funding to share my data?==
+
+'''A:''' Unless otherwise noted in the federal funding announcement, funding to address data sharing must be requested as part of the proposal to collect/create data. The data sharing plans and related funds requested should consider the anticipated benefit of the data, the likely number of interested users of the data and the priorities of the program as outlined in the solicitation.
+
+==Q I am the PI of a large [Cooperative Institute|Sea Grant/similar] program funded by an omnibus grant which in turn manages a number of individual research projects. Must every individual project have its own data sharing plan, or can I develop a program-wide data sharing plan?==
+
+'''A:''' As the omnibus grant recipient, you have a responsibility to see that data sharing plans are followed for all research projects under your program. This may be done with a single Program-wide data sharing plan, individual plans for individual projects, or something in between, as long as all the relevant data generated is covered under some data sharing plan.
+
+==Q What web resources are available to help me do this and obtain more information?==
+
+'''A:''' There is information available at the NOAA Environmental Data Management Committee website reachable from www.nosc.noaa.gov. In general considering data sharing requirements prior to finalizing the methods for collecting/creating/storing the data will save time and effort later on. Unless otherwise noted in the federal funding announcement there is no specific data sharing plan template required.
+
+==Q My question wasn’t on this list, is there a person I can call or email?==
+
+'''A:''' Questions about specific sharing plans, grants, or RFPs should go to your Federal Program Officer or the contact listed in the specific Federal Funding Opportunity announcement of interest. More general questions can go to members of the [https://www.nosc.noaa.gov/EDMC/membership.php NOAA Environmental Data Management Committee]. Specifically the chair or deputy chair will take your general questions and work to answer them and add them to this list.&lt;br&gt;
+
+[[Category:NOAA_Procedural_Directives]]
+  </text>
+      <sha1>50n8oeplzirrhvc6vnocq3nfrp23xu1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Management Planning PD</title>
+    <ns>0</ns>
+    <id>2329</id>
+    <revision>
+      <id>10923</id>
+      <parentid>8506</parentid>
+      <timestamp>2015-02-10T14:44:08Z</timestamp>
+      <contributor>
+        <username>Adam.steckel</username>
+        <id>144</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1243">[https://www.nosc.noaa.gov/EDMC/PD.DMP.php Download the Data Management Planning PD]&lt;br&gt; 
+
+'''Introduction to this PD:''' NOAA Administrative Order (NAO) 212‐15, Management of Environmental Data and Information, states that environmental data is to be managed based upon a lifecycle that includes developing and following a data management plan. The purpose of this procedural directive is to expand upon this requirement for Data Management Plans (DMPs), direct managers of all data production projects and systems to write data management plans, and provide detailed guidance on who should write them and how to write them. It contains a [https://geo-ide.noaa.gov/wiki/images/0/03/Data_Management_Plan_Template.doc template] with questions to be considered and addressed in planning all data production projects. 
+
+The goal of the Data Management plan is to ensure that data are properly collected, documented, made accessible, and preserved for future use in a NOAA Data Center or other longterm archive facility.
+
+
+Examples of completed Data Management Plans can be found in the [https://geo-ide.noaa.gov/wiki/index.php?title=Category:Data_Management_Plans NOAA Data Management Plan Repository]. 
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>891ttbaaydocpye7r0pnkue3062e0vg</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Data Citation FAQ</title>
+    <ns>0</ns>
+    <id>2587</id>
+    <revision>
+      <id>17703</id>
+      <parentid>17700</parentid>
+      <timestamp>2019-11-25T21:02:40Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1987">&lt;font color=&quot;red&quot;&gt;DRAFT&lt;/font&gt;
+== My data is archived at a different facility than NOAA, but they are not minting DOIs. Can I use the NOAA EZID license? ==
+You must request a NOAA data center to also archive the resource.
+&lt;!--== What if the dataset already has a DOI assigned by another organization? ==--&gt;
+
+== What if my data are divided and sent to two different archives? ==
+It’s ok to split datasets and have more domain specific DOIs assigned. (to do: add example)
+
+== Why do we have DOIs when we have metadata? ==
+DOIs are recognized by journals and they are permanent.
+
+== Can I use the same DOI after I clean up the data or provide new updates? ==
+Yes, in most cases. However, it depends on how significant the changes are.
+We recommend '''major''' versions of the same dataset be given new identifiers and treated as
+separate datasets, with links back to the prior version kept in the metadata describing that
+dataset. Forward links to new versions from the original are easily accomplished via a
+metadata search on the unique global identifier. 
+
+Determination of major or minor changes remains at the discretion of the Data Centers in consultation with the creators or providers.
+
+See [http://wiki.esipfed.org/index.php/Interagency_Data_Stewardship/Citations/provider_guidelines#Note_on_Versioning_and_Locators ESIP Guidance]
+
+== How will you maintain the information associated with the DOI? ==
+Update the metadata content (data centers do this already) and update the landing page link – if url changes.
+
+== Can I obtain a DOI for data that is not archived? ==  
+No, only archived data are eligible for a NOAA DOI.
+
+== Are you handling the '''version''' between sub-parts of the collections? ==
+Include major.minor version in the recommended citation and describe when you accessed the resource.
+
+&lt;!--== Dataset has been pre-determined ‘not to be archived’, but later used in peer review. How quickly can I get a DOI? ==--&gt;
+
+
+
+[[Category:NOAA_Procedural_Directives]]</text>
+      <sha1>677loc034ki5894t93fsgjbkbqgx8cj</sha1>
+    </revision>
+  </page>
+</mediawiki>

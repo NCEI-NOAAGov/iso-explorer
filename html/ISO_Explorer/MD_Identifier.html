@@ -1,0 +1,372 @@
+<p><strong>MD_Identifier - For a value uniquely identifying an object within a namespace.</strong></p>
+<table class="wikitable">
+<th valign="top" align="left" colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_Citation" title="wikilink">authority</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Citation to person or party responsible for maintenance of the code value.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">code</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The alphanumeric value that uniquely identifies the referenced resource. When the identifer has a permanent URL, then use the <code>gmx:Anchor</code> field instead of <code>gco:CharacterString</code> field.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="2">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>authority</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>code</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="2">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>authority</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>code</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:MD_Identifier.PNG" title="wikilink">thumb|left</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li>WGS84: <a href="http://www.ngdc.noaa.gov/docucomp/2504d000-8345-11e1-b0c4-0800200c9a66.guide" class="uri">http://www.ngdc.noaa.gov/docucomp/2504d000-8345-11e1-b0c4-0800200c9a66.guide</a></li>
+<li><a href="/ISO_Identifiers" title="wikilink">ISO_Identifiers</a>
+</td>
+</tr></li>
+</ul>
+<tr>
+<th>
+<p>Example</p>
+</th>
+<td bgcolor="FFFFFF">
+<p>For <strong>“code”</strong> element: <gmd:code><gmx:Anchor xlink:href="https://dx.doi.org/10.7289/V52Z13FT" xlink:title="DOI"xlink:actuate="onRequest"><a href="doi:10.7289/V52Z13FT"><code>doi:10.7289/V52Z13FT</code></a></gmx:Anchor></gmd:code></p>
+</td>
+</tr>
+</table>
+<p><strong>RS_Identifier</strong> - Identifier used for reference systems.</p>
+<table class="wikitable">
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CI_Citation" title="wikilink">authority</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Citation to person or party responsible for maintenance of the code value. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">code</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The alphanumeric value that uniquely identifies the referenced resource. When the identifer has a permanent URL, then use the <code>gmx:Anchor</code> field instead of <code>gco:CharacterString</code> field. <strong>Example:</strong> <a href="urn:ogc:def:crs:EPSG"><code>urn:ogc:def:crs:EPSG</code></a><code>::4326</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">codeSpace</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Namespace of the system in which the code is valid.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">version</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The version of the code value. Example: <code>6.18.3</code></i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements-1">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>authority</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="4">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>code</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>codeSpace</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>version</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>authority</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="4">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>code</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>codeSpave</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>version</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information-1">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:RS_Identifier.png" title="wikilink">thumb|left</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li>WGS84: <a href="http://www.ngdc.noaa.gov/docucomp/2504d000-8345-11e1-b0c4-0800200c9a66.guide" class="uri">http://www.ngdc.noaa.gov/docucomp/2504d000-8345-11e1-b0c4-0800200c9a66.guide</a></li>
+<li><a href="/ISO_Identifiers" title="wikilink">ISO_Identifiers</a>
+</td>
+</tr></li>
+</ul>
+<tr>
+<th>
+<p>Examples</p>
+</th>
+<td bgcolor="FFFFFF">
+<p>For <strong>“authority”</strong> element: <code>authority: (CI_Citation) title: European Petroleum Survey Group (EPSG) Geodetic Parameter Registry date: (CI_Date) date: 2008-11-12 dateType: (CI_DateTypeCode) citedResponsibleParty: (CI_ResponsibleParty) organisationName: European Petroleum Survey Group contactInfo: (CI_Contact) onlineResource: (CI_OnlineResource) linkage:</code><a href="http://www.epsg-registry.org/"><code>http://www.epsg-registry.org/</code></a><code>name: European Petroleum Survey Group Geodetic Parameter Dataset description: Registry that accesses the EPSG Geodetic Parameter Dataset, which is a structured dataset of Coordinate Reference Systems and Coordinate Transformations. function: (CI_OnLineFunctionCode) search role: (inapplicable)</code></p>
+</td>
+</tr>
+</table>

@@ -1,0 +1,247 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFF99">
+<p>1</p>
+</td>
+<td bgcolor="CCFF99">
+<p><a href="/CharacterString" title="wikilink">description</a></p>
+</td>
+<td bgcolor="CCFF99">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Mandatory when geographicElement, temporalElement and verticalElement are not present. When there are multiple extents, this field is useful for identifying each extent.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF" nowrap="nowrap">
+<p>geographicElement <em>(choose one)</em></p>
+<ul>
+<li><a href="/EX_BoundingPolygon" title="wikilink">EX BoundingPolygon</a></li>
+<li><a href="/EX_GeographicBoundingBox" title="wikilink">EX GeographicBoundingBox</a></li>
+<li><a href="/EX_GeographicDescription" title="wikilink">EX GeographicDescription</a></li>
+</ul>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Geographic extent of the resource. At a minimum, provide the GeographicBoundingBox, because most discovery systems rely on this section for spatial searches. Not required when resource is non-geospatial and the scopeCode = ‘nonGeographicDataset’. </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p>temporalElement <em>(choose one)</em> *<a href="/EX_TemporalExtent" title="wikilink">EX TemporalExtent</a></p>
+<ul>
+<li><a href="/EX_SpatialTemporalExtent" title="wikilink">EX SpatialTemporalExtent</a></li>
+</ul>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Temporal extent of the resource. Describe the time period covered by the content of the resource or the date and time range when the data was collected. The use of multiple temporal extents should be explained in the attribute description of the extent. If the resource has a status of ‘ongoing’ then use the indeterminatePosition attribute without an end date value. <strong>Example</strong>:<gml:endPosition indeterminatePosition="now"/></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/EX_VerticalExtent" title="wikilink">verticalElement</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Minimum and maximum vertical extent of the resource. </i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>description</p>
+</td>
+<td>
+</td>
+<td>
+<p>C</p>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Mandatory when geographicElement, temporalElement and verticalElement are not present. When there are multiple extents, this field is useful for identifying each extent.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>geographicElement</p>
+</td>
+<td>
+</td>
+<td align="center">
+<p>C</p>
+</td>
+<td>
+</td>
+<td>
+<p>At a minimum, GeographicBoundingBox must be provided, because most discovery systems rely on this section for spatial searches. Not required when resource is non-geospatial and the scopeCode = ‘nonGeographicDataset’.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>temporalElement</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>verticalElement</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>description</p>
+</td>
+<td>
+</td>
+<td>
+<p>C</p>
+</td>
+<td align="center">
+</td>
+<td>
+<p>Mandatory when geographicElement, temporalElement and verticalElement are not present. When there are multiple extents, this field is useful for identifying each extent.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>geographicElement</p>
+</td>
+<td>
+</td>
+<td align="center">
+<p>C</p>
+</td>
+<td>
+</td>
+<td>
+<p>At a minimum, GeographicBoundingBox must be provided, because most discovery systems rely on this section for spatial searches. Not required when resource is non-geospatial and the scopeCode = ‘nonGeographicDataset’.</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>temporalElement</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>verticalElement</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+<p>R</p>
+</td>
+<td>
+<p>Extra credit for recommended fields</p>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:EX_Extent.png" title="wikilink">thumb|left|center</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Extents" title="wikilink">ISO Extents</a></li>
+</ul>
+</td>
+</tr>
+</table>

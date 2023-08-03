@@ -1,0 +1,82 @@
+<p>This is a collection of tools that operate on XML files stored in a filesystem or web accessible directory. The tools include translation, validation, reporting and resolving services. Record Service tools operate on a single XML record, whereas Collection Service tools operate on a collection of records contained in a web accessible folder (WAF).</p>
+<h2 id="record-services">Record Services</h2>
+<p>These services operate on an XML record accessible from a local filesystem or URL. To access an XML record, select the File radio button and browse to the record on your local filesystem, or select the Url radio button and paste a URL into URL text field. To apply a service select a Service Type and click the submit button.</p>
+<table>
+<colgroup>
+<col width="3%" />
+<col width="96%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Well Formed</td>
+<td>This service checks the structure of the XML to ensure it is well formed. Well formed XML is required for XML processors and browsers to read the file. An error will be returned if the XML is not well formed.</td>
+</tr>
+<tr class="even">
+<td>Resolve XML</td>
+<td>This service resolves an unprocessed XML record. An unprocessed XML record may contain xlink references to XML content stored at an external location. The resolve process replaces the xlink references in the unprocessed record with the external XML content being references by the xlink. The externally referenced content is called a <a href="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_Components">component</a>.</td>
+</tr>
+<tr class="odd">
+<td>Link Check</td>
+<td>This service checks URL references within ISO CI_OnlineResource elements to ensure the links are valid. If a link is broken an error message is returned.</td>
+</tr>
+<tr class="even">
+<td>ISO Validate</td>
+<td>This service validates ISO metadata records with the ISO 19139 schema. This validation ensures the XML record complies with the structure and rules defined in the ISO 19139 schema.</td>
+</tr>
+<tr class="odd">
+<td>Schematron</td>
+<td>This service validates ISO metadata records with Schematron. Schematron provides validation checks not possible with XML schema. Schematron enables user defined business rules and custom error messages to be incorporated into the validation. Some examples include checking for empty elements and verifying codelist values are valid.</td>
+</tr>
+<tr class="even">
+<td>NCML to ISO</td>
+<td>This service transforms NCML XML to ISO 19115-2 XML</td>
+</tr>
+<tr class="odd">
+<td>NCML to Rubric</td>
+<td>This service generates a documentation completeness report (Rubric) from NCML XML. The report is based on a series of <a href="http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals">documentation spirals</a> designed to assist metadata authors with creating and improving scientific documentation.</td>
+</tr>
+<tr class="even">
+<td>ISO to Rubric</td>
+<td>This service generates a documentation completeness report (Rubric) from ISO XML. The report is based on a series of <a href="http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals">documentation spirals</a> designed to assist metadata authors with creating and improving scientific documentation.</td>
+</tr>
+<tr class="odd">
+<td>NCML to ISO</td>
+<td>This service transforms NCML XML to ISO XML.</td>
+</tr>
+<tr class="even">
+<td>FGDC to ISO</td>
+<td>This service transforms FGDC XML to ISO XML.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="collection-services">Collection Services</h2>
+<p>These services operate on a web accessible folder (WAF) containing a collection of ISO metadata records. To access a metadata collection paste the URL of the WAF into the URL text field. To apply a service select a Service Type and click the submit button.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="85%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Display Collection</td>
+<td>This service displays the contents of a web accessible folder</td>
+</tr>
+<tr class="even">
+<td>ISO Validate</td>
+<td>This service validates all records in a WAF with XML schema for ISO-19139. Records that are not valid will be referenced in an error message.</td>
+</tr>
+<tr class="odd">
+<td>Full Report</td>
+<td>This service runs the following diagnostic reports on the WAF collection; ISO Validation, Unique UUIDs, Bad XLINKS, Malformed XML URL’s, and Recursive XLINKS</td>
+</tr>
+<tr class="even">
+<td>ISO Rubric Report</td>
+<td>This service generates an ISO rubric scores completeness report.</td>
+</tr>
+<tr class="odd">
+<td>Waf On Demand Processing</td>
+<td>Resolve xlinked components, generate rubric and diagnostic reports and Table of Contents for a public WAF.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/category:Metadata_Tools" title="wikilink">category:Metadata Tools</a></p>

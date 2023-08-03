@@ -1,0 +1,39 @@
+<p>In this example, I am replacing the gmd:dateStamp/gco:Date value on 73 records. I only want to replace the gco:Date value for the metadata dateStamp (not any/all gco:Date tags) and the value is inconsistent across the records. To the right is a jpeg of the dialog box for editing multiple files in Oxygen. <a href="/Image:OxygenReplace.jpg" title="wikilink">200px|thumb|right|Search and Replace</a></p>
+<ul>
+<li>Make sure your xml file is ‘indented and formatted’, so that each xml tag is on it’s own line</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Select ‘Find/Replace in Files’ option in the ‘Find’ drop down menu</li>
+<li>copy/paste the xml tag your are replacing
+<ul>
+<li>e.g. <gco:Date>1982-01-01</gco:Date></li>
+<li>replace the content with regular expression and check the ‘regular expression’ box, this enables you to find these tags with any content</li>
+<li>e.g. <gco:Date>.*</gco:Date></li>
+<li><em><a href="http://www.cs.tut.fi/~jkorpela/perl/regexp.html">regular expressions in Perl</a></em></li>
+</ul></li>
+<li>type in XPath in ‘Restrict to Xpath’ field
+<ul>
+<li>e.g. gmi:MI_Metadata/gmd:dateStamp</li>
+<li>note: DO NOT include the tags you are editing</li>
+<li>you can get the xpath by right clicking on the desired tag in the editor and select ‘Copy XPath’ and then paste this into the field</li>
+</ul></li>
+<li>set replacement value in ‘Replace With’ field
+<ul>
+<li>e.g. <gco:Date>2010-01-20</gco:Date></li>
+</ul></li>
+<li>select the ‘Scope’
+<ul>
+<li>I usually run this on ‘Project files’, but you can also run this on a desktop directory</li>
+<li>for testing I recommend run this first on one file (‘selected project files’)</li>
+</ul></li>
+</ol>
+<p>Some other things to note:</p>
+<ul>
+<li>it’s best to search w/o replacing first - to ensure that you don’t override text you want to keep</li>
+<li>there is also the option to make a backup copy</li>
+<li>you can’t undo the results</li>
+<li>I don’t think this will work on large chunks of xml, like replacing a complete citation - but not sure about that</li>
+<li>For most updates, a simple search and replace of text will suffice!</li>
+<li>Tested on v11.1</li>
+</ul>
+<p><a href="/Category:_Metadata" title="wikilink">Category: Metadata</a> <a href="/Category:_Metadata_Tools" title="wikilink">Category: Metadata Tools</a> <a href="/Category:_Oxygen_XML_Editor" title="wikilink">Category: Oxygen XML Editor</a> <a href="/Category:_ISO_19139" title="wikilink">Category: ISO 19139</a> <a href="/Category:_ISO_19115" title="wikilink">Category: ISO 19115</a></p>

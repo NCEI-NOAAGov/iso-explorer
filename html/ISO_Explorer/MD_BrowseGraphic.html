@@ -1,0 +1,191 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/CharacterString" title="wikilink">fileName</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="white">
+<p><i>URL to a thumbnail image that can be rendered in browser. In order of importance, we recommend these types of images:</p>
+<ol style="list-style-type: decimal">
+<li>sample imagery produced by data.</li>
+<li>map/location representing of data location</li>
+<li>snapshot of a time series plot</li>
+<li>an image of the station or lab</li>
+<li>or as a last resort, a logo associated with data (e.g. project logo).</li>
+</ol>
+<p>(NOTE: This is the ONLY gco:CharacterString field that SHOULD contain a URL.)</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>2</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">fileDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="white">
+<p><i>Brief sentence that can become an image caption.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/CharacterString" title="wikilink">fileType</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="white">
+<p><i>Suffix of image type.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="3">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>fileName</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center">
+<p>R</p>
+</td>
+<td>
+<p>Extra credit</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileDescription</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileType</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="3">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>fileName</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileDescription</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+<td rowspan="2">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>fileType</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr bgcolor="white">
+<th>
+<p>UML</p>
+</th>
+<td>
+<p><a href="/File:MI_BrowseGraphic.png" title="wikilink">thumb|left</a></p>
+</td>
+</tr>
+<tr bgcolor="white">
+<th>
+<p>Examples</p>
+</th>
+<p>&lt;td bgcolor="FFFFFF&gt; graphicOverview: (MD_BrowseGraphic) fileName: https://www.ngdc.noaa.gov/mgg/ocean_age/data/2008/image/age_oceanic_lith.jpg fileDescription: crustal ages fileType: JPEG</p>
+</td>
+</tr>
+</table>

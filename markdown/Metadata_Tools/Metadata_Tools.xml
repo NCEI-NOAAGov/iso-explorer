@@ -1,0 +1,2131 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>NOAA Environmental Data Management Wiki</sitename>
+    <dbname>noscwiki_prod</dbname>
+    <base>http://geo-ide.noaa.gov/wiki/index.php?title=Main_Page</base>
+    <generator>MediaWiki 1.27.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">NOAA Environmental Data Management Wiki</namespace>
+      <namespace key="5" case="first-letter">NOAA Environmental Data Management Wiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Oxygen XML Editor</title>
+    <ns>0</ns>
+    <id>1815</id>
+    <revision>
+      <id>17766</id>
+      <parentid>10761</parentid>
+      <timestamp>2019-11-25T21:54:52Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="5418">Oxygen XML Editor is a cross platform xml editor. Oxygen provides a robust environment for editing ISO 19139 metadata in XML format. The purpose of this page is to share metadata authoring work flow and user tips in this environment. (To learn more or download a trial version go to http://www.oxygenxml.com.) 
+
+== Getting Started  ==
+
+[[Image:Oxygen Macros.jpg|thumb|right|200px]] 
+
+=== License Server ===
+
+*Help/Register 
+**Licensing Method: Use a license server
+
+=== Set Up Oxygen  ===
+
+*[[Image:MaximizeScreenSpace.png|thumb]]The first time you open Oxygen XML Editor there will be a lot of floating windows that provide useful information, but take up a lot of space. Closing these extra windows so that you ONLY have what you need helps maximize your work space. The Figure at right shows Oxygen with just one editing window open. The project view is useful as you start to work with groups of related files and the outline view is very helpful when you are working with large files. 
+*[[Image:Menus.png|thumb|right]]Oxygen has a very flexible menu system that allows you to turn menus on and off as you need them and organize them in the menu bar in a way that works for you. This is great as you gain experience with Oxygen and what it can do, but it is a bit overwhelming at the beginning. This Figure shows the menus that are used for basic file tasks and for the critical associate schema, validation, and transform tasks. 
+*[[Image:ContentCompletion.PNG|thumb|right]]Once an XML schema is associated with your file, Oxygen knows the details of what can and cannot be in the XML. You can take advantage of this using Oxygen's content completion capabilities:
+
+#Options Tab &amp;gt; Preferences &amp;gt; Content Completion 
+#Check the following 
+#*Add Element Content to automatically add required content for any element 
+#*Add Optional Content to automatically add optional content for any element. This can be very helpful at the beginning as you become familiar with the standard but as you gain experience you may want to turn it off. 
+#*Show all entities 
+#*Insert the required attributes - there are only a few required attributes in the ISO standards so this one will seem not to make a difference in most cases.
+
+=== Basics  ===
+
+*You can import folders from the desktop or add individual files by creating a Project. Here you can easily organize and edit multiple files. 
+*Taking advantage of the Outline panel makes it easy to navigate a potentially large file and can help you get to know an unfamiliar standard.
+
+&lt;br&gt; 
+
+=== Associating Schemas  ===
+
+#Click on: Document &amp;gt; Schema &amp;gt; Associate Schema... 
+#Under the XML Schema tab, enter the URL: http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd
+
+*You can associate Schematron schemas as well, by entering the URL: http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch under the Schematron Schema tab.
+
+== Editing  ==
+* [[ISO Namespaces]] - One of the first things you need to do is make sure that the metadata is properly attributed with ISO namespace declarations and schema location.
+* [[ISO Object Ordering]] - Ordering of ISO objects
+* [[ISO Boilerplate]]- ISO Boilerplate
+
+== Components  ==
+
+=== Resources  ===
+
+*[[ISO Components|Wiki page about components]] 
+*[http://www.ngdc.noaa.gov/docucomp Docucomp (Component Service)] 
+*[https://ngdc.noaa.gov/docucomp/recordServices Record Services (including Resolver)] &lt;!-- * [http://www.ngdc.noaa.gov/idb/struts/form?t=103046&amp;s=1&amp;d=1 Component Search from IDB] --&gt;
+
+== Transformation  ==
+
+[[Extensible Stylesheet Language Transformation (XSLT)|List of XSLTs]] &lt;br&gt; [[Transform in Oxygen XML Editor|How to set transformation in Oxygen ]] 
+
+== Validating  ==
+
+*[[How to Set Up Custom Validation in Oxygen]] 
+*[[Validation Error Guidance]]
+
+=== Resources  ===
+
+*[http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd 19139 Schema URL]- supports 19115, 19115-2, 19119 standards 
+*[http://www.ngdc.noaa.gov/metadata/published/xsd/19139.zip 19139 Schema ZIP] - for download 
+*[http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch Schematron URL] - validation support not available in the basic XSD Schema validation
+
+== User Tips  ==
+
+*[[How to add template text]] 
+*[[How to Import Codelist URLs]] 
+*[[How to Edit Multiple Files]] 
+*[[Stack Overflow Error]] 
+*[[How to create sample XML]]
+
+== Oxygen in a Documentation Workflow  ==
+
+A number of metadata managers at NGDC are using Oxygen as their primary metadata creation and maintenance tool in the context of a larger documentation management architecture. Any full featured XML editor could fit into this architecture in the same slot as Oxygen. The expected workflow is: 
+
+#Authors edit and validate ISO Metadata using a desktop XML editor (Oxygen) 
+#Save metadata files from Oxygen to a version control system (Subversion). These files may contain xlinks to metadata [[ISO Components|components]] and are therefore called &quot;unresolved&quot; records. 
+#These files are automatically checked out from Subversion to a Web Accessible Folder (WAF). 
+#The xlinks in the unresolved files are automatically resolved and the complete files are checked in to a second version control system. 
+#The complete records are checked out from Subversion to a resolved/published WAF. 
+#Metadata are harvested to discovery sites.
+
+&lt;br&gt; [[Metadata Schemas]] [[Metadata Stylesheets]] 
+
+[[Category:Metadata_Tools]]</text>
+      <sha1>r2xj39f10u5cv0gk5q50x3lemcu7dp2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Validation Error Guidance</title>
+    <ns>0</ns>
+    <id>1834</id>
+    <revision>
+      <id>11464</id>
+      <parentid>11461</parentid>
+      <timestamp>2016-12-12T18:21:29Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="24123">&lt;font color=&quot;red&quot;&gt;URL to Schema changed to HTTPS on Nov 30,2016! Please update your metadata records&lt;/font&gt;
+
+
+The XML used to share ISO Metadata is complicate enough that writing it without a validation tool is impossible. All sophisticated XML editors include a validation capability. The errors reported by these tools are sometines hard to understand. This page provides some help interpreting and fixing validation errors. 
+
+= Error Messages in oXygen  =
+
+== Element 'someElementName' cannot have character [children]  ==
+&lt;pre&gt;Error Message:
+cvc-complex-type.2.3: Element 'gmd:organisationName' cannot have character [children], 
+because the type's content type is element-only.
+&lt;/pre&gt; 
+Errors related to &quot;element-only&quot; usually occur when content (text) is included in a tag that can only have tags as children. This usually means that you have written a string directly into an element without the required &amp;lt;gco:CharacterString&amp;gt; tag. For example: 
+&lt;pre&gt;invalid:
+&amp;lt;gmd:organisationName&amp;gt;Geoscience Australia (GA)&amp;lt;/gmd:organisationName&amp;gt;
+
+valid:
+&amp;lt;gmd:organisationName&amp;gt;
+    &amp;lt;gco:CharacterString&amp;gt;Geoscience Australia (GA)&amp;lt;/gco:CharacterString&amp;gt;
+&amp;lt;/gmd:organisationName&amp;gt;
+&lt;/pre&gt; 
+== Expected content from http://www.opengis.net/gml/3.2  ==
+
+This error is related to changes in the namespace structure for Geographic Markup Language (GML). It can come in multiple forms including (but not limited to): 
+
+*Invalid content was found starting with element 'gml:TimePeriod'. One of '{&quot;http://www.opengis.net/gml/3.2&quot;:AbstractTimePrimitive}' is expected. 
+*Invalid content was found starting with element 'gml:Point'. One of '{&quot;http://www.opengis.net/gml/3.2&quot;:Point}' is expected
+
+This error can be fixed by changing the gml namespace from gml to gml/3.2, usually in the root element of the document. 
+&lt;pre&gt;invalid:
+xmlns:gml=&quot;http://www.opengis.net/gml&quot;
+
+valid:
+xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot;
+&lt;/pre&gt; 
+== The content of element 'gmd:CI_ResponsibleParty' is not complete  ==
+&lt;pre&gt;Description: cvc-complex-type.2.4.b: The content of element 'gmd:CI_ResponsibleParty' is not complete.
+One of '{&quot;http://www.isotc211.org/2005/gmd&quot;:role}' is expected.
+&lt;/pre&gt; 
+This error is related to content missing from the gmd:ResponsibileParty object. This object requires a role element that is not there. 
+&lt;pre&gt;invalid:
+&amp;lt;gmd:CI_ResponsibleParty uuid=&quot;08D95C427FB128479945893256DADE37&quot;&amp;gt;
+    &amp;lt;gmd:organisationName&amp;gt;...&amp;lt;/gmd:organisationName&amp;gt;
+    &amp;lt;gmd:contactInfo&amp;gt;...&amp;lt;/gmd:contactInfo&amp;gt;
+&amp;lt;/gmd:CI_ResponsibleParty&amp;gt;
+
+valid:
+&amp;lt;gmd:CI_ResponsibleParty uuid=&quot;08D95C427FB128479945893256DADE37&quot;&amp;gt;
+    &amp;lt;gmd:organisationName&amp;gt;...&amp;lt;/gmd:organisationName&amp;gt;
+    &amp;lt;gmd:contactInfo&amp;gt;...&amp;lt;/gmd:contactInfo&amp;gt;
+    &amp;lt;gmd:role&amp;gt;
+        &amp;lt;gmd:CI_RoleCode 
+            codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode&quot;
+            codeListValue=&quot;pointOfContact&quot;&amp;gt;pointOfContact&amp;lt;/gmd:CI_RoleCode&amp;gt;
+    &amp;lt;/gmd:role&amp;gt;
+&amp;lt;/gmd:CI_ResponsibleParty&amp;gt;
+&lt;/pre&gt; 
+== Invalid content was found  ==
+&lt;pre&gt;cvc-complex-type.2.4.a: Invalid content was found starting with element 'someElement'. 
+One of '{someListOfElements}' is expected.
+&lt;/pre&gt; 
+This error is usually related to incorrect ordering of the elements in the record. Even a correct element can cause a problem if it is in the wrong location. For example: 
+&lt;pre&gt;&amp;lt;gmd:characterSet&amp;gt;
+  &amp;lt;gmd:MD_CharacterSetCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode&quot;
+codeListValue=&quot;UTF8&quot;&amp;gt;UTF8&amp;lt;/gmd:MD_CharacterSetCode&amp;gt;
+&amp;lt;/gmd:characterSet&amp;gt;
+&amp;lt;gmd:language&amp;gt;
+  &amp;lt;gmd:LanguageCode codeList=&quot;http://www.loc.gov/standards/iso639-2/php/code_list.php&quot; codeListValue=&quot;eng&quot;&amp;gt;eng&amp;lt;/gmd:LanguageCode&amp;gt;
+&amp;lt;/gmd:language&amp;gt;
+gives this error while the same content in the correct order:
+&amp;lt;gmd:language&amp;gt;
+  &amp;lt;gmd:LanguageCode codeList=&quot;http://www.loc.gov/standards/iso639-2/php/code_list.php&quot; codeListValue=&quot;eng&quot;&amp;gt;eng&amp;lt;/gmd:LanguageCode&amp;gt;
+&amp;lt;/gmd:language&amp;gt;
+&amp;lt;gmd:characterSet&amp;gt;
+  &amp;lt;gmd:MD_CharacterSetCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode&quot; codeListValue=&quot;UTF8&quot;&amp;gt;UTF8&amp;lt;/gmd:MD_CharacterSetCode&amp;gt;
+&amp;lt;/gmd:characterSet&amp;gt;
+is valid.
+&lt;/pre&gt; 
+See [[ISO Object Ordering]] for the correct ordering of many common ISO elements. 
+
+This Error can also indicate that a required element is missing. 
+&lt;pre&gt;cvc-complex-type.2.4.a: Invalid content was found starting with element 'gmd:codeSpace'. 
+One of '{&quot;http://www.isotc211.org/2005/gmd&quot;:authority, &quot;http://www.isotc211.org/2005/gmd&quot;:code}' 
+is expected. 
+
+For example, this gmd:RS_Identifier is missing the required code element:
+
+invalid:
+&amp;lt;gmd:RS_Identifier&amp;gt;
+    &amp;lt;gmd:codeSpace&amp;gt;
+        &amp;lt;gco:CharacterString&amp;gt;location name&amp;lt;/gco:CharacterString&amp;gt;
+    &amp;lt;/gmd:codeSpace&amp;gt;
+&amp;lt;/gmd:RS_Identifier&amp;gt;
+
+valid:
+&amp;lt;gmd:RS_Identifier&amp;gt;
+    &amp;lt;gmd:code&amp;gt;
+        &amp;lt;gco:CharacterString&amp;gt;code goes here&amp;lt;/gco:CharacterString&amp;gt;
+    &amp;lt;/gmd:code&amp;gt;
+    &amp;lt;gmd:codeSpace&amp;gt;
+        &amp;lt;gco:CharacterString&amp;gt;location name&amp;lt;/gco:CharacterString&amp;gt;
+    &amp;lt;/gmd:codeSpace&amp;gt;
+&amp;lt;/gmd:RS_Identifier&amp;gt;
+&lt;/pre&gt; 
+== Not a valid value for 'someType'  ==
+&lt;pre&gt;cvc-datatype-valid.1.2.1: '' is not a valid value for 'decimal'
+&lt;/pre&gt; 
+This error indicates that an invalid value is present for an element with the specified type. It can happen if a bounding latitude or longitude is left empty: 
+&lt;pre&gt;&amp;lt;gmd:westBoundLongitude&amp;gt;
+  &amp;lt;gco:Decimal/&amp;gt;
+&amp;lt;/gmd:westBoundLongitude&amp;gt;
+&amp;lt;gmd:eastBoundLongitude&amp;gt;
+  &amp;lt;gco:Decimal/&amp;gt;
+&amp;lt;/gmd:eastBoundLongitude&amp;gt;
+&lt;/pre&gt; 
+== Multiple occurrences of ID value 'someId'  ==
+
+When id attributes are used to identify objects in a metadata record the values of those ids must be unique in the file. 
+&lt;pre&gt;cvc-id.2: There are multiple occurrences of ID value 'sourceTemporalExtent'
+
+invalid:
+&amp;lt;gmd:extent&amp;gt;
+    &amp;lt;gml:TimePeriod gml:id=&quot;sourceTemporalExtent&quot;&amp;gt;
+        &amp;lt;gml:description&amp;gt; ground condition &amp;lt;/gml:description&amp;gt;
+        &amp;lt;gml:beginPosition&amp;gt;2004-02&amp;lt;/gml:beginPosition&amp;gt;
+        &amp;lt;gml:endPosition&amp;gt;2004-03&amp;lt;/gml:endPosition&amp;gt;
+    &amp;lt;/gml:TimePeriod&amp;gt;
+&amp;lt;/gmd:extent&amp;gt;
+&amp;lt;gmd:extent&amp;gt;
+    &amp;lt;gml:TimePeriod gml:id=&quot;sourceTemporalExtent&quot;&amp;gt;
+        &amp;lt;gml:description&amp;gt; ground condition &amp;lt;/gml:description&amp;gt;
+        &amp;lt;gml:beginPosition&amp;gt;2004-02&amp;lt;/gml:beginPosition&amp;gt;
+        &amp;lt;gml:endPosition&amp;gt;2004-03&amp;lt;/gml:endPosition&amp;gt;
+    &amp;lt;/gml:TimePeriod&amp;gt;
+&amp;lt;/gmd:extent&amp;gt;
+
+valid:
+&amp;lt;gmd:extent&amp;gt;
+    &amp;lt;gml:TimePeriod gml:id=&quot;sourceTemporalExtent_1&quot;&amp;gt;
+        &amp;lt;gml:description&amp;gt; ground condition &amp;lt;/gml:description&amp;gt;
+        &amp;lt;gml:beginPosition&amp;gt;2004-02&amp;lt;/gml:beginPosition&amp;gt;
+        &amp;lt;gml:endPosition&amp;gt;2004-03&amp;lt;/gml:endPosition&amp;gt;
+    &amp;lt;/gml:TimePeriod&amp;gt;
+&amp;lt;/gmd:extent&amp;gt;
+&amp;lt;gmd:extent&amp;gt;
+    &amp;lt;gml:TimePeriod gml:id=&quot;sourceTemporalExtent_2&quot;&amp;gt;
+        &amp;lt;gml:description&amp;gt; ground condition &amp;lt;/gml:description&amp;gt;
+        &amp;lt;gml:beginPosition&amp;gt;2004-02&amp;lt;/gml:beginPosition&amp;gt;
+        &amp;lt;gml:endPosition&amp;gt;2004-03&amp;lt;/gml:endPosition&amp;gt;
+    &amp;lt;/gml:TimePeriod&amp;gt;
+&amp;lt;/gmd:extent&amp;gt;
+&lt;/pre&gt; 
+== Attribute 'codeListValue' must appear on element 'gmd:CI_DateTypeCode'  ==
+
+When translating from one dialect to another it is sometimes difficult to deal with unknown values. The &amp;lt;date&amp;gt; element in this example has no real content, but the translation included a gmd:CI_DateTypeCode element which has a required attribute: codeListValue. 
+
+The solution in this case is to replace the entire &amp;lt;gmd:date&amp;gt; with an empty tag with a gco:nilReason attribute. See [[ISO XML Attributes]] for information on the nilReason attribute. 
+&lt;pre&gt;invalid:
+&amp;lt;gmd:date&amp;gt;
+  &amp;lt;gmd:CI_Date&amp;gt;
+    &amp;lt;gmd:date/&amp;gt;
+    &amp;lt;gmd:dateType&amp;gt;
+      &amp;lt;gmd:CI_DateTypeCode/&amp;gt;
+    &amp;lt;/gmd:dateType&amp;gt;
+  &amp;lt;/gmd:CI_Date&amp;gt;
+&amp;lt;/gmd:date&amp;gt;
+
+valid:
+&amp;lt;gmd:date gco:nilReason=&quot;unknown&quot;/&amp;gt;
+&lt;/pre&gt; 
+&lt;br&gt;
+
+== Illegal HTML character: decimal 146 or 148==
+Some special characters (smart quotes / apostrophes) are illegal in html and stylesheets that encounter these characters will show an error. You can find these characters in the xml by searching for &amp;#N; where N is 146 or 148 and use Oxygen's Search and Replace in Files tool to replace these characters in a collection of files.
+
+= Error Messages in XMLSpy  =
+
+== Text not allowed  ==
+
+'''&lt;u&gt;&lt;br&gt;Problem:&lt;/u&gt;'''&lt;br&gt;You have content where it is not allowed.&lt;br&gt;'''&lt;u&gt;Not Valid:&lt;/u&gt;'''&lt;br&gt;&amp;lt;gmd:language&amp;gt;eng; USA&amp;lt;/gmd:language&amp;gt; 
+
+'''&lt;u&gt;Error Message you will get:&lt;/u&gt;'''&lt;br&gt;Text 'eng; USA' is not allowed for element &amp;lt;gmd:language&amp;gt;. The element declaration's content type is 'element-only'.&lt;br&gt;Error location: gmd:MD_Metadata / gmd:language&lt;br&gt;Details&lt;br&gt;cvc-complex-type.2.3: Text 'eng; USA' is not allowed for element &amp;lt;gmd:language&amp;gt;. The element declaration's content type is 'element-only'.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gmd:language&amp;gt; is not valid with respect to the actual type definition 'gco:CharacterString_PropertyType'. 
+
+'''&lt;u&gt;What this means in English:&lt;/u&gt;'''&lt;br&gt;Content, in this case free text, has been entered directly into the element language. Language has a child type of characterString. In ISO, free text is used within the characterString tag. Similar error messages will appear for other types as well. Make sure to check the child type and that content was not entered directly into the element. &lt;br&gt;'''&lt;u&gt;Valid:&lt;/u&gt;'''&lt;br&gt; &amp;lt;gmd:language&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;eng; USA&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:language&amp;gt; 
+
+&lt;br&gt; 
+
+== Invalid content  ==
+
+&lt;br&gt;'''&lt;u&gt;Problem:&lt;/u&gt;'''&lt;br&gt;You have repeated or added a tag that is not allowed.&lt;br&gt;&lt;u&gt;'''Not Valid:'''&lt;/u&gt;&lt;br&gt; &amp;lt;gmd:voice&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-9444&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-5555&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:voice&amp;gt;&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;Element &amp;lt;gco:CharacterString&amp;gt; is not allowed at this location under element &amp;lt;gmd:voice&amp;gt;.&lt;br&gt;Reason: No more elements expected.&lt;br&gt;Error location: gmd:MD_Metadata / gmd:contact / gmd:CI_ResponsibleParty / gmd:contactInfo / gmd:CI_Contact / gmd:phone / gmd:CI_Telephone / gmd:voice / gco:CharacterString&lt;br&gt;Details&lt;br&gt;cvc-model-group: Unexpected element &amp;lt;gco:CharacterString&amp;gt; in element &amp;lt;gmd:voice&amp;gt;. No further element expected.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gmd:voice&amp;gt; is not valid with respect to the actual type definition 'gco:CharacterString_PropertyType'. 
+
+&lt;u&gt;'''What this means in English:'''&lt;/u&gt;&lt;br&gt;The schema validation is saying that it is not expecting another tag after characterString. The voice tag is repeatable, not characterString. Make sure that you have repeated at the correct level and that extra tags are not within elements that do not have them as their children. &lt;br&gt;&lt;u&gt;'''Valid:'''&lt;/u&gt;&lt;br&gt; &amp;lt;gmd:voice&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-9444&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:voice&amp;gt;&lt;br&gt; &amp;lt;gmd:voice&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-5555&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:voice&amp;gt; 
+
+&lt;br&gt; 
+
+== Missing required elements  ==
+
+&lt;br&gt;&lt;u&gt;'''Problem:'''&lt;/u&gt;&lt;br&gt;You are missing required elements.&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;Further elements required under element &amp;lt;gmd:CI_ResponsibleParty&amp;gt;.&lt;br&gt;Reason: The following elements are expected after this location (see below)&lt;br&gt;&amp;lt;gmd:role&amp;gt;&lt;br&gt;Annotations of type 'gmd:CI_ResponsibleParty_Type' (see below)&lt;br&gt;Identification of, and means of communication with, person(s) and organisations associated with the dataset&lt;br&gt;Error location: gmd:MD_Metadata / gmd:contact / gmd:CI_ResponsibleParty / gmd:contactInfo&lt;br&gt;Details&lt;br&gt;cvc-model-group: The content for element &amp;lt;gmd:CI_ResponsibleParty&amp;gt; is incomplete.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gmd:CI_ResponsibleParty&amp;gt; is not valid with respect to the actual type definition 'gmd:CI_ResponsibleParty_Type'.&lt;br&gt;'''&lt;u&gt;What this means in English:&lt;/u&gt;'''&lt;br&gt;The schema validation is looking for the existence of the minimum requirements. If one of the mandatory elements is missing, then it will report that it expects to see that element and cannot find it and is therefore, incomplete. In this case, role was not found for the responsibleParty and role is a mandatory element to meet the minimum requirements. If you see this type of error message, look to see which mandatory element(s) are missing.&lt;br&gt;&lt;u&gt;'''Valid:'''&lt;/u&gt;&lt;br&gt; &amp;lt;gmd:role&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_RoleCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode&quot; codeListValue=&quot;originator&quot; codeSpace=&quot;006&quot;&amp;gt;originator&amp;lt;/gmd:CI_RoleCode&amp;gt;&lt;br&gt; &amp;lt;/gmd:role&amp;gt; 
+
+&lt;br&gt; 
+
+== Elements out of order  ==
+
+&lt;br&gt;&lt;u&gt;'''Problem:'''&lt;/u&gt;&lt;br&gt;You have elements out of order or that are not allowed.&lt;br&gt;&lt;u&gt;'''Not Valid:'''&lt;/u&gt;&lt;br&gt;&amp;lt;gmd:CI_ResponsibleParty uuid=&quot;0ca7cab0-e1fe-11df-85ca-0800200c9a66&quot;&amp;gt;&lt;br&gt; &amp;lt;gmd:organisationName&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;NOAA/OAR/OER - Ocean Exploration and Research&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:organisationName&amp;gt;&lt;br&gt; &amp;lt;gmd:role&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_RoleCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode&quot; codeListValue=&quot;originator&quot; codeSpace=&quot;006&quot;&amp;gt;originator&amp;lt;/gmd:CI_RoleCode&amp;gt;&lt;br&gt; &amp;lt;/gmd:role&amp;gt;&lt;br&gt; &amp;lt;gmd:contactInfo&amp;gt; etc…&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;Element &amp;lt;gmd:contactInfo&amp;gt; is not allowed at this location under element &amp;lt;gmd:CI_ResponsibleParty&amp;gt;.&lt;br&gt;Reason: No more elements expected.&lt;br&gt;Annotations of type 'gmd:CI_ResponsibleParty_Type' (see below)&lt;br&gt;Identification of, and means of communication with, person(s) and organisations associated with the dataset&lt;br&gt;Error location: gmd:MD_Metadata / gmd:contact / gmd:CI_ResponsibleParty / gmd:contactInfo&lt;br&gt;Details&lt;br&gt;cvc-model-group: Unexpected element &amp;lt;gmd:contactInfo&amp;gt; in element &amp;lt;gmd:CI_ResponsibleParty&amp;gt;. No further element expected.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gmd:CI_ResponsibleParty&amp;gt; is not valid with respect to the actual type definition 'gmd:CI_ResponsibleParty_Type'. 
+
+'''&lt;u&gt;What this means in English:&lt;/u&gt;'''&lt;br&gt;The validation is seeing that the mandatory elements are there but it sees that there is something extra. If you see this type of error message, look at the point of the unexpected element, in this case, contactInfo and make sure that the elements are in the correct order. You will have to look just above the point of the unexpected element to make sure that it is in the correct location as well. &lt;br&gt;&lt;u&gt;'''Valid:'''&lt;/u&gt;&lt;br&gt;&amp;lt;gmd:CI_ResponsibleParty uuid=&quot;0ca7cab0-e1fe-11df-85ca-0800200c9a66&quot;&amp;gt;&lt;br&gt; &amp;lt;gmd:organisationName&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;NOAA/OAR/OER - Ocean Exploration and Research&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:organisationName&amp;gt;&lt;br&gt; &amp;lt;gmd:contactInfo&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_Contact&amp;gt;&lt;br&gt; &amp;lt;gmd:phone&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_Telephone&amp;gt;&lt;br&gt; &amp;lt;gmd:voice&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-9444&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:voice&amp;gt; &amp;lt;gmd:facsimile&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;301-713-4252&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:facsimile&amp;gt;&lt;br&gt; &amp;lt;/gmd:CI_Telephone&amp;gt;&lt;br&gt; &amp;lt;/gmd:phone&amp;gt;&lt;br&gt; &amp;lt;gmd:address&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_Address&amp;gt;&lt;br&gt; &amp;lt;gmd:deliveryPoint&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;SSMC3, 1315 East-West Highway, 10th Floor&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:deliveryPoint&amp;gt;&lt;br&gt; &amp;lt;gmd:city&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;Silver Spring&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:city&amp;gt;&lt;br&gt; &amp;lt;gmd:administrativeArea&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;MD&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:administrativeArea&amp;gt;&lt;br&gt; &amp;lt;gmd:postalCode&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;20910&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:postalCode&amp;gt;&lt;br&gt; &amp;lt;gmd:country&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;USA&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:country&amp;gt;&lt;br&gt; &amp;lt;gmd:electronicMailAddress&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;ncddcmetadata@noaa.gov&amp;lt;/gco:CharacterString&amp;gt; &amp;lt;/gmd:electronicMailAddress&amp;gt;&lt;br&gt; &amp;lt;/gmd:CI_Address&amp;gt;&lt;br&gt; &amp;lt;/gmd:address&amp;gt;&lt;br&gt; &amp;lt;gmd:hoursOfService&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;8am-5pm, Monday through Friday&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:hoursOfService&amp;gt;&lt;br&gt; &amp;lt;/gmd:CI_Contact&amp;gt;&lt;br&gt; &amp;lt;/gmd:contactInfo&amp;gt;&lt;br&gt; &amp;lt;gmd:role&amp;gt;&lt;br&gt; &amp;lt;gmd:CI_RoleCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode&quot; codeListValue=&quot;originator&quot; codeSpace=&quot;006&quot;&amp;gt;originator&amp;lt;/gmd:CI_RoleCode&amp;gt;&lt;br&gt; &amp;lt;/gmd:role&amp;gt;&lt;br&gt;&amp;lt;/gmd:CI_ResponsibleParty&amp;gt; 
+
+&lt;br&gt; 
+
+== Missing tags  ==
+
+&lt;br&gt;'''&lt;u&gt;Problem:&lt;/u&gt;'''&lt;br&gt;You are missing tags of either end (xml not well-formed).&lt;br&gt;'''&lt;u&gt;Not Valid:&lt;/u&gt;'''&lt;br&gt; &amp;lt;gmd:language&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;eng; USA&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;gmd:characterSet&amp;gt;&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;End tag must not have name 'gmd:MD_Metadata'&lt;br&gt;Reason: its name must match start tag 'gmd:language'&lt;br&gt;Details&lt;br&gt;WFC: Element Type Match: Name 'gmd:MD_Metadata' of end tag does not match name 'gmd:language' of its start tag 
+
+&lt;u&gt;'''What this means in English:'''&lt;/u&gt;&lt;br&gt;XML and its tags must by symmetrical. Make sure that if you open a tag that you close it properly.&lt;br&gt;&lt;u&gt;'''Valid:'''&lt;/u&gt;&lt;br&gt; &amp;lt;gmd:language&amp;gt;&lt;br&gt; &amp;lt;gco:CharacterString&amp;gt;eng; USA&amp;lt;/gco:CharacterString&amp;gt;&lt;br&gt; &amp;lt;/gmd:language&amp;gt; 
+
+&lt;br&gt; 
+
+== Missing xml tags  ==
+
+&lt;br&gt;&lt;u&gt;'''Problem:'''&lt;/u&gt; &lt;br&gt;You are missing tags of either end (xml not well-formed).&lt;br&gt;'''&lt;u&gt;Not Valid:&lt;/u&gt;'''&lt;br&gt; &amp;lt;gmd:dateStamp gco:nilReason=&quot;missing&quot;&amp;gt;&lt;br&gt; &amp;lt;gmd:metadataStandardName&amp;gt; 
+
+'''&lt;u&gt;Error Message you will get:&lt;/u&gt;'''&lt;br&gt;Character '&amp;lt;' is grammatically unexpected&lt;br&gt;Reason: one of the following is expected (see below)&lt;br&gt;'/&amp;gt;'&lt;br&gt;'&amp;gt;'&lt;br&gt;Name&lt;br&gt;Details&lt;br&gt;XML production: Production 'STag' not satisfied 
+
+'''&lt;u&gt;What this means in English:&lt;/u&gt;'''&lt;br&gt;XML and its tags must by symmetrical. Make sure that if you open a tag that you close it properly.&lt;br&gt;'''&lt;u&gt;Valid:&lt;/u&gt;'''&lt;br&gt;&amp;lt;gmd:dateStamp gco:nilReason=&quot;missing&quot;/&amp;gt; 
+
+&lt;br&gt; 
+
+== Missing xml attributes  ==
+
+&lt;br&gt;'''&lt;u&gt;Problem:&lt;/u&gt;'''&lt;br&gt;You are missing a mandatory xml attribute.&lt;br&gt;&lt;u&gt;'''Not Valid:'''&lt;/u&gt;&lt;br&gt; &amp;lt;gml:TimePeriod&amp;gt;&lt;br&gt; &amp;lt;gml:description&amp;gt;ground condition&amp;lt;/gml:description&amp;gt;&lt;br&gt; &amp;lt;gml:beginPosition&amp;gt;2010-05-19&amp;lt;/gml:beginPosition&amp;gt;&lt;br&gt; &amp;lt;gml:endPosition&amp;gt;2010-06-03&amp;lt;/gml:endPosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimePeriod&amp;gt;&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;Attribute 'gml:id' is required in element &amp;lt;gml:TimePeriod&amp;gt;.&lt;br&gt;Error location: gmd:MD_Metadata / gmd:identificationInfo / gmd:MD_DataIdentification / gmd:extent / gmd:EX_Extent / gmd:temporalElement / gmd:EX_TemporalExtent / gmd:extent / gml:TimePeriod&lt;br&gt;Details&lt;br&gt;cvc-complex-type.4: Required attribute 'gml:id' is missing from element &amp;lt;gml:TimePeriod&amp;gt;.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gml:TimePeriod&amp;gt; is not valid with respect to the actual type definition 'gml:TimePeriodType'. 
+
+&lt;u&gt;'''What this means in English:'''&lt;/u&gt;&lt;br&gt;Some XML attributes are mandatory for some elements. In this case, the mandatory xml attribute id is missing from TimePeriod. You will commonly see this issue if uom or id attributes are missing.&lt;br&gt;'''&lt;u&gt;Valid:&lt;/u&gt;'''&lt;br&gt; &amp;lt;gml:TimePeriod gml:id=&quot;boundingTemporalExtent&quot;&amp;gt;&lt;br&gt; &amp;lt;gml:description&amp;gt;ground condition&amp;lt;/gml:description&amp;gt;&lt;br&gt; &amp;lt;gml:beginPosition&amp;gt;2010-05-19&amp;lt;/gml:beginPosition&amp;gt;&lt;br&gt; &amp;lt;gml:endPosition&amp;gt;2010-06-03&amp;lt;/gml:endPosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimePeriod&amp;gt; 
+
+== &lt;br&gt;Unique Ids  ==
+
+&lt;br&gt;&lt;u&gt;'''Problem:'''&lt;/u&gt;&lt;br&gt;The id must be unique in the document.&lt;br&gt;&lt;u&gt;'''Not Valid:'''&lt;/u&gt;&lt;br&gt;&amp;lt;gmd:temporalElement&amp;gt;&lt;br&gt; &amp;lt;gmd:EX_TemporalExtent&amp;gt;&lt;br&gt; &amp;lt;gmd:extent&amp;gt;&lt;br&gt; &amp;lt;gml:TimeInstant gml:id=&quot;timeInstant1&quot;&amp;gt;&lt;br&gt; &amp;lt;gml:timePosition&amp;gt;2010-05-19&amp;lt;/gml:timePosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimeInstant&amp;gt;&lt;br&gt; &amp;lt;/gmd:extent&amp;gt;&lt;br&gt; &amp;lt;/gmd:EX_TemporalExtent&amp;gt;&lt;br&gt;&amp;lt;/gmd:temporalElement&amp;gt;&lt;br&gt;&amp;lt;gmd:temporalElement&amp;gt;&lt;br&gt; &amp;lt;gmd:EX_TemporalExtent&amp;gt;&lt;br&gt; &amp;lt;gmd:extent&amp;gt;&lt;br&gt; &amp;lt;gml:TimeInstant gml:id=&quot;timeInstant1&quot;&amp;gt;&lt;br&gt; &amp;lt;gml:timePosition&amp;gt;2011-05-19&amp;lt;/gml:timePosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimeInstant&amp;gt;&lt;br&gt; &amp;lt;/gmd:extent&amp;gt;&lt;br&gt; &amp;lt;/gmd:EX_TemporalExtent&amp;gt;&lt;br&gt;&amp;lt;/gmd:temporalElement&amp;gt;&lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;ID 'timeInstant1' is already declared.&lt;br&gt;Error location: gmd:MD_Metadata / gmd:identificationInfo / gmd:MD_DataIdentification / gmd:extent / gmd:EX_Extent / gmd:temporalElement / gmd:EX_TemporalExtent / gmd:extent / gml:TimeInstant / @gml:id&lt;br&gt;Details&lt;br&gt;cvc-id.2: ID 'timeInstant1' is already declared.&lt;br&gt;cvc-complex-type.3.1: The attribute 'gml:id' of complex type 'gml:TimeInstantType' is not valid.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gml:TimeInstant&amp;gt; is not valid with respect to the actual type definition 'gml:TimeInstantType'. 
+
+&lt;u&gt;'''What this means in English:'''&lt;/u&gt;&lt;br&gt;Some attributes, such as ids, must unique within the same document. Simply sequence the ids so that they become unique within the document.&lt;br&gt;&lt;u&gt;'''Valid:'''&lt;/u&gt;&lt;br&gt;&amp;lt;gmd:temporalElement&amp;gt;&lt;br&gt; &amp;lt;gmd:EX_TemporalExtent&amp;gt;&lt;br&gt; &amp;lt;gmd:extent&amp;gt;&lt;br&gt; &amp;lt;gml:TimeInstant gml:id=&quot;timeInstant1&quot;&amp;gt;&lt;br&gt; &amp;lt;gml:timePosition&amp;gt;2010-05-19&amp;lt;/gml:timePosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimeInstant&amp;gt;&lt;br&gt; &amp;lt;/gmd:extent&amp;gt;&lt;br&gt; &amp;lt;/gmd:EX_TemporalExtent&amp;gt;&lt;br&gt;&amp;lt;/gmd:temporalElement&amp;gt;&lt;br&gt;&amp;lt;gmd:temporalElement&amp;gt;&lt;br&gt; &amp;lt;gmd:EX_TemporalExtent&amp;gt;&lt;br&gt; &amp;lt;gmd:extent&amp;gt;&lt;br&gt; &amp;lt;gml:TimeInstant gml:id=&quot;timeInstant2&quot;&amp;gt;&lt;br&gt; &amp;lt;gml:timePosition&amp;gt;2011-05-19&amp;lt;/gml:timePosition&amp;gt;&lt;br&gt; &amp;lt;/gml:TimeInstant&amp;gt;&lt;br&gt; &amp;lt;/gmd:extent&amp;gt;&lt;br&gt; &amp;lt;/gmd:EX_TemporalExtent&amp;gt;&lt;br&gt;&amp;lt;/gmd:temporalElement&amp;gt; 
+
+&lt;br&gt; 
+
+== Incorrect declarations  ==
+
+&lt;br&gt;&lt;u&gt;'''Problem:'''&lt;/u&gt;&lt;br&gt;You do not have the correct validation scenario set up. &lt;br&gt;&lt;u&gt;'''Error Message you will get:'''&lt;/u&gt;&lt;br&gt;Element &amp;lt;gml:TimePeriod&amp;gt; is not allowed under element &amp;lt;gmd:extent&amp;gt;.&lt;br&gt;Reason: The following elements are expected at this location (see below)&lt;br&gt;&amp;lt;gml:TimeEdge&amp;gt;&lt;br&gt;&amp;lt;gml:TimePeriod&amp;gt;&lt;br&gt;&amp;lt;gml:TimeInstant&amp;gt;&lt;br&gt;&amp;lt;gml:TimeNode&amp;gt;&lt;br&gt;Error location: gmd:MD_Metadata / gmd:identificationInfo / gmd:MD_DataIdentification / gmd:extent / gmd:EX_Extent / gmd:temporalElement / gmd:EX_TemporalExtent / gmd:extent / gml:TimePeriod&lt;br&gt;Details&lt;br&gt;cvc-model-group: Element &amp;lt;gml:TimePeriod&amp;gt; unexpected by type 'gts:TM_Primitive_PropertyType' of element &amp;lt;gmd:extent&amp;gt;.&lt;br&gt;cvc-elt.5.2.1: The element &amp;lt;gmd:extent&amp;gt; is not valid with respect to the actual type definition 'gts:TM_Primitive_PropertyType'. 
+
+&lt;u&gt;'''What this means in English:'''&lt;/u&gt;&lt;br&gt;You have conflicting schema and namespace declarations. Forgetting the gml/3.2 declaration is the most common mistake. Make sure that the correct namespace declarations and schemas are being applied. xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot; xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot; xmlns:gsr=&quot;http://www.isotc211.org/2005/gsr&quot; xmlns:gss=&quot;http://www.isotc211.org/2005/gss&quot; xmlns:gts=&quot;http://www.isotc211.org/2005/gts&quot; xmlns:gmx=&quot;http://www.isotc211.org/2005/gmx&quot; xmlns:gmi=&quot;http://www.isotc211.org/2005/gmi&quot; xsi:schemaLocation=&quot;http://www.isotc211.org/2005/gmi https://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd&quot;&lt;br&gt;&lt;br&gt; 
+
+See [[ISO XML Attributes|ISO XML Attributes]] for some discussion and limitations on these ids. 
+
+[[Category:ISO_19139]] [[Category:ISO_19115]] [[Category:Metadata]] [[Category:Metadata_Tools]] [[Category:Oxygen_XML_Editor]] [[Category:Validation]]&amp;nbsp;</text>
+      <sha1>6ct9rg79m7a4d4ecez958c1aogc56ni</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>ISO Namespaces</title>
+    <ns>0</ns>
+    <id>1862</id>
+    <revision>
+      <id>17533</id>
+      <parentid>17529</parentid>
+      <timestamp>2019-08-15T18:14:01Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="7181">&lt;font color=&quot;red&quot;&gt;Please update your metadata records. The schema URL has moved to: https://data.noaa.gov/resources/iso19139/schema.xsd&lt;/font&gt;
+
+=== Copy/Paste This ===
+You can copy the content below and paste it into the root elements of the ISO 19115/19115-2 metadata you are authoring and it should represent all the namespaces that you might need.
+
+&lt;pre&gt;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+	xsi:schemaLocation=&quot;http://www.isotc211.org/2005/gmi https://data.noaa.gov/resources/iso19139/schema.xsd&quot; 
+	xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; 
+	xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+	xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+	xmlns:gmx=&quot;http://www.isotc211.org/2005/gmx&quot; 
+	xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot; 
+	xmlns:gss=&quot;http://www.isotc211.org/2005/gss&quot; 
+	xmlns:gts=&quot;http://www.isotc211.org/2005/gts&quot; 
+	xmlns:gsr=&quot;http://www.isotc211.org/2005/gsr&quot; 
+	xmlns:gmi=&quot;http://www.isotc211.org/2005/gmi&quot; 
+	xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot;&lt;/pre&gt;
+
+== Declaring Namespaces in ISO XML ==
+You may notice in the XML that the element names have a three letter code followed by a colon. These codes are called namespaces. The namespace is a container providing context and rules for items. A definition of a term may change depending on what namespace is applied.[[Image:Nsexample.png|thumb|right|400px]]
+
+
+It is important to declare the the schema location and the namespaces in the root element of the ISO XML that you are working on. (The root element is the first xml tag in the ISO metadata file.) This allows you to harness the full power of using an XML editing tool while authoring ISO metadata.  
+
+
+=== Example with Explanation ===
+The examples below show what a root element with ALL of the appropriate ISO namespaces and schema location should look like. I recommend copying and pasting this into any root element of the ISO metadata your are working with. You should be aware that some metadata tools (such as GeoNetwork and CatMDEdit) may classify which metadata standard you are using based on the existence of certain namespaces. For example,  If you are not using the elements that are included in Geographic information - Services metadata, and the namespace xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot; exists within the root, these tools will classify the ingested metadata as ISO 19119 Geographic information - Services even if you did not use any of the service metadata elements. 
+
+&lt;pre&gt;&lt;gmi:MI_Metadata xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+	xsi:schemaLocation=&quot;http://www.isotc211.org/2005/gmi https://data.noaa.gov/resources/iso19139/schema.xsd&quot; 
+	xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; 
+	xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+	xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+	xmlns:gmx=&quot;http://www.isotc211.org/2005/gmx&quot; 
+	xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot; 
+	xmlns:gss=&quot;http://www.isotc211.org/2005/gss&quot; 
+	xmlns:gts=&quot;http://www.isotc211.org/2005/gts&quot; 
+	xmlns:gsr=&quot;http://www.isotc211.org/2005/gsr&quot; 
+	xmlns:gmi=&quot;http://www.isotc211.org/2005/gmi&quot; 
+	xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot;&gt;&lt;/pre&gt;
+
+
+'''root element:'''
+&lt;pre&gt;
+gmi:MI_Metadata 
+&lt;/pre&gt;
+'''schema-instance namespace declaration:'''
+&lt;pre&gt;
+ xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+&lt;/pre&gt;
+'''schema location declaration:'''&lt;br/&gt;
+The url must return a valid XSD. The ISO Schemas were originally published at Eden (http://eden.ign.fr/). 
+&lt;pre&gt;xsi:schemaLocation=&quot;http://www.isotc211.org/2005/gmi https://data.noaa.gov/resources/iso19139/schema.xsd&quot; &lt;/pre&gt;
+
+'''ISO namespace declarations:'''
+&lt;pre&gt;
+ xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; 
+ xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+ xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+ xmlns:gmx=&quot;http://www.isotc211.org/2005/gmx&quot; 
+ xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot; 
+ xmlns:gss=&quot;http://www.isotc211.org/2005/gss&quot; 
+ xmlns:gts=&quot;http://www.isotc211.org/2005/gts&quot; 
+ xmlns:gsr=&quot;http://www.isotc211.org/2005/gsr&quot; 
+ xmlns:gmi=&quot;http://www.isotc211.org/2005/gmi&quot; 
+ xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot;
+&lt;/pre&gt;
+
+=== Another Example ===
+This shows the root element of a component that has all of the proper attribution. It is not necessary to declare every possible namespaces if a component does not utilize them. For example, the CI_ResponsibleParty section of ISO only uses gco, gmd, xlink and maybe gmx namespaces. However, there may be more complex sections (components) of ISO that may or may not need the other namespaces and I think it is easier to just go ahead and include them all rather than try to guess which ones are needed and where. 
+&lt;pre&gt;
+&lt;gmd:CI_ResponsibleParty
+        xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+	xsi:schemaLocation=&quot;http://www.isotc211.org/2005/gmi https://data.noaa.gov/resources/iso19139/schema.xsd&quot; 
+	xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; 
+	xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+	xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+	xmlns:gmx=&quot;http://www.isotc211.org/2005/gmx&quot; 
+	xmlns:gml=&quot;http://www.opengis.net/gml/3.2&quot; 
+	xmlns:gss=&quot;http://www.isotc211.org/2005/gss&quot; 
+	xmlns:gts=&quot;http://www.isotc211.org/2005/gts&quot; 
+	xmlns:gsr=&quot;http://www.isotc211.org/2005/gsr&quot; 
+	xmlns:gmi=&quot;http://www.isotc211.org/2005/gmi&quot; 
+	xmlns:srv=&quot;http://www.isotc211.org/2005/srv&quot; 
+        uuid=&quot;8294BEE08AD7359FE040AC8C5AB460D1&quot;&gt;
+&lt;/pre&gt;
+
+== Namespace Descriptions ==
+
+In the table below, the column on the left describes the common namespace prefix used to describe the elements in the namespace. The second column is an English description of the namespace prefix, and the third column is the URI of the actual namespace. These URIs do not correspond necessarily to an effective location of the schemas. (source: 19139 specification)
+
+&lt;table border=&quot;1&quot; cellpadding=&quot;3&quot;&gt;
+&lt;tr&gt;
+ &lt;td&gt;gco&lt;/td&gt;
+ &lt;td&gt;Geographic Common extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gco&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gmd&lt;/td&gt;
+ &lt;td&gt;Geographic Metadata extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gmd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gmi&lt;/td&gt;
+ &lt;td&gt;Geographic Metadata Imagery extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gmi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gml&lt;/td&gt;
+ &lt;td&gt;Geography Markup Language&lt;/td&gt;
+ &lt;td&gt;http://www.opengis.net/gml/3.2&lt;/td&gt;
+&lt;/tr&gt;			
+&lt;tr&gt;
+ &lt;td&gt;gmx&lt;/td&gt;
+ &lt;td&gt;Geographic Metadata XML Schema&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gmx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gsr&lt;/td&gt;
+ &lt;td&gt;Geographic Spatial Referencing extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gsr&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gss&lt;/td&gt;
+ &lt;td&gt;Geographic Spatial Schema extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gss&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;gts&lt;/td&gt;
+ &lt;td&gt;Geographic Temporal Schema extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/gts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;srv&lt;/td&gt;
+ &lt;td&gt;Service Metadata extensible markup language&lt;/td&gt;
+ &lt;td&gt;http://www.isotc211.org/2005/srv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;xlink&lt;/td&gt;
+ &lt;td&gt;XML Linking Language&lt;/td&gt;
+ &lt;td&gt;http://www.w3.org/1999/xlink&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;xsi&lt;/td&gt;
+ &lt;td&gt;W3C XML base schemas&lt;/td&gt;
+ &lt;td&gt;http://www.w3.org/2001/XMLSchema-instance&lt;/td&gt;
+&lt;/tr&gt;			
+&lt;/table&gt;
+
+[[Category: ISO 19139]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19115]]
+[[Category:Metadata Tools]]</text>
+      <sha1>90b34wfy6dzdgi522v0m8iw6kpbku46</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>NcISO</title>
+    <ns>0</ns>
+    <id>1867</id>
+    <revision>
+      <id>17743</id>
+      <parentid>11678</parentid>
+      <timestamp>2019-11-25T21:39:38Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="11558">=ncISO=
+ncISO is a package of tools that facilitates the generation of [[ISO 19115 Geographic Information %E2%80%93 Metadata | ISO 19115-2]] metadata from [http://www.unidata.ucar.edu/software/netcdf/ NetCDF] data sources stored in a [http://www.unidata.ucar.edu/projects/THREDDS/ THREDDS] data server (TDS) catalog.  There are currently two tools available, first a command line utility that can be run on your local desktop or workstation, and second a THREDDS server extension library. See [http://www.ngdc.noaa.gov/thredds/sstCatalog.html?dataset=SST-Aerosol-Agg this] and other data pages on the [http://www.ngdc.noaa.gov/thredds/catalog.html NGDC THREDDS Server] for examples of the ncISO extension to THREDDS.
+== Latest Release Notes ==
+The latest release for desktop ncISO is version 2.0.  It includes a number of enhancements and bug fixes which include:
+
+1) A move from XALAN and XSL 1.0 to SAXON and XSL 2.0.  This has simplified the login surrounding [https://geo-ide.noaa.gov/wiki/index.php?title=NetCDF_Attribute_Convention_for_Dataset_Discovery#Determining_an_Order_of_Precedence precedence] issues.
+
+2) New transfer options for OpenDAP viewers like NCDC's climate and weather toolkit.  These new &amp;lt;gmd:MD_DigitalTransferOptions&amp;gt; allow linkages to be created in applications like geoportal.
+
+3) Improved resolution calculations for geospatial and temporal extents.
+
+4) Improved dimension counts.
+
+5) Enhanced crawling capabilities based on an ISO series record.
+== Server Extension to THREDDS ==
+Source code: https://github.com/Unidata/threddsIso
+
+
+== Command Line Utility ==
+[[Image:Commandline.png|thumb]]The command line utility traverses a THREDDS catalog and creates a local directory structure containing [http://www.unidata.ucar.edu/software/netcdf/ncml/ NCML], a metadata rubric, and ISO metadata.  NCML is a markup language for NetCDF files and is the most common way in which NetCDF files are documented.  This utility evaluates a dataset's NCML based on its conformance to [http://www.unidata.ucar.edu/software/netcdf-java/formats/DataDiscoveryAttConvention.html Unidata Data Discovery Conventions], and using an Extensible Stylesheet Language Transformation (XSLT), a graphical report (rubric) of existing documentation is made.    Users can improve the quality of their metadata by using the rubric and following a [[Creating Good Documentation | spiral]] process for enhancing dataset documentation.  As the documentation is improved users will see an improvement in their rubric scores as well as in the quality of their ISO metadata.  All of the metadata outputs from the command line utility are available as an html report (see image at right).
+
+== THREDDS Server Extension ==
+[[Image:Threddsiso.png|thumb]]The THREDDS server extension library integrates these metadata tools directly into THREDDS as services.  Using the same XSLTs as the command line utility and leveraging THREDDS service oriented architecture, three new services are made available namely an NCML service, a metadata rubric service called UDDC, and an ISO service.  At right is an an image depicting the services available after the server extension library has been installed.
+
+== Instructions and Downloads ==
+Download a zip of the jar file here: https://geo-ide.noaa.gov/wiki/images/9/90/NcISO-2.3.zip
+
+Source code for the client application: https://github.com/NOAA-PMEL/uafnciso
+
+ncISO: A command-line utility for automating metadata analysis and ISO metadata generation for THREDDS Catalogs
+
+DESCRIPTION
+
+The ncISO Tool traverses THREDDS Catalogs, reads dataset documentation and translates that documentation into different views using Extensible Stylesheet Language Transformations (XSLT). Two stylesheets are currently supported:
+A graphical comparison (rubric) of existing documentation with the Unidata Data Discovery Conventions with guidance on using those conventions to facilitate data discovery; and
+Translation of discovery elements from NcML into ISO 19115.
+INSTRUCTIONS
+Download ncISO Version 2.3
+Extract the jar into a local directory.
+Open a shell window or command prompt from the directory that contains the extracted files.
+Enter the command java –jar ncISO.jar to see available ncISO arguments and descriptions of how to use them.
+Enter the ncISO command with appropriate arguments.
+Prior versions of ncISO are available.
+
+OPTIONS
+
+–Xms1024m and –Xmx1024m: Standard java elements for specifying the amount of memory to allocate to the ncISO utility. In this case 1024 megaBytes are specified for initial and maximum memory.
+
+–ts THREDDS_CATALOG_URL: specifies the URL of the THREDDS catalog to process.
+
+–num N: specifies the number of datasets to process per branch. Specifying a small number of datasets/branch, as in this case, results in a fast sample scan that is representative in THREDDS catalogs with generally homogeneous content in each branch. Specify a large number for a translation of all content.
+
+–depth 20: limits the crawlers descent into the catalog.
+
+–iso: signals to the crawler to generate ISO.
+
+–waf ROOT_WAF_FOLDER: signals the crawler to dump files to a flat WAF structure.
+
+–custom: signals to the crawler to translate the NCML using a custom stylesheet.
+
+–xslt: XSLT_FILENAME located in an xslt subfolder.
+
+EXAMPLES
+
+Crawl NOAA's NGDC THREDDS catalog and generate metadata:
+java -Xms1024m -Xmx1024m -jar ncISO-2.2.2.jar -ts http://www.ngdc.noaa.gov/thredds/catalog.xml -num 1 -depth 20 -iso true
+
+After the utility has completed running, a thredds directory will be created storing NCML, a metadata report and ISO xml for each NetCDF dataset that was located. In addition a thredds.json file is generated that allows a tree based display in your browser. In order to view these results in the browser copy the nciso.html, thredds.json and directory structure into a web accessible location. Now open nciso.html to visualize and access the results in your browser, for example: http://localhost/yourpath/nciso.html.
+
+== Questions and Answers==
+Many ncISO users come up with great questions about the way that attributes are being translated from CF/netCDF/THREDDDS to ISO. Many times multiple users have the same question.
+===Translation vs. Conversion===
+There is a blurry line between the processes of translation and conversion. Translation involves restructuring but not changing content. Conversion implies restructuring and changing the content. There are several places in ncISO where translation/conversion questions come up. Perhaps the most clear example is the contributor_role attribute. This is a character string that contains an uncontrolled value for the role that a person or organization played in relation to the dataset. Semantically this attribute is clearly equivalent to the gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode in ISO. The ISO role, however, is controlled by a [[ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode: | codelist]]. In cases like this, ncISO plays a translation role rather than a conversion role. The value in the contributor_role attribute is copied into the gmd:CI_RoleCode without validating that it is actually in the appropriate codelist. Creating a general crosswalk between the code list and all possible contributor_roles is beyond the scope of ncISO.
+
+===ncISO units - UDUnits or UCUM?===
+There are a number of places in scientific data files where units are required and there are many sources for information about and standard unit definitions/conversions. The convention in netCDF is to use the [http://www.unidata.ucar.edu/software/udunits/ Unidata UDUNITS Tools]. In order to reference these units from an ISO file we need a URI (or a persistent URL) that might look like: 
+&lt;gmd:units xlink:href=&quot;http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/uom/gmxUom.xml#deg&quot;/&gt; which is a reference to the unit degree in the sample ISO units catalog. UDUNITS does not currently provide such a resource although there is some [http://www.unidata.ucar.edu//software/udunits/udunits-2-units.html XML] available.
+
+The [[http://unitsofmeasure.org/ Unified Code for Units of Measure]] provides a possible alternative to UDUNITS that is broader in scope. The [[http://marinemetadata.org/references/ucumunits Marine Metadata Interoperability Project]] has some discussion of this catalog. There is an [[http://aurora.regenstrief.org/~ucum/ucum-essence.xml XML]] representation of UCUM, but it is not a catalog with elements that can be referenced.
+
+[[http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP]] provides a service for translating between UDUNITS and UCUM.
+
+===Keyword Delimiters and Vocabularies===
+The [http://www.unidata.ucar.edu/software/netcdf-java/formats/DataDiscoveryAttConvention.html ACDD] definition of the keywords attribute specifies that it is a comma-delimited list. Early versions of ncISO were treating this as a space-delimited list. This was corrected in Version 2.21. If the keyword list includes commas or the string '&amp;gt;' the translation assumes that it is a comma separated list. If not, it assumes that the list is space-delimited.
+
+There is currently no attempt made to estimate the keyword vocabulary from the form of the keywords, e.g if the keywords contain '-' they are CF parameter names, if they contain &gt; they are GCMD keywords. 
+
+===XML ids===
+There are some elements in the ISO metadata, primarily gml:TimePeriod, that ''require'' an id attribute. These attributes need to be unique in the output file. The most straightforward mechanism for creating these is to use the xsl:generate-id() function that generates an id that depends on the position in the source file. This approach leads to ids that look like: &lt;gml:TimePeriod gml:id=&quot;d1e108&quot;&gt; and are unique in the output file unless the same input element is used more than once.
+
+===Dimension Information===
+Information about dimensions can be spread all over a netCDF file. The names and lengths are defined in dimension tags (&lt;dimension name=&quot;lat&quot; length=&quot;1&quot;/&gt;), the units are defined in variables with the same name as the dimension (&lt;attribute name=&quot;units&quot; value=&quot;degrees_north&quot;/&gt;), and the minima and maxima can be inferred from the data using CF, or they can be in the THREDDS catalog, or they can be in global attributes. Pulling this information together in XSLT (the translation tool used in ncISO) can be a challenge. Treatment of dimensions was improved significantly in NcISO 2.0 by adding the capability to identify dimension variables. This was done using the following XSLT:
+&lt;pre&gt;
+  &lt;xsl:variable name=&quot;longitudeVariableName&quot; select=&quot;//nc:variable[nc:attribute[@name='units' and @value='degrees_east']]/@name&quot;/&gt;
+  &lt;xsl:variable name=&quot;latitudeVariableName&quot; select=&quot;//nc:variable[nc:attribute[@name='units' and @value='degrees_north']]/@name&quot;/&gt;
+  &lt;xsl:variable name=&quot;verticalVariableName&quot; select=&quot;//nc:variable[nc:attribute[@name='positive' and (@value='up' or @value='down')]]/@name&quot;/&gt;
+  &lt;xsl:variable name=&quot;timeVariableName&quot; select=&quot;//nc:variable[nc:attribute[@name='standard_name' and lower-case(@value)='time']]/@name&quot;/&gt;
+&lt;/pre&gt;
+*The longitude/latitude variables have an attribute named units and a value of degrees_east/degrees_north.
+*The vertical variable has an attribute named positive with a value of up or down and
+*The temporal variable has an attribute named standard_name and a value of time.
+
+If funny things are happening with dimensions in you ISO XML it is likely to be related to incorrectly identifying these variables!
+
+[[Category:Metadata Tools]]</text>
+      <sha1>5jy81cmj7fdt31417oh6cp5zomk4atq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>File:EnterpriseMetadataArchitecture.png</title>
+    <ns>6</ns>
+    <id>1875</id>
+    <revision>
+      <id>4854</id>
+      <parentid>4853</parentid>
+      <timestamp>2010-08-20T23:20:28Z</timestamp>
+      <contributor>
+        <username>Haber</username>
+        <id>2</id>
+      </contributor>
+      <comment>uploaded a new version of &quot;[[Image:EnterpriseMetadataArchitecture.png]]&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="28">[[Category: Metadata Tools]]</text>
+      <sha1>cm11dgdpime7dt405qyzn81c0y8mmq0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Enterprise Documentation Architecture</title>
+    <ns>0</ns>
+    <id>1876</id>
+    <revision>
+      <id>10740</id>
+      <parentid>10739</parentid>
+      <timestamp>2014-04-30T19:54:50Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <comment>/* Reports and Dashboards */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="5493">[[Image:EnterpriseMetadataArchitecture.png|thumb|Enterprise Documentation Architecture]]
+The Enterprise Data Systems Group at NOAA's National Geophysical Data Center has developed a system for managing and sharing documentation in multiple dialects. This Figure shows the major components in the system and how they are connected. The components are described below.&lt;hr/&gt;
+=Desktop XML Editor=
+Full-featured desktop XML editors include many capabilities that are required for creating and editing modern metadata records. They are schema aware, so they know the valid choices at any place in the file, can offer tool tips from the schema while editing and can validate records using schema and schematron. They can translate records using XSLT which is very helpful for evaluating completeness and checking content as it is edited. They can operate on single files or directories full of files and can do batch search and replace. They can compare multiple files, connect to web services for content and to subversion for version control. In short, they offer a comprehensive collection of features that is very difficult to match in a web environment. Two great choices are [http://www.oxygenxml.com/ Oxygen] and [http://www.altova.com/xmlspy.html XMLSpy] both have free 30-day trials. There are certainly others.
+
+=Subversion=
+[http://subversion.apache.org/ Subversion] is an open-source version control system supported as part of the Apache Software Foundation. It keeps track of versions of metadata records. The system includes two Subversion Repositories: the Workspace Repository is used internally by metadata editors and is accessed through various clients. Records in the Workspace Repository can contain references to external content ([http://www.w3.org/TR/xlink/ XLinks]). The Published Subversion Repository provides version control of published records which generally do not include external references.
+
+Records can be checked in to the Workspace Repository using a variety of free clients or command line tools. The external connection to the Workspace Repository shown in the Figure is not functional at present.
+
+=Component Library=
+Most large documentation collections include content that is repeated in many records. It is useful to manage only one copy of these components that can be used in many records. At NGDC, that is done in the Component Library in the [[Docucomp Component Management System]].
+
+The Component Library is accessible using a [http://en.wikipedia.org/wiki/Representational_State_Transfer REST] interface that supports Creation, Read, Update, and Delete operations for components. This interface is available to web and desktop clients.
+
+=Web Accessible Folders=
+[[Web Accessible Folder | Web Accessible Folders (WAFs)]] are directories that are accessible using an http or web interface. They are used throughout the system to hold collections of related records and to make those records available to the outside world. Many of the tools developed to manage and transform records operate on directories or Web Accessible Folders.
+
+The system includes several WAFs. The UWAF is created and maintained by regularly scheduled checkouts of records from the Workspace Subversion Repository. These records can contain references to external content ([http://www.w3.org/TR/xlink/ XLinks]). They are referred to as unresolved records and they are in the Unresolved WAF (UWAF).
+
+The ISO WAF contains published records in various ISO dialects (19115-2, 19119, ...). It is created and maintained by regularly scheduled checkouts of records from the UWAF Subversion Repository. The ISO WAF is the source for sharing content in a variety of views.
+
+The system Figure shows an FGDC WAFgenerated as an output from the ISO WAF. The FGDC WAF serves as a source of records for external systems that are still based on the FGDC metadata standard. The FGDC WAF is seen as a temporary element that will be phased out as the external systems transition to the ISO Standards.
+
+=Reports and Dashboards=
+Each ISO WAF has reports documenting the quality and completeness of the set of records. 
+* [[ISO Metadata Reports]]
+
+'''Graphical dashboards''' &lt;br/&gt;
+WAF Table Of Contents pages now have charts and reports showing various metrics, including quantity and completeness of metadata. For example:
+* http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/DEM/iso/
+or for Groups of WAFs:
+* http://www.ngdc.noaa.gov/docucomp/transform?view=WafGroupsTable&amp;title=Docucomp+Collection+Groups+Report
+
+=Views=
+The system includes views created from the unprocessed WAFs and processed WAFs using [http://en.wikipedia.org/wiki/XSLT XSLTs]. These views support a variety of documentation dialects and applications. They are described in more detail on the [[Web Accessible Folder]] page.
+
+=Resolving XLinks in Metadata Records=
+Most large documentation collections include [[ISO Components | components]] that are repeated in multiple records. Connections between components and composite records can be maintained using ([http://www.w3.org/TR/xlink/ XLinks]) that need to be resolved in order to produce a complete metadata record. This is accomplished using the &quot;[[Metadata Resolver Quick Start Guide |Resolver]]&quot; as part of the automated update of the ISO WAF from the UWAF.
+
+=Portal Support=
+The system supports portals and metadata access systems that can harvest metadata records directly from the ISO WAF. 
+
+[[Category: Metadata Tools]]
+
+{{template:DocucompFooter}}</text>
+      <sha1>5gbxat3c50rdccsosxr2jtlyvw3fr77</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Enterprise Documentation Glossary</title>
+    <ns>0</ns>
+    <id>1877</id>
+    <revision>
+      <id>17696</id>
+      <parentid>17685</parentid>
+      <timestamp>2019-11-25T20:58:06Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3493">&lt;table align=&quot;top&quot; cellspacing=&quot;10&quot;&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Component:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;A snippet of XML describing a specific piece of metadata content such as information about people, websites, documents, archives, instruments, etc. A component is the finest level (atomic level) of granularity in a metadata record. Components are stored once and used as often as required within a metadata collection. Components provide significant storage and editing advantages over the traditional metadata management method of storing each record as a whole.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Composite:&lt;/b&gt;&lt;td&gt;A complete metadata record. A composite record can reference multiple [[ISO_Components|components]].&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Hierarchy Levels:&lt;/b&gt;&lt;td&gt;The ISO metadata standard enables metadata to be organized into a hierarchy structure similar to a computer directory structure. This is useful for representing relationships between metadata records.  For example, networks contain platforms which contain instruments/sensors that collect observations which become datasets.  Each of these levels are distinct from one another, yet they are related via organizational or physical structure.  ISO provides mechanisms for documenting these relationships through hierarchy levels.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Record Set:&lt;/b&gt;&lt;td&gt;A collection of related metadata records generally organized by program.  Record Sets are maintained in the EDMS subversion repository and NGDC [[Web Accessible Folder|Web Accessible Folders]].&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Resolver:&lt;/b&gt;&lt;td&gt;A tool for resolving [[ISO_Components|components]] to form a metadata record without references to remote content.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Resolved Record:&lt;/b&gt;&lt;td valign=&quot;top&quot;&gt;A metadata record that includes no links to external content, no references. The output of the resolver.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Unresolved Record:&lt;/b&gt;&lt;td&gt;A metadata record that contains references (usually [http://www.w3.org/TR/xlink/ xlinks]) to [[ISO_Components|components]], instead of the component content. The component content is added during the resolving process.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;Unresolving:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;The process of creating an unresolved record from a composite record.  This process includes removing component XML pieces from the composite record and replacing the pieces with xlink references to the component database.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;UUID:&lt;/b&gt;&lt;td&gt;A Universally Unique Identifier.  UUIDs are used to reference components in an unresolved metadata record. The UUID tells the resolver what component to resolve.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;b&gt;XLink:&lt;/b&gt;&lt;td&gt;An XML specification that provides methods for creating internal and external links within an XML document. [http://www.w3.org/TR/xlink/ Xlinks] can be used in metadata recoreds to reference specific [[ISO_Components|components]] using its unique identifier (UUID). During the resolve process the referenced component is retrieved and embedded in the record.  The xlink href attribute is used to reference a component and the xlink title attribute is used to provide a human understandable name for the component. Xlink references in docucomp take the following form: &lt;pre&gt;xlink:href=&quot;http://www.ngdc.noaa.gov/docucomp/iso/bb3bd940-5d51-11df-bb8e-0002a5d5c51b&quot; xlink:title=&quot;EPSG Resgistry&quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+[[Category:ISO 19115]]
+[[Category: Metadata Tools]]
+[[Category:Collection Manager]]</text>
+      <sha1>nvjlzqajmznkse30ebf7r7vy9wptdm8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Docucomp Component Management System</title>
+    <ns>0</ns>
+    <id>1886</id>
+    <revision>
+      <id>17714</id>
+      <parentid>17699</parentid>
+      <timestamp>2019-11-25T21:12:31Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="6768">[[Category:Metadata Tools]]
+[[Category:Collection Manager]]
+ 
+http://www.ngdc.noaa.gov/docucomp
+
+Docucomp is a web application for managing XML [[ISO_Components|components]] as part of an [[Enterprise Documentation Architecture]]. A component is a snippet of XML describing a specific piece of metadata content. They are stored in a database and managed with [http://en.wikipedia.org/wiki/Representational_State_Transfer REST] web services.  The REST services support insert, search, update and delete operations.  
+
+== Presentations ==
+[[File:DocucompHowTo.ppt]]
+
+==Insert Component==
+The component library is a collection of components stored in the Docucomp database. Below are the steps for adding a component to the Library. 
+
+1. Prepare component for insert:  
+:a. Make sure component is [http://en.wikipedia.org/wiki/XML#Well-formedness_and_error-handling well-formed] XML.
+:b. Make sure component includes a [[ISO Namespaces |namespace]] declaration for each namespace used in the component. 
+:c. Components are identified using [http://en.wikipedia.org/wiki/Universally_Unique_Identifier UUIDs]. If you wish to assign a UUID to the component, it must be included in the root element of the component. If it is not included, Docucomp will assign a UUID constructed by the underlying database system..
+ 
+The UUID and namespace declarations are added to the root element of the component. Components do not require a header XML declaration. A sample component is shown below. Note how the gmd and gco namespaces and a UUID are declared in the root element of the component.  
+
+&lt;pre&gt;
+&lt;gmd:CI_OnlineResource 
+  xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; 
+  xmlns:gco=&quot;http://www.isotc211.org/2005/gco&quot; 
+  uuid=&quot;e38c87c0-4404-11df-9d12-0002a5d5c51b&quot;&gt;
+  &lt;gmd:linkage&gt;
+    &lt;gmd:URL&gt;http://uhslc.soest.hawaii.edu/uhslc/jasl.html&lt;/gmd:URL&gt;
+  &lt;/gmd:linkage&gt;
+  &lt;gmd:name&gt;
+    &lt;gco:CharacterString&gt;University of Hawaii Sea Level Center JASL Home Page&lt;/gco:CharacterString&gt;
+  &lt;/gmd:name&gt;
+  &lt;gmd:function&gt;
+    &lt;gmd:CI_OnLineFunctionCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode&quot; codeListValue=&quot;information&quot;&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;
+  &lt;/gmd:function&gt;
+&lt;/gmd:CI_OnlineResource&gt;
+&lt;/pre&gt;
+
+2. Insert Process: To insert a component into the database go to [http://www.ngdc.noaa.gov/docucomp Docucomp] web interface.
+[[Image:create1.jpg|thumb|Create component page]] 
+:a. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.
+:b. Click on the 'Insert New Component' link (upper right)
+:c. Paste the component into the 'XML' text box and click the 'create' button. 
+:d. If Potential Duplicate components are presented, see the [[Docucomp_Component_Management_System#Duplicate_Components|Duplicate Components]] section below.
+:e. When the component is successfully inserted, the 'Show Component' page will be returned.
+::- During the submission process the service ensures the component is well formed and contains the required namespaces.   
+::- If the component is not well formed or is missing required namespaces an error message will be returned.  The user must fix the error before resubmitting.  
+:e. To fix an xml error, click the back button to return to the XML display page. Edit the component XML and recreate the component. An xml editor such as 'Oxygen' or 'Xml Spy' is ideal for finding and fixing XML errors.
+
+==Duplicate Components==
+
+During the component insert process Docucomp checks to see if the component being inserted already exists in the database.  If similar components are found they are presented to the user as 'Potential Duplicates'.  The user then has the option to 'Keep' or 'Cancel' the operation.  If the component is determined to be unique the user should click the 'Keep' button to complete the insert process.  If a duplicate component is discovered the user should click the 'Cancel' button to cancel the insert process, and continue to use the found, pre existing component. This service is a warning system to prevent duplicate components from being inserted into the Docucomp database.
+
+==Search for Components==
+[[Image:search1.jpg|thumb|Search for component]]
+Docucomp search options include; component xml (Content), component identifier (UUID), [[ISO_Components|Component Type]] and [[Enterprise_Documentation_Glossary|Record Set]]. 
+These search options are accessible from the Docucomp Home Page.&lt;br/&gt;
+1. Enter a string in the 'Content' search field to return components containing the search string&lt;br/&gt;
+2. Enter a component UUID in the 'UUID' search field to return a component by UUID&lt;br/&gt; 
+3. Select a Record Set from the drop down menu to filter your search results by the selected Record Set&lt;br/&gt;
+4. Select a Component Type from the drop down menu to filter your search results by the selected Component Type
+5. Your search results will be presented in the 'Component List' page, where searches can be modifed or filtered.
+
+==Update a Component==
+[[Image:edit1.jpg|thumb|Edit component page]]
+Docucomp users must be registered in order to perform edit operations.&lt;br/&gt;
+1. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.&lt;br/&gt;
+2. [[Docucomp_Component_Management_System#Search_for_Components|Search]] for the component you want to update.&lt;br/&gt;
+3. Search results will be displayed in the 'Component List' page.  Click the 'Edit' button to the left of the component you want to edit to access the 'Edit Component' page.&lt;br/&gt;
+4. Edit the 'XML' field and click the Update button.&lt;br/&gt; 
+5. Upon update the edit results are presented in the 'Show Component' page.&lt;br/&gt;
+Note:  Component xml must be well formed and contain the required namespaces in order to update. If a component fails to update make sure the XML is well formed and contains all the required namespaces.  An XML editor such 'Oxygen' or 'Xml Spy' is ideal for this purpose.
+
+==Delete a Component==
+Docucomp users must be registered in order to delete a component&lt;br/&gt;
+1. Log In to Docucomp.  If you are not a Docucomp user, visit the [[Docucomp_Account_Setup_Page|Docucomp Account Setup Page]] for 'New User' Instructions.&lt;br/&gt;
+2. [[Docucomp_Component_Management_System#Search_for_Components|Search]] for the component you want to update.&lt;br/&gt;
+3. Search results will be displayed in the 'Component List' page.  Click the 'Edit' button to the left of the component you want to edit to access the 'Edit Component' page.&lt;br/&gt;
+4. Click the 'Delete' button from the 'Edit Component' page to remove the component from the Docucomp database.
+
+
+{{template:DocucompFooter}}
+[[Category:Collection Manager]]</text>
+      <sha1>0shmlnwv0q30z9h4g35301unc1b4i6u</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>GeoPortal OpenDAP</title>
+    <ns>0</ns>
+    <id>1976</id>
+    <revision>
+      <id>17719</id>
+      <parentid>6167</parentid>
+      <timestamp>2019-11-25T21:25:19Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="5762">= Steps to configure OpenDAP Viewer linkage in Geoportal =
+
+== Instructions ==
+
+1.       Open the sample thredds ncISO metadata document, and identify the xpath that contains the nc.html URL.  In the sample document at http://www.ngdc.noaa.gov/thredds/iso/relief/ETOPO1/thredds/ETOPO1_Ice_g_gmt4.nc, the xpath is /gmi:MI_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL.
+ 
+2.       On the server hosting the Geoportal, navigate to the geoportal web application directory and open the  \\geoportal\WEB-INF\classes\gpt\metadata\iso\apiso-indexables.xml file
+ 
+3.       In that apiso-indexables.xml file, find the property-meaning for ‘website.url’ (Note: descriptions for property meanings that trigger specific Geoportal functionality are described in the help topic “Details of Lucene Indexing in the Geoportal” at http://sourceforge.net/apps/mediawiki/geoportal/index.php?title=Details_of_Lucene_Indexing_in_the_Geoportal . This help topic is important reading in general for customizing how elements are indexed for Geoportal search.):
+
+&lt;pre&gt;  &lt;property meaning=&quot;apiso:Contact.URL&quot; xpath=&quot;/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage/gmd:URL&quot;/&gt;
+&lt;/pre&gt;
+ 
+4.       This website.url is actually mapped to the ‘apiso:Contact.URL’ property meaning.  This is an index associated with the point of contact website.  Below this property meaning, you are going to add a different website.url parameter, and use a different property meaning name.  Below the property meaning for the apiso:Contact.URL, add a property meaning for website.url that maps to your xpath from step #1 above. This section should now look like the following:
+ 
+&lt;pre&gt;
+  &lt;!-- website.url --&gt;
+  &lt;property meaning=&quot;apiso:Contact.URL&quot; xpath=&quot;/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact  /gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage/gmd:URL&quot;/&gt;
+ 
+  &lt;!-- website.url for nc.html added 02/25/2011 --&gt;
+  &lt;property meaning=&quot;website.url&quot; xpath=&quot;/gmi:MI_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL&quot;/&gt;
+&lt;/pre&gt;
+ 
+5.       You will need to add the gmi namespace to this apiso-indexables.xml file. At the top of the file, add the gmi namespace, so it looks similar to the following:
+
+&lt;pre&gt;
+  &lt;!-- namespaces --&gt;
+  &lt;namespace prefix=&quot;gmd&quot; uri=&quot;http://www.isotc211.org/2005/gmd&quot;/&gt;
+  &lt;namespace prefix=&quot;gco&quot; uri=&quot;http://www.isotc211.org/2005/gco&quot;/&gt;
+  &lt;namespace prefix=&quot;gml&quot; uri=&quot;http://www.opengis.net/gml&quot;/&gt;
+  &lt;namespace prefix=&quot;srv&quot; uri=&quot;http://www.isotc211.org/2005/srv&quot;/&gt;
+  &lt;namespace prefix=&quot;gmi&quot; uri=&quot;http://www.isotc211.org/2005/gmi&quot;/&gt;
+&lt;/pre&gt;
+ 
+6.       Now, open your iso19115-2-definition.xml file from the \\geoportal\WEB-INF\classes\gpt\metadata\iso directory.  A little history here… this iso19115-2-definition.xml file was developed for Geoportal version 9.3.1 sp1, when we did not use the indexables.xml for mapping xpaths to indices. In that version, we put the property-meaning as an attribute value for each element in the definition.xml file.  Geoportal version 10 and Geoportal Server are backward compatible, meaning that the 9.3.1 sp1 iso19115-2-definition.xml file will still work, and attributes will be indexed. However, every element that you want indexed has to exist in that definition file. This is problematic. So, if we want to invoke the apiso-indexables.xml file instead of the old 9.3.1 sp1 method for indexing, we need to add a reference to that apiso-indexables.xml file  in the iso19115-2-definition.xml file.  To do this add the following line after the &lt;interrogation count=&quot;count(/gmi:MI_Metadata)&quot;/&gt; element:
+
+&lt;pre&gt;
+  &lt;!-- indexables --&gt;
+  &lt;indexables fileName=&quot;gpt/metadata/iso/apiso-indexables.xml&quot;/&gt;
+&lt;/pre&gt;
+ 
+7.       Verify that the path you specified in that indexables filename does map to the location of your apiso-indexables.xml file, and edit if necessary.
+
+ 
+8.       Now save the apiso-indexables.xml and the iso19115-2-definition.xml files.
+
+9.       Restart Tomcat. 
+
+10.   Login to the Geoportal, and publish your .nc XML record.
+
+11.   Approve the record to trigger indexing it.
+
+12.   Search for the record (a blank search will put the record on top).
+
+13.   You should have a “Website” link in the search result.  Note, you can change the name of the link to anything you want, as all text strings are in the \\geoportal\WEB-INF\classes\gpt\resources\gpt.properties file… perhaps, ‘Access Data’ is a more appropriate name for the nc.html case. This link should open your nc.html file.
+
+14.   You’ll also note that you no longer have a ‘zoom-to’ link in the search result. That is because the to pick up the iso19115-2-definition.xml file is now using the apiso-indexables.xml file for indexing, and none of the gmi metadata namespace mappings have been added to that file.  To index the abstract, bounding box, and other elements, you will need to add their xpaths to the requisite property-meanings in the apiso-indexables.xml file, using steps 1-4 above.  Note, when we finalize support for ISO 19115-2 in future versions of the Geoportal Server, this will not be necessary.  Right now we have to do it because the apiso-indexables.xml file was not written to accommodate xpaths with the gmi namespace.
+
+See more about [[ESRI Geoportal]]
+
+[[Category: Metadata Tools]]</text>
+      <sha1>gmzwna71am6gyrqnddpm41lrqote9yz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>How to Configure Automatic XML Options</title>
+    <ns>0</ns>
+    <id>2029</id>
+    <revision>
+      <id>6262</id>
+      <timestamp>2011-06-13T21:34:45Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with &quot;=== Configure Automatic XML Generation Options === # Options Tab &gt; Preferences &gt; Content Completion  # Check the following #* Add Element Content #* Add Optional Content #* Show ...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="401">=== Configure Automatic XML Generation Options ===
+# Options Tab &gt; Preferences &gt; Content Completion 
+# Check the following
+#* Add Element Content
+#* Add Optional Content
+#* Show all entities
+#* Insert the required attributes
+
+[[File:ContentCompletion.PNG|thumb|right]]
+
+[[Category: Metadata]]
+[[Category: Metadata Tools]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19139]]
+[[Category: ISO 19115]]</text>
+      <sha1>py22vqoxm1pmujs1iu0a0jg8fjsy8o6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>How to add template text</title>
+    <ns>0</ns>
+    <id>2030</id>
+    <revision>
+      <id>6265</id>
+      <timestamp>2011-06-13T21:36:41Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with &quot;=== How to add &quot;template&quot; text === Oxygen has a feature for adding template text that you need to include often in your xml files. I think this is useful for the quickly adding t...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="708">=== How to add &quot;template&quot; text ===
+Oxygen has a feature for adding template text that you need to include often in your xml files. I think this is useful for the quickly adding the codelist urls. 
+
+[[Image:CodeTemplate.jpg|200px|thumb|right|Template for Text]]
+
+You can manually enter the values or you can import an xml file that describes the values you want. After you have set your template values you can quickly add them as needed while you are editing a metadata record by selecting ''ctrl+shift+space'' and then select your value from the drop down menu that appears.
+
+[[Category: Metadata]]
+[[Category: Metadata Tools]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19139]]
+[[Category: ISO 19115]]</text>
+      <sha1>q2xh4jzm6z466106rh5c5xos6ngh490</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>How to Edit Multiple Files</title>
+    <ns>0</ns>
+    <id>2032</id>
+    <revision>
+      <id>6270</id>
+      <parentid>6269</parentid>
+      <timestamp>2011-06-13T21:38:35Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <comment>/* How to Edit Multiple Files */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1985">In this example, I am replacing the gmd:dateStamp/gco:Date value on 73 records. I only want to replace the gco:Date value for the metadata dateStamp (not any/all gco:Date tags) and the value is inconsistent across the records. To the right is a jpeg of the dialog box for editing multiple files in Oxygen. 
+[[Image:OxygenReplace.jpg|200px|thumb|right|Search and Replace]]
+
+* Make sure your xml file is 'indented and formatted', so that each xml tag is on it's own line
+# Select 'Find/Replace in Files' option in the 'Find' drop down menu
+# copy/paste the xml tag your are replacing
+#* e.g. &lt;gco:Date&gt;1982-01-01&lt;/gco:Date&gt;
+#* replace the content with regular expression and check the 'regular expression' box, this enables you to find these tags with any content
+#* e.g. &lt;gco:Date&gt;&lt;nowiki&gt;.*&lt;/nowiki&gt;&lt;/gco:Date&gt;
+#* ''[http://www.cs.tut.fi/~jkorpela/perl/regexp.html regular expressions in Perl]''
+# type in XPath in 'Restrict to Xpath' field
+#* e.g. gmi:MI_Metadata/gmd:dateStamp
+#* note: DO NOT include the tags you are editing
+#* you can get the xpath by right clicking on the desired tag in the editor and select 'Copy XPath' and then paste this into the field
+# set replacement value in 'Replace With' field
+#* e.g. &lt;gco:Date&gt;2010-01-20&lt;/gco:Date&gt;
+# select the 'Scope'
+#* I usually run this on 'Project files', but you can also run this on a desktop directory
+#* for testing I recommend run this first on one file ('selected project files')
+
+Some other things to note:
+* it's best to search w/o replacing first - to ensure that you don't override text you want to keep
+* there is also the option to make a backup copy
+* you can't undo the results
+* I don't think this will work on large chunks of xml, like replacing a complete citation - but not sure about that
+* For most updates, a simple search and replace of text will suffice!
+* Tested on v11.1
+[[Category: Metadata]]
+[[Category: Metadata Tools]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19139]]
+[[Category: ISO 19115]]</text>
+      <sha1>qun76n89avxj4z3pdt9yru5vl638ynh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>How to create sample XML</title>
+    <ns>0</ns>
+    <id>2034</id>
+    <revision>
+      <id>6946</id>
+      <parentid>6274</parentid>
+      <timestamp>2011-09-27T23:39:05Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="719">=== Creating a Sample XML File ===
+Here's a fast and easy way to create a sample XML file. It can be used as a reference when editing metadata.
+# From the Tools menu, select Generate Sample XML Files...
+# Click on the Load Settings button and open the above file.
+# Change the Output Folder to one on your desktop, click OK.
+* These are example settings, and trying out different ones might be necessary to accomplish your goal. 
+** For example, you could change the preferred number of repetitions to 2 so that every repeatable object in the standard is shown twice in your sample file.
+[[Category: Metadata]]
+[[Category: Metadata Tools]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19139]]
+[[Category: ISO 19115]]</text>
+      <sha1>ay8x0rxdusdm97t2uzfwcgg0v5o7idr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Maximize Your Space</title>
+    <ns>0</ns>
+    <id>2035</id>
+    <revision>
+      <id>6287</id>
+      <parentid>6286</parentid>
+      <timestamp>2011-06-13T22:45:08Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="386">The first time you open an XML file in Oxygen XML Editor - there will be a lot of floating windows that take up a lot of space. I recommend closing all extra windows so that you ONLY have what you need. 
+[[Image:MaximizeScreenSpace.png|thumb|top|right]]
+
+[[Category: Metadata]]
+[[Category: Metadata Tools]]
+[[Category: Oxygen XML Editor]]
+[[Category: ISO 19139]]
+[[Category: ISO 19115]]</text>
+      <sha1>9p4aizppofjo2nbw7dvnzh79sbbhbf3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Web Accessible Folder and DS Series</title>
+    <ns>0</ns>
+    <id>2083</id>
+    <revision>
+      <id>6561</id>
+      <parentid>6560</parentid>
+      <timestamp>2011-09-02T18:15:45Z</timestamp>
+      <contributor>
+        <username>Haber</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* Coalescing the DS_Series */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="8213">Everyone that uses computers is familiar with the idea of using directories or folders to organize information on their disks and in their email systems. This concept extends easily to the practice of using Web Accessible Folders (WAFs) for organizing and accessing metadata content. ISO 19115 also includes a mechanism for grouping related metadata content into collections called DS_Series. Each DS_Series includes two parts: a DS_DataSet that includes any number of MD/MI_Metadata entities and any number of seriesMetadata entities that include metadata that describes the whole collection. The MD/MI_Metadata entities are analogs of files and the seriesMetadata is similar to a readme file that describes the contents of directory.
+
+The obvious conceptual similarities between WAFs and DS_Series raises the obvious question of how bridges might be built to take advantage of these similarities. This document describes some first steps towards exploring these connections.
+
+=Directory Listing and DS_Series=
+[[File:metadataDirectory.PNG|thumb|Metadta Directory]]The first obvious step towards this connection is realizing the equivalence between a WAF and a DS_Dataset. A WAF is a dirfectory that contains a set of related metadata files. Many time these files contain a metadata “record” contained in a single MD/MI_Metadata entity. 
+This Figure shows a directory that includes roughly 300 metadata files for fish surveys conducted at sites across the Pacific Ocean using several techniques and at several times. The techniques shown in these files are “belt_transect” and “blt”. The locations and times are included in the file names after the techniques, e.g. “alamagan_2005” is a survey at Alamagan Island during 2005.
+
+A DS_Series can be constructed directly from those files using xlinks that provide URLs for full MI_Metadata entities:
+
+&lt;pre&gt;
+&lt;gmd:DS_Series&gt;
+    &lt;gmd:composedOf&gt;
+        &lt;gmd:DS_DataSet id=&quot;Collection&quot;&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_sarigan_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_stingray_shoals_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_supply_reef_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_swains_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tatsumi_reef_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tau_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tinian_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tutuila_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_uracus_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_wake_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_zealandia_bank_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_agrihan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_agrihan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_aguijan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_aguijan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_alamagan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_alamagan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_arakane_reef_2005.xml&quot;/&gt;
+        &lt;/gmd:DS_DataSet&gt;
+    &lt;/gmd:composedOf&gt;
+    &lt;gmd:seriesMetadata&gt;
+        &lt;gmi:MI_Metadata&gt;...&lt;/gmi:MI_Metadata&gt;
+    &lt;/gmd:seriesMetadata&gt;
+&lt;/gmd:DS_Series&gt;
+&lt;/pre&gt;
+
+When these xlinks are resolved to complete MI_Metadata objects, this block of xml will provide a full and valid version of the metadata that are included in these files. The seriesMetadata object at the bottom of the DS_Dataset describes the whole collection.
+=The createWAFSeries Stylesheet=
+[[File:CreateWAFSeries.PNG|thumb|Create WAF Series]]The previous example illustrates an approach that relies on the Web to resolve the content of the xlink:hrefs into complete MI_Metadata entities. A second approach is to use the standard tool for manipulating XML files: eXtensible Style Layer Transforms (XSLT’s). Applying these tools requires a stylesheet (generally referred to as an xsl), and a transform engine that can carry out the instructions included in the stylesheet. 
+
+The createWAFSeries stylesheet operates on a set of files in a directory like the one shown above. It requires two parameters: recordSetPath is the path to the WAF, and fileNamePattern is the pattern used to select files from the WAF. In the example shown below the fileNamePattern is ‘*_maui_*.xml’ and the recordSetPath is file:/C:/Documents%20and%20Settings/haber/My%20Documents/NOAA/Metadata/NMFS/CRED/rea/fish/iso/, the path to a directory on the machine where the processing is being done. This fileNamePattern selects all of the fish surveys done near Maui.
+Running the createWAFSeries transform inserts the contents of the selected files verbatim as members of a DS_Series in a file called DS_Series_Complete.xml. Note that these MI_Metadata entities have between 599 and 731 lines each.
+
+[[File:DS SeriesComplete.PNG|thumb|Complete WAF Series]]The seriesMetadata in this case is very simple, it contains only information about the files that were selected and the directory they were selected from:
+
+&lt;pre&gt;
+&lt;gmd:seriesMetadata&gt;
+   &lt;gmi:MI_Metadata&gt;
+      &lt;gmd:fileIdentifier&gt;
+         &lt;gco:CharacterString&gt;DS_Series for files=
+         'file:/C:/Documents%20and%20Settings/haber/My%20Documents/
+          NOAA/Metadata/NMFS/CRED/rea/fish/iso/*_maui*.xml'
+         &lt;/gco:CharacterString&gt;
+      &lt;/gmd:fileIdentifier&gt;
+      &lt;gmd:contact/&gt;
+      &lt;gmd:dateStamp/&gt;
+      &lt;gmd:identificationInfo/&gt;
+   &lt;/gmi:MI_Metadata&gt;
+&lt;/gmd:seriesMetadata&gt;
+&lt;/pre&gt;
+
+
+=Coalescing the DS_Series=
+[[File:CoalesceSeries.PNG|thumb|Coalesce Series]]As would be expected, the MI_Metadata entities included in DS_Series_Complete.xml have considerable overlap. XML provides a mechanism for reducing redundancy by including repeated content at one place in an XML file and referring to it from other locations rather than repeating it. For example, many of these metadata records share the same metadata contact:
+
+&lt;pre&gt;
+&lt;gmd:contact id=&quot;d1e19&quot;&gt;
+    &lt;gmd:CI_ResponsibleParty&gt;
+        &lt;gmd:organisationName&gt;
+            &lt;gco:CharacterString&gt;Coral Reef Ecosystem Division (CRED), Pacific Islands Fisheries Sciences
+            Center, NOAA National Marine Fisheries Service&lt;/gco:CharacterString&gt;
+        &lt;/gmd:organisationName&gt;
+        &lt;gmd:contactInfo&gt;
+        &lt;/gmd:contactInfo&gt;
+        &lt;gmd:role&gt;
+            &lt;gmd:CI_RoleCode
+            codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode
+            codeListValue=&quot;pointOfContact&quot;&gt;pointOfContact&lt;/gmd:CI_RoleCode&gt;
+        &lt;/gmd:role&gt;
+    &lt;/gmd:CI_ResponsibleParty&gt;
+&lt;/gmd:contact&gt;
+&lt;/pre&gt;
+
+The XML referencing capability allows this contact to be defined once and given a unique id (d1e19 in this case) and referenced from other locations in the file as
+
+&lt;gmd:contact xlink:href=&quot;#d1e19&quot;/&gt;.
+
+The stylesheet coalesceSeries.xsl identifies repeated entities of several types, transfers their content to the seriesMetadata entity, and replaces the original content with a reference to the content in the seriesMetadata. This process is illustrated below and is reflected in the sizes of the MI_Metadata entities in the original series (599-731 lines) vs. their sizes in the coalesced series (380-600 lines) and in the increase in zize of the seriesMetadata entity from 9 to 425 lines.
+
+[[Category:ISO 19115]] [[Category:Metadata Tools]]</text>
+      <sha1>8p0r33m1hutj3t0090cmd9lrmchv5py</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>ESRI Geoportal</title>
+    <ns>0</ns>
+    <id>2009</id>
+    <revision>
+      <id>17693</id>
+      <parentid>17691</parentid>
+      <timestamp>2019-11-25T20:54:45Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="18754">[[Category: Metadata Tools]]
+
+== Geoportal Instances ==
+* [http://data.nodc.noaa.gov/geoportal/ NODC]
+* [http://gis.ncdc.noaa.gov/geoportal NCDC]
+* [http://www.ngdc.noaa.gov/geoportal/ NGDC] 
+* [http://coris.noaa.gov/geoportal/ CoRIS]
+* [http://wwwdemo.ngdc.noaa.gov/iocmdemo/ Ocean &amp; Coastal Mapping (IOCM) Inventory (NGDC)] (demo)
+* [http://www.csc.noaa.gov/NOSDataExplorer/catalog/search/search.page NOS Data Explorer Geoportal] 
+* [http://www.csc.noaa.gov/secart Southeastern &amp; Caribbean Regional Data Explorer (SECART DE)]
+* [http://service.ncddc.noaa.gov/ecowatch-geoportal/catalog/search/search.page Gulf of Mexico EcoWatch Catalog (NCDDC)] 
+* [http://service.ncddc.noaa.gov/oer-geoportal/catalog/search/search.page Ocean Exploration &amp; Research (OER) Data Explorer (NCDDC)] (beta)
+
+== Indexes ==
+* http://www.ngdc.noaa.gov/geoportal/rest/index/stats
+* http://www.nodc.noaa.gov/geoportal/rest/index/stats
+* http://service.ncddc.noaa.gov/oer-geoportal/rest/index/stats
+* http://service.ncddc.noaa.gov/ecowatch-geoportal/rest/index/stats
+
+
+== NOAA Geoportal Collaborative Documentation ==
+=== Google Docs ===
+[https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AvllJ1rM2zkRdEZUaE5aWEgybmxZYzRUZXFOUDJ4NWc#gid=0 NOAA Geoportal Server Inventory Matrix on Google Docs]
+
+=== ISO 19115-2 support ===
+To configure GeoPortal to work with ncISO, you need to add ISO 19115-2 support.
+
+* Unzip the linked file http://www.ngdc.noaa.gov/eds/tds/downloads/NGDC_customizations.zip 
+* Review the files determine whether the customizations make sense for your geoportal instance!  These files contain new property meanings to allow common searching across FGDC and ISO metadata.  Custom displays to allow linkages from Geoportal search results to common THREDDS services and other NOAA viewers.
+* After your review copy the relevant files to your webapps\geoportal\ folder. 
+
+* You will need to restart the geoportal web application after adding/updating the files.
+* Currently GeoPortal can only support resolved ISO records (no xlinks) and not use nilReason xml attributes for mandatory fields (such as date).
+
+[[File:gptlinks.png|200px|thumb|right]]
+
+Image at right is an ISO-2 metadata record with custom links out to OGC Services and NOAA viewer apps.
+
+=== Steps to configure OpenDAP Viewer linkage in Geoportal  ===
+Note this customization and linkages to other THREDDS services and NOAA clients are now included in the NGDC_Customizations.zip file referenced above.
+
+[[GeoPortal_OpenDAP]]
+
+=== Working with custom locator services  ===
+
+Follow ESRI instructions on creating a locator service for ArcGIS Server:
+http://help.arcgis.com/en/arcgisserver/10.0/help/arcgis_server_dotnet_help/index.html#//009300000025000000.htm
+
+Once established you can update your gpt.xml file to point to the new service. See the interactiveMap element e.g.
+
+        locatorUrl=&quot;http://maps.ngdc.noaa.gov/rest/services/GptGaz/GeocodeServer&quot;
+        locatorSingleFieldParameter = &quot;PlaceName&quot;/&gt;
+
+The NGDC locator service contains world ocean and sea names as well as undersea features.
+
+=== Customizing browse catalog  ===
+You can modify the browse tree to display custom searches of your metadata.  In some cases, you may want to browse by Web Accessible Folder (WAF), below is an example of a tree node that displays all records in your WAF.
+
+		&lt;item&gt;
+			&lt;name resourceKey=&quot;catalog.search.filterContentTypes.org.ioos&quot;&gt;&lt;/name&gt;
+			&lt;query&gt;searchText=sys.siteuuid:&quot;{E4949969-468A-4B10-823D-9BF1BF0785B2}&quot;&lt;/query&gt;
+		&lt;/item&gt;
+
+Be sure to include your resource key text value in the gpt.properties file.
+
+=== Updating the CSW Response  ===
+Please be sure to update the metadata associated with the CSW GetCapabilities response.  
+
+Updates can be made to cswCapabilities.xml file.
+
+This file is located here:
+/geoportal/WEB-INF/classes/gpt/metadata/cswCapabilities.xml
+
+== GeoPortal REST Documentation ==
+
+=== Multibeam WAF ===
+Search within the multibeam WAF for records with start date 2009-02-01 to end date 2012-02-01 with JSON response:
+[http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=startDate%3A&amp;#91;1800-01-01%20TO%202012-02-01&amp;#93;%20AND%20endDate%3A&amp;#91;2009-02-01%20TO%202100-01-01&amp;#93;%20%20AND%20sys.siteuuid%3A%22{E4CE09E6-D441-4C94-BC34-33CB928F6794}%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson Multibeam Example1 Link] 
+
+Search within the multibeam WAF for keywords 'Elevation' with JSON response:
+[http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=keywords%3A%20Elevation%20AND%20sys.siteuuid%3A%22{E4CE09E6-D441-4C94-BC34-33CB928F6794}%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson Multibeam Example2 Link] 
+
+Search within the multibeam WAF for records within -82.692,32.6969,-67.2573,40.2692 with JSON response:
+[http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=sys.siteuuid%3A%22%7BE4CE09E6-D441-4C94-BC34-33CB928F6794%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-82.692,32.6969,-67.2573,40.2692&amp;maxSearchTimeMilliSec=10000&amp;f=pjson Multibeam Example3 Link] 
+
+
+=== IOOS WAFs  ===
+See GitHub Repository: https://github.com/ioos/registry/blob/master/uuid.csv &lt;br/&gt;
+'''Date Search Example:''' Search within the PacIOOS WAF for records with start date 2009-02-01 to end date 2012-02-01 with JSON response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=startDate%3A%5B1800-01-01%20TO%202012-02-01%5D%20AND%20endDate%3A%5B2009-02-01%20TO%202100-01-01%5D%20%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson PacIOOS DateSearchExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;searchText=startDate:[1800-01-01 TO 2012-02-01] AND endDate:[2009-02-01 TO 2100-01-01] AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=10&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=pjson 
+
+&lt;br&gt; '''Keyword Example:''' Search within the PacIOOS WAF for keywords 'sea_water_salinity' with JSON response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=keywords%3A%20sea_water_salinity%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson PacIOOS KeywordExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;searchText=keywords: sea_water_salinity AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=pjson 
+
+&lt;br&gt; '''Geographic Search Example:''' Search within the PacIOOS WAF for metadata records within -164.9246,16.6012,-149.4899,25.3959 with JSON response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson PacIOOS GeoExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;searchText=sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;spatialRel=esriSpatialRelWithin&amp;amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=pjson 
+
+&lt;br&gt; '''Multi-Criteria Example:''' Search within the PacIOOS WAF for metadata records with all of the above with JSON response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=keywords%3A%20sea_water_salinity%20AND%20endDate%3A%5B2009-02-01%20TO%202100-01-01%5D%20AND%20startDate%3A%5B1800-01-01%20TO%202012-02-01%5D%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson PacIOOS MultiExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;rids=local&amp;amp;searchText=keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;spatialRel=esriSpatialRelWithin&amp;amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=pjson 
+
+&lt;br&gt; '''WMS Example:''' Search within the PacIOOS WAF for metadata records with a WMS service endpoint with GeoRSS response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22%20AND%20wms.resource.url%3A*&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=georss PacIOOS WMSExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;rids=local&amp;amp;searchText=wms.resource.url:* AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=georss 
+
+&lt;br&gt; '''WCS Example:''' Search within the PacIOOS WAF for metadata records with a WCS service endpoint with html response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=wcs.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html PacIOOS WCSExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;rids=local&amp;amp;searchText=wcs.resource.url:* AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=html 
+
+&lt;br&gt; '''SOS Example:''' Search within the PacIOOS WAF for metadata records with an SOS service endpoint with html response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=sos.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html PacIOOS SOSExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;rids=local&amp;amp;searchText=sos.resource.url:* AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=html 
+
+&lt;br&gt; '''OPeNDAP Example:''' Search within the PacIOOS WAF for metadata records with a OpenDAP service endpoint with html response: [http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=odp.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html PacIOOS OPeNDAPExample Link] 
+
+''Decoded Parameters:'' rid=local&amp;amp;ridName=NOAA's Geophysical Data Center&amp;amp;rids=local&amp;amp;searchText=odp.resource.url:* AND sys.siteuuid:&quot;{68FF11D8-D66B-45EE-B33A-21919BB26421}&quot;&amp;amp;start=1&amp;amp;max=1000&amp;amp;orderBy=relevance&amp;amp;maxSearchTimeMilliSec=10000&amp;amp;f=html
+
+=== ESRI API Docs ===
+[https://sourceforge.net/apps/mediawiki/geoportal/index.php?title=REST_API_Syntax ESRI Restful Interface Documentation]
+
+== GeoPortal CSW Documentation ==
+
+=== NGDC CSW Service Endpoint ===
+http://www.ngdc.noaa.gov/geoportal/csw
+
+The examples below must be made as an XML POST request.
+
+
+=== PacIOOS WAF ===
+'''WMS Search Example:'''
+
+&lt;pre&gt;
+&lt;?xml version=&quot;1.0&quot;?&gt;	
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot; 
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt; 
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt; 
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*wms*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt; 
+  &lt;/ogc:Filter&gt; 
+&lt;/csw:Constraint&gt; 
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;
+&lt;/pre&gt;
+
+'''WCS Search Example:'''
+
+&lt;pre&gt;
+&lt;?xml version=&quot;1.0&quot;?&gt;	
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot; 
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt; 
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt; 
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*wcs*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt; 
+  &lt;/ogc:Filter&gt; 
+&lt;/csw:Constraint&gt; 
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;
+&lt;/pre&gt;
+
+'''OPeNDAP Search Example:'''
+
+&lt;pre&gt;
+&lt;?xml version=&quot;1.0&quot;?&gt;	
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt; 
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt; 
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*opendap*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt; 
+  &lt;/ogc:Filter&gt; 
+&lt;/csw:Constraint&gt; 
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;
+&lt;/pre&gt;
+
+'''SOS Search Example:'''
+
+&lt;pre&gt;
+&lt;?xml version=&quot;1.0&quot;?&gt;	
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt; 
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt; 
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*sos*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt; 
+  &lt;/ogc:Filter&gt; 
+&lt;/csw:Constraint&gt; 
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;
+&lt;/pre&gt;
+
+=== ISO Date Modified Search ===
+&lt;pre&gt;
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot; startPosition=&quot;1&quot; maxRecords=&quot;11&quot; outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot;&gt; &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; &gt; 
+&lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt; 
+&lt;csw:Constraint version=&quot;1.1.0&quot;&gt; 
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt; 
+      &lt;ogc:PropertyName&gt;apiso:modified&lt;/ogc:PropertyName&gt; &lt;ogc:Literal&gt;2011-09-30&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt; 
+      &lt;ogc:PropertyIsLessThan&gt; 
+      &lt;ogc:PropertyName&gt;apiso:modified&lt;/ogc:PropertyName&gt; &lt;ogc:Literal&gt;2011-10-02&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt; 
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt; 
+&lt;/csw:Query&gt; 
+&lt;/csw:GetRecords&gt; 
+&lt;/pre&gt;
+
+=== ESRI CSW Docs ===
+http://sourceforge.net/apps/mediawiki/geoportal/index.php?title=Catalog_Service
+
+== GeoPortal OpenSearch Documentation ==
+[[File:gptopensearch.png|200px|thumb|right]]
+Geoportal's OpenSearch API support allows you to use your browser to search for metadata.  To use OpenSearch from the browser go to a Geoportal website and then from the search option drop down choose add Geoportal Search (see image at right).  Next enter a simple text search phrase or leverage lucene search syntax such as where sys.siteuuid refers to IOOS WAF:
+keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:&quot;{E4949969-468A-4B10-823D-9BF1BF0785B2}&quot;
+
+
+
+[[File:gptopensearchrestapi.png|200px|thumb|right]]
+OpenSearch can also be used by client applications using the REST API.  For example, the same search above can be submitted as (see image at right):
+
+'''Example:''' 
+Search within the IOOS WAF with HTML response:
+
+[http://www.ngdc.noaa.gov/geoportal/rest/find/document?searchText=keywords%3A+sea_water_salinity+AND+sys.siteuuid%3A%22{E4949969-468A-4B10-823D-9BF1BF0785B2}%22&amp;start=&amp;max=&amp;bbox=&amp;f=html IOOS Example]
+
+''Decoded OpenSearch REST Example:'' 
+/geoportal/rest/find/document?searchText=keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:&quot;{E4949969-468A-4B10-823D-9BF1BF0785B2}&quot;&amp;start=&amp;max=&amp;bbox=&amp;f=html
+
+== NOAA Geoportal Presentations ==
+
+* [[NODC Geoportal Presentation]]
+* NODC Geoportal Updates 2012-02-01: [[File:NODC_gpt_DMIT_20120201.pdf]]</text>
+      <sha1>gk7binktlba3iazby1kvizct9g8ybad</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Catalogs</title>
+    <ns>0</ns>
+    <id>2244</id>
+    <revision>
+      <id>7813</id>
+      <parentid>7454</parentid>
+      <timestamp>2012-01-30T20:52:11Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="363">[[Category: Metadata Tools]]
+= Information relating to data catalogs at NOAA  =
+
+*PDF version of slides illustrating some aspects of creating a master catalog of NOAA data. Slides were shown at DAARWG 2011-11-15 and at Geoportal technical meeting 2011-12-07. [[Media:ProposedCatalogApproach_2011-11-15.pdf]] 
+*Material regarding ESRI Geoportal: [[ESRI Geoportal]]</text>
+      <sha1>nw4uq5ew17nxlidswgjfargeswgx06m</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Setup Accounts for Collection Manager Tools</title>
+    <ns>0</ns>
+    <id>2300</id>
+    <revision>
+      <id>17690</id>
+      <parentid>17586</parentid>
+      <timestamp>2019-11-25T20:53:28Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1034">==Registration Instructions==
+Send email to [mailto:ncei.collection-manager.support@noaa.gov ncei.collection-manager.support@noaa.gov] with the following details
+# Subject: 'New User for [CoMET, Docucomp, and/or Metaserver] for &lt;i&gt;your name&lt;/i&gt;'
+# Your contact information 
+# Your associated program or agency
+# Intended usage 
+
+Once you are set up, your login name will be your email (without the @noaa.gov) and the password will be the same as your email password.
+
+=== CoMET===
+* Create, edit and import ISO records 
+* Fill out a Data Stewardship Maturity Questionnaire (DSMQ)
+
+=== Docucomp ===
+* insert or edit components
+
+
+=== Metaserver ===
+* Assess individual records with Record Services
+* Process WAFs with Collection Services
+
+
+'''Note: Login is currently limited to users with a NOAA email, but external access is planned for a future release cycle. Send in a request if you'd like to be informed when this capability is available.'''
+
+[[Category:Metadata Tools]]
+[[Category:Collection Manager]]
+{{template:DocucompFooter}}</text>
+      <sha1>j7w1zfgq2s2r6t1ztle8qy58f56a40j</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Enterprise Metadata Tools</title>
+    <ns>0</ns>
+    <id>2376</id>
+    <revision>
+      <id>9982</id>
+      <parentid>8853</parentid>
+      <timestamp>2013-04-23T23:31:24Z</timestamp>
+      <contributor>
+        <username>Fozzard</username>
+        <id>99</id>
+      </contributor>
+      <comment>/* Collection Services */ add Waf On Demand Processing</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3977">This is a collection of tools that operate on XML files stored in a filesystem or web accessible directory.  The tools include  translation, validation, reporting and resolving services.  Record Service tools operate on a single XML record, whereas Collection Service tools operate on a collection of records contained in a web accessible folder (WAF).
+
+==Record Services==
+These services operate on an XML record accessible from a local filesystem or URL.  To access an XML record, select the File radio button and browse to the record on your local filesystem, or select the Url radio button and paste a URL into URL text field. To apply a service select a Service Type and click the submit button.
+
+{|class=&quot;wikitable&quot; width=&quot;100%&quot; align=&quot;top&quot;
+|Well Formed
+|This service checks the structure of the XML to ensure it is well formed.  Well formed XML is required for XML processors and browsers to read the file.  An error will be returned if the XML is not well formed.
+|-
+|Resolve XML
+|This service resolves an unprocessed XML record. An unprocessed XML record may contain xlink references to XML content stored at an external location. The resolve process replaces the xlink references in the unprocessed record with the external XML content being references by the xlink.  The externally referenced content is called a [https://geo-ide.noaa.gov/wiki/index.php?title=ISO_Components component].     
+|-
+|Link Check
+|This service checks URL references within ISO CI_OnlineResource elements to ensure the links are valid.  If a link is broken an error message is returned.
+|-
+|ISO Validate
+|This service validates ISO metadata records with the ISO 19139 schema.  This validation ensures the XML record complies with the structure and rules defined in the ISO 19139 schema.
+|-
+|Schematron
+|This service validates ISO metadata records with Schematron. Schematron provides validation checks not possible with XML schema. Schematron enables user defined business rules and custom error messages to be incorporated into the validation. Some examples include checking for empty elements and verifying codelist values are valid.  
+|-
+|NCML to ISO
+|This service transforms NCML XML to ISO 19115-2 XML 
+|-
+|NCML to Rubric
+|This service generates a documentation completeness report (Rubric) from NCML XML.  The report is based on a series of [http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals documentation spirals] designed to assist metadata authors with creating and improving scientific documentation. 
+|-
+|ISO to Rubric
+|This service generates a documentation completeness report (Rubric) from ISO XML.  The report is based on a series of [http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals documentation spirals] designed to assist metadata authors with creating and improving scientific documentation.   
+|-
+|NCML to ISO
+|This service transforms NCML XML to ISO XML.
+|-
+|FGDC to ISO
+|This service transforms FGDC XML to ISO XML.
+|}
+
+==Collection Services==
+
+These services operate on a web accessible folder (WAF) containing a collection of ISO metadata records. To access a metadata collection paste the URL of the WAF into the URL text field. To apply a service select a Service Type and click the submit button.
+
+{|class=&quot;wikitable&quot; width=&quot;100%&quot; align=&quot;top&quot;
+|Display Collection
+|This service displays the contents of a web accessible folder
+|-
+|ISO Validate
+|This service validates all records in a WAF with XML schema for ISO-19139.  Records that are not valid will be referenced in an error message.    
+|-
+|Full Report
+|This service runs the following diagnostic reports on the WAF collection; ISO Validation, Unique UUIDs, Bad XLINKS, Malformed XML URL's, and Recursive XLINKS
+|-
+|ISO Rubric Report
+|This service generates an ISO rubric scores completeness report.  
+|-
+|Waf On Demand Processing
+|Resolve xlinked components, generate rubric and diagnostic reports and Table of Contents for a public WAF.  
+|}
+
+
+[[category:Metadata Tools]]</text>
+      <sha1>4ih2bst2kbaepwtbwgptuv1li1qog5t</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Collection Manager</title>
+    <ns>0</ns>
+    <id>3150</id>
+    <revision>
+      <id>17488</id>
+      <parentid>17486</parentid>
+      <timestamp>2019-07-12T19:13:32Z</timestamp>
+      <contributor>
+        <username>Fozzard</username>
+        <id>99</id>
+      </contributor>
+      <minor/>
+      <comment>Move WAFs to top</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="959">=== Collection Metadata Editing Tool (CoMET) ===
+https://data.noaa.gov/comet
+* Import, Create, Edit, Validate and Publish ISO metadata records
+* Fill out a Data Stewardship Maturity Questionnaire (DSMQ)
+
+=== Web Accessible Folders (WAFs) ===
+https://data.noaa.gov/waf/
+* Folders with ISO XML metadata records, quality and completeness reports, and various human- and machine-readable views of the metadata
+
+=== Docucomp ===
+https://data.noaa.gov/docucomp
+* Insert or edit &quot;components&quot;, i.e. snippets of XML that are meant to be referenced by an xlink in your metadata. E.g. a &lt;gmd:contact&gt; element
+
+=== Metaserver ===
+https://data.noaa.gov/metaserver
+* Assessing individual records with RecordServices
+* Process records with WAF On Demand
+* View Record Sources and Collection Sources
+* Metrics DB for quality/completeness
+
+=== Metaview ===
+https://data.noaa.gov/metaview
+* Transform Engine - no login
+
+
+[[Category:Metadata Tools]]
+
+{{template:DocucompFooter}}</text>
+      <sha1>oswzue3ati0z5sav9luk5gacipzhdnb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>About Collection Metadata Editing Tool</title>
+    <ns>0</ns>
+    <id>2862</id>
+    <revision>
+      <id>17669</id>
+      <parentid>17566</parentid>
+      <timestamp>2019-11-25T18:55:59Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="23859">[[Category:Collection Manager]]
+
+This guidance is for v1.0.0 of the Collection Metadata Enterprise Tool (CoMET). CoMET is a metadata editor built using the CEdit web application.  
+== Logging In ==
+To log on, a user points a web browser to https://data.noaa.gov/comet.
+
+The login page asks for username and password. Use your NOAA email username and password. If your email address is john.doe@noaa.gov, the username would be john.doe.
+
+For those who were not previously registered with CEdit, only READ-ONLY access is granted and the following message is shown:
+[[File: CoMET_1_ReadOnlyAccess.png|center|frame|alt=Message text for users with READ-ONLY access|Figure 1.1  The above message is shown when a user logins with READ-ONLY access.]]
+If you need to edit records in CoMET, please send an email as described in the above message.
+
+Once logged in, click the “View Forms” button to start working with metadata records. The web application will display the Form List page. Look for a selector with “-- FormManagers --” text and select “CoMET” from the list.
+[[File: CoMET_1_FormManagerSelection.png|center|frame|alt=Form Manager Selector|Figure 1.2 The dropdown menu for selecting a form manager]]
+First 10 records (that are managed by CoMET) will be listed. Now you are ready to work with metadata.
+
+== Creating Metadata ==
+=== Importing Existing Metadata ===
+Users with metadata editing access can import existing metadata records external to CoMET. Two types of metadata records can be imported. They are ISO 19115-2 and NCML metadata in XML file format. With “CoMET” selected as described at the end of Section 1, locate and click the “Import New Form” button on top right corner:
+[[File: CoMET_2_ImportNewFormButton.png|center|frame|alt=The Import New Form button|Figure 2.1 The Import New Form button.]]
+
+The web application will present an import screen:
+[[File: CoMET_2_UploadContents.png|center|frame|alt=The Import user interface|Figure 2.2 The Import user interface. The user uploads a file or provides a URL.]]
+
+There are two options to specify where the record for import is located. Use the upload function if the record is on your computer disk. If the record is available from a web server, a ftp server, etc., use the input field for a URL. If an upload file and a URL are provided, the application will use the URL only.
+
+==== Importing Metadata in ISO ====
+CoMET stores a metadata record in a standards-neutral format that is compatible with the ISO 19115-2 format. In order to import an ISO record, a format converter needs to be selected. Select the “convert-iso19115-2-to-comet” view. When the converter is selected, a description text will appear below the selector:
+[[File: CoMET_2_ImportViews.png|center|frame|alt=Selection of an import view|Figure 2.3 Selection of an import view. The example in the above shows an ISO record is to be imported.]]
+
+Click the “Save Import” button. The web application will apply the format converter and convert the ISO record into the standards-neutral format. If the conversion is completed without an error, the “Form Content: Create” page will be shown. The screen capture below shows a Digital Elevation Model record:
+[[File: CoMET_2_CreateFormContent.png|center|frame||alt=Example view of creating a new form content|Figure 2.4 The Form Content Create page. The above example shows creating a Digital Elevation Model record.]]
+
+Enter the title of the record to be imported to the “Description” field. If none is entered, the default title of “-Enter Description Here-” will be used instead.
+
+Input fields are organized by tabs. When CoMET opens a record, the “Identification” tab is shown by default. Explore all tabs and edit the record as necessary. Almost all features described in Section 5 for “Updating Metadata” are applicable here. Keyword autocompletion and component selection might prove useful. If everything looks good, click the “Create” button. The program will check if all mandatory input fields are populated. If one or more required input fields are empty or they are not in an expected format, a popup dialog will appear as shown in Figure 2.4a:
+[[File: CoMET_2_InputValidationErrorPopupDialog.png|center|frame||alt=Example popup dialog showing input field errors|Figure 2.4a The Input Validation Error Popup Dialog.]]
+
+The popup dialog provides two buttons, namely, the Cancel button and the OK button. If the Cancel button is clicked, the program will go back to the edit mode so that the user could fix the issues. However, if the OK button is clicked, the program will ignore the input validation errors and will create a record. Then a list of metadata records will be shown.
+
+==== Importing Metadata in NCML ====
+Importing an NCML record is not much different from bringing in an ISO. However, it involves one more step. It is necessary to transform an NCML into ISO. The resulting ISO record is imported as described in the previous subsection. Read next paragraph on how to “daisy-chain” converters.
+
+Choose a file to upload or enter a URL. Select the “convert-ncml-to-iso19115-2” view that turns an NCML record into ISO. To add a second transform (or view), click the “Add Import View.” A selector will be added. Now select the “convert-iso19115-2-to-comet” view. The screen should look like:
+[[File: CoMET_2_DaisyChainingImportViews.png|center|frame|alt=Daisy-chaining import views to import an NCML record|Figure 2.5 Connecting two views to import an NCML record. Note that the first view transforms an NCML record into ISO and the second ISO to the internal storage format of CoMET.]]
+
+The appearance order of the import views is important as they are applied in the same order. If the order of the converters are inadvertently switched, the “convert-iso19115-2-to-comet” view is listed above the “convert-ncml-to-iso19115-2” view, an error will likely occur or the Create page will not properly prefill input fields.
+
+Once both conversions are applied, the “Form Content: Create” page will be presented. As described in Subsection 2.1.1, enter a proper record title to the “Description” field, review the record by navigating various tabs, and click the “Create” button. A record will be created and the “Form Content: List” page will be shown.
+
+=== Bulk Import Using RESTful Web API ===
+CoMET provides a number of REST Web API endpoints. For details, see a separate document entitled “CoMET RESTful API” available at https://docs.google.com/document/d/1ejIiZ5Dj8A0p820wmuU9a2eFZoFSWc1nnFIFw8u6ZY8. (The API document requires NOAA login.)
+
+
+For bulk import, the “import metadata API” at the /cedit/metadata/CoMET endpoint is used. There are many different ways of calling a RESTful endpoint. Here, we assume that users are using a Linux computer and they are using bash shell scripts and the curl command.
+
+
+Since the “import metadata API” requires user authentication, a shell script for user authentication comes first. Let’s name it to “auth.sh.” The authentication script will ask username and password and it will call the login API. If authentication succeeds, it will create a“cookies.txt” file that can be used for subsequent API calls. The cookie file contains a session information. The session expires after inactivity of 30 minutes. With an expired session, API calls will fail. In such case, it is necessary to delete the cookie file and start over.
+&lt;pre&gt;
+#!/bin/bash
+
+export COMET_URL=&quot;https://data.noaa.gov/cedit&quot;
+
+if [ ! -r cookies.txt ]; then
+    echo -n &quot;Enter username: &quot;
+    read USERNAME
+
+    echo -n &quot;Enter password for $USERNAME: &quot;
+    read -s PASSWORD
+    echo &quot;&quot;
+
+    CREDENTIALS=&quot;username=$USERNAME&amp;password=$PASSWORD&quot;
+    curl --data &quot;$CREDENTIALS&quot; -k &quot;$COMET_URL/login&quot; --cookie-jar cookies.txt
+    echo &quot;&quot;
+fi
+&lt;/pre&gt;
+
+Below is the “import.sh” script that imports an ISO record:
+&lt;pre&gt;
+#!/bin/bash
+
+source auth.sh
+
+IMPORT_FILE=&quot;$1&quot;
+IMPORT_TITLE=&quot;$2&quot;
+
+curl --cookie cookies.txt \
+    -X &quot;POST&quot; \
+    -H &quot;Content-Type: application/xml&quot; \
+    --data-binary @&quot;$IMPORT_FILE&quot; \
+    &quot;$COMET_URL/metadata/CoMET?description=$IMPORT_TITLE&amp;transform=convert-iso19115-2-to-comet&amp;format=xml&quot;
+&lt;/pre&gt;
+
+The script takes two arguments, the name of an ISO metadata file and its title. Both arguments needs to be URL encoded. For example, to import a file named “a.xml” with title “TEST TITLE”, one would run:
+&lt;pre&gt;
+$ ./import.sh a.xml “TEST%20TITLE”
+&lt;/pre&gt;
+
+The script may be modified to process many files using a loop.
+
+=== Copying Existing Metadata ===
+If a new record to be created is similar to an existing one, making a few changes to a copy would be efficient. The “Form List” page shows ten records at a time. Each record has three buttons, namely, “View”, “Edit”, and “Copy:”
+[[File: CoMET_2_ViewEditCopyButtons.png|center|frame|alt=The View, Edit, and Copy buttons appearing on a list of form contents|Figure 2.6 The View, Edit, and Copy buttons shown for each record on the Form List page.]]
+
+Click the “Copy” button. The application will show the “Form Content: Create” page with a copy of the existing record. Make necessary changes and enter the record title to the Description field. Click the “Create” button. A new record will be created and the “Form Content: List” page will be shown.
+
+== Viewing Metadata ==
+On the “Form List” page, each metadata record is shown with three action buttons. Click the “View” button for the record of interest:
+[[File: CoMET_2_ViewEditCopyButtons.png|center|frame|alt=The View, Edit, and Copy buttons|Figure 3.1 The View, Edit, and Copy buttons. They appear on each line for a record in the Form List page. The image here is the same as Figure 2.6 and it is repeated for convenience.]]
+
+The application will show a “View” page that looks like:
+[[File: CoMET_3_ShowRecord.png|center|frame|alt=The View page of an example record|Figure 3.2 The screen capture shows an example record. The title, dates, version, etc. are shown. The XML content of the record is displayed when the &quot;show/hide xml&quot; button is clicked.]]
+
+Notice a long button with the “View As Other Format…” label. Click it. It will expand to look:
+[[File: CoMET_3_InitialViewAs.png|center|frame|alt=The View As Other Format Panel|Figure 3.3 The View As Other Format panel. Up to three export views can be connected. No export view is selected in the example above.]]
+
+It is ready to view the record in ISO, Landing Page, etc. Proceed to Subsection 3.1 or 3.2.
+
+=== Viewing as ISO XML ===
+From the “View As Other Format…” panel, locate the selector with “-- Views --.” Using the selector, choose the “convert-comet-to-iso19115-2” option. When the option is selected, a descriptive text appears below the selector:
+[[File: CoMET_3_ViewAsISO.png|center|frame|alt=This example shows how to export a record to an ISO format|Figure 3.4 The View As Other Format panel with a selection. The example above shows that a record will be exported in the ISO format.]]
+
+With the converter selected, click the “View As” button. The web browser will show the record in the ISO XML format. To go back to the previous page, use the “go back” button on your web browser.
+
+=== Viewing as Landing Page HTML ===
+To check how the landing page would look from a CoMET record, two export views are required. As described in Section 3.1, first select the “convert-comet-to-iso19115-2” view. The view is used to transform a CoMET record to ISO. From the “View As Other Format…” panel, click the “Add Export View” button. It will show a second view selector below the first one. Choose the “convert-iso19115-2-to-landingPage” view. It would look like:
+[[File: CoMET_3_ViewAsLandingPage.png|center|frame|alt=The View As Other Format Panel with two export views selected|Figure 3.5 Two export views are selected in the above. The record will be transformed to ISO and the resulting ISO record will be turned into a landing page.]]
+
+Click the “View As” button. The application will perform two transforms and will present a landing page in HTML. To go back from the landing page, use the “go back” button on your web browser.
+
+== Validating Metadata ==
+=== ISO Validation ===
+With CEdit, a metadata record can be validated using the XML Schema Definition (XSD) schema. Validation is available on the record “View” page. From the “Form Content: List” page, click the “View” button associated with the record of interest. The record “View” page appears as described in Section 3. At the bottom of the page, locate the “ISO Validate” button and click it. When a validation run finishes, the “Validate” page is shown. If the record is compliant with the ISO XSD schema and thus no issue is found, the “Validation Result:” field display “true:”
+[[File: CoMET_4_IsoValidationResults.png|center|frame|alt=Result of an ISO validation run|Figure 4.1 The result of an ISO validation test on a record. The example record shows no validation error and it is fully compliant with ISO.]]
+
+However, if the record is not compliant with ISO, error messages are shown with line numbers:
+[[File: CoMET_4_ISOValidationErrorMessages.png|center|frame|alt=Result of an ISO validation of a non-compliant record|Figure 4.2 Error messages are listed when an ISO validation run fails. Line numbers and error messages are listed.]]
+
+An error message line is a link and it is clickable. Click a message line. The metadata record in the ISO format will be shown under the “XML” field:
+[[File: CoMET_4_ISOValidationErrorMessagesLinked.png|center|frame|alt=When an error message is clicked, the corresponding part in the ISO record is highlighted|Figure 4.3 Line 68 is highlighted with a dashed rectangle. When an error message listed next to the Validation Summary and below, the corresponding line is highlighted on the XML view.]]
+
+The screenshot in the above is taken after clicking the the first error message on line 68. Notice that line 68 on the panel showing the ISO record is highlighted with dashed border. Try to click another error message. The panel will scroll automatically to show the corresponding line if the line is outside the panel view. To go back to the record “View” page, click the “View” button at the bottom:
+[[File: CoMET_4_ViewButton.png|center|frame|alt=The View button|Figure 4.4 The View button.]]
+
+=== NOAA Rubric V2 Analysis ===
+Rubric V2 analysis is a tool to see if a record is adherent to NOAA metadata best practices. Like ISO validation, Rubric V2 analysis is launched from the record “View” page. From the “View” page, click the “ISO Rubric V2” button. Once the analysis finishes, the web browser shows the overall completeness score as well as scores for each category. To go back to the record “View” page, use the “go back” button on the web browser.
+
+== Updating Metadata ==
+A metadata record is opened for updating by clicking an “Edit” button:
+[[File: CoMET_5_EditButton.png]]
+or
+[[File: CoMET_5_SmallerEditButton.png]]
+
+There are a few pages that contains an “Edit” button. The “Form Content: List” page is the easiest place to find one. Find the record to be updated by using the “Search content” input field or by using the page navigation bar appearing at the end of the record list. Click the “Edit” button associated with the record.
+
+As mentioned in an earlier Section, input fields are organized by tabs. When CoMET opens a record, the “Identification” tab is shown by default. Make necessary changes across all tabs. Once editing is completed, click the “Save” or “Commit” button appearing top right corner or near the bottom (but above the footer):
+[[File: CoMET_5_SaveCommitButtons.png|center|frame|alt=The Save and Commit Buttons|Figure 5.1 The Save and Commit buttons. See text for the difference between the two buttons.]]
+
+Both buttons would save the record. The difference is that, when a record is committed, a dialogue appears to collect “Reason for Change.” The Reason for Change is saved along with the record and a flag indicating this particular version is committed.
+
+=== Keyword Autocompletion ===
+Keywords are listed under the “Keywords” tab. To help users to easily enter keywords, CoMET provides the keyword autocompletion feature. The GCMD keywords are provided by default. The keyword input field uses light blue for its background color when the autocompletion is enabled. When the autocompletion is not supported for a vocabulary, the background color changes to white. The screenshot below shows a keyword input field with autocompletion enabled. Note that the background color of the input field is light blue:
+[[File: CoMET_5_KeywordAutocompletion.png|center|frame|alt=Keyword entry with autocompletion|Figure 5.2 An input field for entering a keyword. The background color of the input field is light blue, indicating autocompletion is enabled.]]
+
+Let’s say we want to enter the “NITRATE PARTICLES” keyword. Type “NIT” and pause for a few seconds. CoMET searches keywords within the given vocabulary and displays first 20 keywords containing “NIT.” Continue typing so that the input field contains “NITRATE.” There are only four keywords containing the word:
+[[File: CoMET_5_KeywordAutocompletionExample.png|center|frame|alt=Autocompletion feature showing keywords containing search terms that the user entered|Figure 5.3 When the user enters one or more search terms, the autocompletion feature shows keywords containing the search terms.]]
+
+At this point, you can place your mouse cursor over the “NITRATE PARTICLES” option and click it. Or add another word to the input field to narrow the search. The input field shows the selected keyword:
+[[File: CoMET_5_KeywordAutocompletionDone.png|center|frame|alt=An input field for keyword entry after a keyword is selected|Figure 5.4 When a keyword is selected from a dropdown menu returned by the autocompletion feature, the keyword is entered to the input field and the dropdown menu disappears.]]
+
+=== Using DocuComp Components ===
+Component selection works much like the keyword autocompletion described in Subsection 5.1. In CoMET, there are many clickable links starting with “+ Add External Reference to .…” One example is where responsible party information is entered. There are three links below:
+[[File: CoMET_5_AddLinks.png|center|frame|alt=Three links to add a responsible party section, a component via external reference, and a nil reason|Figure 5.5 Three possible ways of documenting a responsible party.]] 
+
+The second one is used to enter a DocuComp component. Click the link. It adds a component lookup UI:
+[[File: CoMET_5_ComponentAutocompletion.png|center|frame|alt=An input field for entering a component|Figure 5.6 An input field for entering a reference to a component. Autocompletion is enabled.]] 
+
+Search is done by using the brief column of DocuComp. Enter any combination of words appearing in the brief of a component you want to use. An example search with “bob” responded with a dropdown:
+[[File: CoMET_5_ComponentAutocompletionExample.png|center|frame|alt=A dropdown menu containing matches to search terms is shown|Figure 5.7 When one or more search terms are entered, the autocompletion feature makes a query to an external database and shows matches on a dropdown menu.]] 
+
+When an entity from the dropdown is selected, the component lookup UI displays its title and URL:
+[[File: CoMET_5_ComponentAutocompletionDone.png|center|frame|alt=Three links to add a responsible party section, a component via external reference, and a nil reason|Figure 5.8 When a component is selected from a dropdown menu shown by the autocompletion feature, reference to the selected component is automatically entered.]]
+
+=== Specifying a “Nil Reason” ===
+ISO metadata format allows to specify a reason when the value of a field is empty. The specification is done by using the “gco:nilReason” attribute. CoMET provides a mechanism to enter a nil reason. For example, let’s say the contact information of a responsible party is not provided because it is withheld (by user request, for example). An empty box for entering a Responsible Party looks like:
+[[File: CoMET_5_NilReasonEnabled.png|center|frame|alt=Editing a Responsible Party with Nil Reason specifier enabled|Figure 5.9 A blank section for editing a responsible party. Each input field shown here has a clickable icon to specify a nil reason.]]
+
+At the bottom of the box, there is the “+ Add Reason for Nil Contact Information” link. Click the link. It adds a box within the Responsible Party:
+[[File: CoMET_5_NilReasonSelector.png|center|frame|alt=Nil reason selector|Figure 5.10 The nil reason selector. The dropdown contains a list of predefined values for a nil reason.]]
+
+The selector lists all options supported by ISO. Use the selector to choose the “withheld” option for this example.
+
+== Undoing a Change Using Revision History ==
+Whenever a record is updated from the “Edit” page by using the “Save” or “Commit” button, the prior version is saved using the revision history feature. In fact, CoMET keeps all updates. It is possible to recall an earlier version and to make it the current version. For example, let’s say a record has 10 versions. The version numbers would be 1 through 10 with 10 being the lastest. If version 9 is recalled, a copy of version 9 becomes version 11. Next time when the record is edited, version 11 will be used.
+
+In order to view the revision history of a record, go to the “View” page of a record. This is done from the “Form Content: List” page by clicking the “View” button for the record of interest.
+[[File: CoMET_6_RecordWithRevisions.png|center|frame|alt=An example record with multiple revisions|Figure 6.1 An example record with three revisions.]]
+
+Note, in the above example, the version field shows “3” which is the current version. From this we know there are three versions of the record. Locate the “Revision History” button at the bottom and click it. Now the “Revision History” page is shown:
+[[File: CoMET_6_RevisionHistory.png|center|frame|alt=Revision history of a record|Figure 6.2 The Revision History page of a record. The example shown in the above has three versions. Note that the Revert buttons appear for all versions except for the latest.]]
+
+Version 1, 2, and 3 are shown with their respective timestamps. Under the “Action” column, the “Revert” button appear per version except for the latest one. Click the “Revert” button of the version to be restored. The application asks for a confirmation to avoid an accidental click. If you confirm the revert, a copy of the selected version is made and the copy becomes the most recent version. The web browser refreshes and shows the record “View” page.
+
+== Deleting Metadata ==
+A metadata record may be deleted from CEdit. A “Delete” button is available from several pages. The obvious choice is the record “View” page. To get there, click the “View” button for the record of interest from the “Form Content: List” page. A “Delete” button looks as follows:
+[[File: CoMET_7_DeleteButton.png|center|frame|alt=The Delete Button|Figure 7.1 The Delete button.]]
+
+When the “Delete” button is clicked, the application asks for a confirmation with “Cancel” or “OK”:
+[[File: CoMET_7_DeleteConfirmation.png|center|frame|alt=The Delete Button|Figure 7.2 The Delete Confirmation dialog.]]
+
+The confirmation dialogue is to prevent a record from being accidentally deleted. When the “OK” button is clicked, the record is deleted and the web browser changes to the “Form Content: List” page.
+
+[[Category:Metadata Tools]]</text>
+      <sha1>6rcvly60fft10vkcdn24gye1n38evm2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Metadata Catalogs</title>
+    <ns>0</ns>
+    <id>2542</id>
+    <revision>
+      <id>17925</id>
+      <parentid>10725</parentid>
+      <timestamp>2019-11-26T20:07:00Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3053">[[Category:Metadata Tools]]
+'''''Examples of Geospatial Metadata Catalogs'''''&lt;br&gt; 
+
+&lt;u&gt;Data.gov Data Catalog&lt;/u&gt; &amp;nbsp;&lt;u&gt;&lt;/u&gt;Note that only datasets marked as &quot;Federal&quot; are subject to&amp;nbsp;the U.S. Federal Government and Data.gov's Data Policy. Non-federal participants&amp;nbsp;(e.g., universities, organizations, and tribal, state, and local governments) maintain&amp;nbsp;their own data policies. It is important that users understand the data policies of&amp;nbsp;participating entities in order to best utilize these datasets. A description of this catalog&amp;nbsp;and information about the datasets presented and associated metrics is available here: [http://www.data.gov/newcataloginfo http://www.data.gov/newcataloginfo]. [http://catalog.data.gov//dataset catalog.data.gov//dataset] 
+
+&lt;u&gt;Geo.data.gov&lt;/u&gt; &amp;nbsp;&lt;u&gt;&lt;/u&gt;Since 2005 Geodata.gov has provided the largest web-based access&amp;nbsp;at a single-point for maps, government data, and geospatial services—the Geospatial&amp;nbsp;One Stop. Data.gov, launched in May 2009, provides access to over 400,000 (primarily&amp;nbsp;geospatial) datasets from 172 agencies across the Federal government. On October 1, 2011, Geodata.gov moved to Geo.Data.gov, within the Data.gov infrastructure.  http://geo.data.gov/geoportal/. This is now the data.gov catalog (see Data.gov Data Catalog above).
+
+&lt;u&gt;Data.gov Ocean Communiti&lt;/u&gt;&lt;u&gt;es&lt;/u&gt; &amp;nbsp;&lt;u&gt;&lt;/u&gt;This is the National Ocean Council’s portal for data,&amp;nbsp;information, and tools to support people engaged in planning for the future of the&amp;nbsp;ocean, our coasts, and the Great Lakes. Their goal is to be a one-stop hub to support&amp;nbsp;planners and to provide useful information to the public. Please visit their Forums to&amp;nbsp;tell them what would make the site most useful to you as they expand their content. [http://www.data.gov/communities/ocean http://www.data.gov/communities/ocean] 
+
+&lt;u&gt;USGS Core Science Metadata&lt;/u&gt; &amp;nbsp;The Core Science Metadata Clearinghouse contains&amp;nbsp;standardized metadata descriptions of earth science data sets and information&amp;nbsp;products. Metadata descriptions follow the Federal Geographic Data Committee's&amp;nbsp;(FGDC's) Content Standards for Digital Geospatial Metadata. The Clearinghouse is also&amp;nbsp;a participating node on the FGDC's National Spatial Data Clearinghouse (NSDI) and the&amp;nbsp;Geo.Data.gov. The Core Science Metadata Clearinghouse is comprised of contributions&amp;nbsp;from many different organizations to help scientists find a broad spectrum of data.&amp;nbsp;Metadata in the Clearinghouse describes both geospatial and data that is not as&amp;nbsp;explicitly geospatial, such as results of laboratory research. http://www.usgs.gov/core_science_systems/csas/metadata/discover_data.html 
+
+&lt;u&gt;EPA Geospatial Gateway&lt;/u&gt; &amp;nbsp;&lt;u&gt;&lt;/u&gt;EPA's Environmental Dataset Gateway (EDG) can be used to&amp;nbsp;find and access EPA's environmental resources.&amp;nbsp; https://edg.epa.gov/metadata/catalog/main/home.page 
+
+'''NOAA Geoportals''' 
+
+NOAA has several Geoportal Instances. See the [[ESRI Geoportal]] page in this wiki for details.</text>
+      <sha1>iy9a9hhvs0v7fn281g54p7lhg320bpa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Metadata Schemas</title>
+    <ns>0</ns>
+    <id>1870</id>
+    <revision>
+      <id>17926</id>
+      <parentid>9378</parentid>
+      <timestamp>2019-11-26T20:11:36Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="518">[http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd ISO 19139 Schema] (XSDs for 19115, 19115-2 and 19110)&lt;br/&gt;
+[http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch ISO Schematron] (SCH for validation of conditional elements, codelists and non-html characters in 19139)&lt;br/&gt;
+[http://www.ngdc.noaa.gov/metadata/published/xsd/ngdcSchema/schema.xsd FGDC Schema] (XSDs for CSDGM and CSDGM Extensions for Remote Sensing, ISO extensions and ESRI extensions)&lt;br/&gt;
+
+[[Category: Metadata Tools]]</text>
+      <sha1>nlbpcrji6br86gxtq9l02r0g1gazxar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>OneStop Project</title>
+    <ns>0</ns>
+    <id>3062</id>
+    <revision>
+      <id>17948</id>
+      <parentid>17612</parentid>
+      <timestamp>2019-11-26T20:46:17Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3273">[[Category: Metadata Tools]]
+=Background=
+
+In response to the President’s Open Government Initiative and related policies, NOAA has committed to providing improved public access to all of its environmental information in order to enable research and commercial innovation through ease of data discovery and use. This project supports NOAA's efforts by leveraging existing NOAA catalog and access technologies to develop an improved &quot;one stop shop&quot;, referred to as NOAA OneStop, that will provide improved discovery, access, and visualization services for the highest quality data that NOAA has to offer. The initial capability will focus on a set of selected high-priority datasets from NESDIS and other program data meeting OneStop standards. OneStop will also leverage, when possible, datasets improved by the Big Earth Data Initiative (BEDI) and cloud-enabled by the NOAA Big Data Partnerships (BDP), but is not reliant on those separate efforts for success. Unlike previous efforts to develop a single portal for NOAA data, this project will focus not just on the user interface but also on the underlying standards-based data infrastructure that enables interoperability and discoverability. This project will build on existing access technologies, and web services while also infusing specific innovations. An important goal of this project is to develop and document best practices for data formats and metadata content so that the various component web services are able to search, discover and display the data and metadata with a high degree of quality, consistency, and visual appeal. The user interface can then be built to take advantage of the high quality and consistent information presented via the web services in order to provide a seamless, smooth, and tailored user experience.
+
+[[File:OSEDMWiki1.PNG|center|500px|thumb|Figure 1 - OneStop homepage, note the user can search by free-text or by clicking one of the dataset themes.]]
+&lt;p&gt;
+
+[[File:OSEDMWiki2.PNG|center|600px|thumb|Figure 2 - Representative image of search results displaying browse graphic thumbnails of each dataset.]]
+
+
+=Metadata and Data Readiness Guidance=
+
+==Purpose==
+The purpose of this guidance is to define a system of OneStop readiness criteria that data managers and providers can use to increase the discoverability, accessibility, and understanding of the data and metadata in the NOAA OneStop portal. These improvements will also provide a richer user experience that leverages all of OneStop’s advanced capabilities.
+
+==Scope==
+This guidance applies initially to all of NCEI’s data holdings and any data manager or provider can utilize it to improve their data and metadata. In the future, the scope will expand to include all of NOAA’s data.
+
+==Download the Guidance==
+
+NOAA OneStop Data and Metadata Improvement Tiers: A Comprehensive Guide for Data Managers
+Published by the OneStop Metadata Team
+2018-09-06; [v2.0]
+
+[[File:OSEDMWiki5.PNG|center|500px|thumb|Figure 3 - NOAA OneStop Data and Metadata Improvement Guidance.]]
+
+
+
+Download: 
+[https://geo-ide.noaa.gov/wiki/index.php?title=File:ReadinessGuidance.pdf Readiness Guidance]
+
+=Timeline and Major Milestones=
+
+
+[[File:OSEDMWiki4.PNG|center|800px|thumb|Figure 4 - OneStop timeline from kickoff to closeout.]]</text>
+      <sha1>cqypg04i9mxnmzgt1tg6tnxn01hgiy3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:DocucompFooter</title>
+    <ns>10</ns>
+    <id>2531</id>
+    <revision>
+      <id>17481</id>
+      <parentid>17479</parentid>
+      <timestamp>2019-07-12T19:02:24Z</timestamp>
+      <contributor>
+        <username>Amilan</username>
+        <id>5</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="119">&lt;hr/&gt;&lt;hr/&gt;
+* Contact: [mailto:ncei.collection-manager.support@noaa.gov Support Email] 
+
+[[Category:Collection Manager]]</text>
+      <sha1>8er2zzkqacijfm3t6bk3x9ghm6c0w4k</sha1>
+    </revision>
+  </page>
+</mediawiki>

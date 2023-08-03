@@ -1,0 +1,155 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p>date <em>(choose one)</em> * <a href="/Date" title="wikilink">Date</a></p>
+<ul>
+<li><a href="/DateTime" title="wikilink">DateTime</a>
+</td></li>
+</ul>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>The publication, creation and revision dates associated with the cited resource. If the publication or creation date is “unknown” or “inapplicable” then use the gco:nilReason attribute instead of gco:Date. Whenever possible, also include both creation date and revision date.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#CI_DateTypeCode" title="wikilink">dateType</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Publication date identifies when the resource was issued and made publicly available. Creation date identifies when the resource was created or first date of data collection. Revision date identifies when the resource was changed.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M</p>
+</th>
+<th>
+<p>C</p>
+</th>
+<th>
+<p>R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="2">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>date</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<td rowspan="2">
+<p>Same requirements as ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateType</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="2">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>date</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td>
+</td>
+<td align="center">
+</td>
+<p>&lt;td rowspan="2+&gt; Same requirements as ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>dateType</p>
+</td>
+<td>
+<p>M</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information">More Information</h3>
+<table class="wikitable">
+<tr>
+<td colspan="3">
+<p><strong>Links</strong></p>
+</td>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Dates" title="wikilink">ISO_Dates</a>
+</td></li>
+</ul>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Examples</strong></p>
+</td>
+<td bgcolor="FFFFFF">
+<p><code> * date: </code></p>
+<pre><code>CI_Date
+date: (unknown)
+dateType:  (CI_DateTypeCode) publication
+date:  (CI_Date)
+date:  1981-12-31
+dateType:  (CI_DateTypeCode) revision</code></pre>
+</td>
+</tr>
+</table>

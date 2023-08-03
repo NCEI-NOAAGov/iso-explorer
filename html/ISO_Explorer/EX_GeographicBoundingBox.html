@@ -1,0 +1,224 @@
+<p>Bounding coordinates of the maximum geospatial extent in decimal degrees. Not required resource is non-geospatial and the resource scopeCode = ‘nonGeographicDataset’. When there are multiple extents, provide the bounding coordinates at the top with the id attribute of ‘boundingGeographicBoundingBox’.</p>
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>1</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/Boolean" title="wikilink">extentTypeCode</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Indication of whether the bounding polygon encompasses an area covered by the data or an area where data is not present. Default assumption is that the bounding area is where the data is present.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/Decimal" title="wikilink">westBoundLongitude</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Westernmost coordinate of the limit of the dataset extent, expressed in longitude in decimal degrees.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>3</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/Decimal" title="wikilink">eastBoundLongitude</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Easternmost coordinate of the limit of the dataset extent, expressed in longitude in decimal degrees.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>4</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/Decimal" title="wikilink">southBoundLatitude</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Southernmost coordinate of the limit of the dataset extent, expressed in latitude in decimal degrees.</i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>5</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/Decimal" title="wikilink">northBoundLatitude</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Northernmost coordinate of the limit of the dataset extent, expressed in latitude in decimal degrees.</i></p>
+</td>
+</tr>
+</table>
+<h3 id="community-requirements">Community Requirements</h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="5">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>extentTypeCode</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="5">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>westBoundLongitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>eastBoundLongitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>southBoundLatitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>northBoundLatitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="5">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>extentTypeCode</p>
+</td>
+<td align="center">
+</td>
+<td rowspan="5">
+<p>Same requirements as the ISO standard</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>westBoundLongitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>eastBoundLongitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>southBoundLatitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>northBoundLatitude</p>
+</td>
+<td align="center">
+<p>M</p>
+</td>
+</tr>
+</table>
+<h3 id="more-information"><strong>More Information</strong></h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:EX_Extent.png" title="wikilink">thumb|left|EX Extent.png</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Extents" title="wikilink">ISO Extents</a></li>
+<li>The EX_GeographicBoundingBox is intended to represent the geographic area of the entire dataset referenced to WGS 84</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<p>Examples</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><gmd:EX_GeographicBoundingBox
+    id="boundingGeographicBoundingBox"> <gmd:westBoundLongitude> <gco:Decimal>-179.716</gco:Decimal> </gmd:westBoundLongitude> <gmd:eastBoundLongitude> <gco:Decimal>179.883</gco:Decimal> </gmd:eastBoundLongitude> <gmd:southBoundLatitude> <gco:Decimal>-65.616</gco:Decimal> </gmd:southBoundLatitude> <gmd:northBoundLatitude> <gco:Decimal>56.166</gco:Decimal> </gmd:northBoundLatitude> </gmd:EX_GeographicBoundingBox></p>
+</td>
+</tr>
+</table>

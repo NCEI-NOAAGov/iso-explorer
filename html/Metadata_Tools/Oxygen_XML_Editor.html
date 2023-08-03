@@ -1,0 +1,85 @@
+<p>Oxygen XML Editor is a cross platform xml editor. Oxygen provides a robust environment for editing ISO 19139 metadata in XML format. The purpose of this page is to share metadata authoring work flow and user tips in this environment. (To learn more or download a trial version go to <a href="http://www.oxygenxml.com" class="uri">http://www.oxygenxml.com</a>.)</p>
+<h2 id="getting-started">Getting Started</h2>
+<p><a href="/Image:Oxygen_Macros.jpg" title="wikilink">thumb|right|200px</a></p>
+<h3 id="license-server">License Server</h3>
+<ul>
+<li>Help/Register
+<ul>
+<li>Licensing Method: Use a license server</li>
+</ul></li>
+</ul>
+<h3 id="set-up-oxygen">Set Up Oxygen</h3>
+<ul>
+<li><a href="/Image:MaximizeScreenSpace.png" title="wikilink">thumbThe</a> first time you open Oxygen XML Editor there will be a lot of floating windows that provide useful information, but take up a lot of space. Closing these extra windows so that you ONLY have what you need helps maximize your work space. The Figure at right shows Oxygen with just one editing window open. The project view is useful as you start to work with groups of related files and the outline view is very helpful when you are working with large files.</li>
+<li><a href="/Image:Menus.png" title="wikilink">thumb|rightOxygen</a> has a very flexible menu system that allows you to turn menus on and off as you need them and organize them in the menu bar in a way that works for you. This is great as you gain experience with Oxygen and what it can do, but it is a bit overwhelming at the beginning. This Figure shows the menus that are used for basic file tasks and for the critical associate schema, validation, and transform tasks.</li>
+<li><a href="/Image:ContentCompletion.PNG" title="wikilink">thumb|rightOnce</a> an XML schema is associated with your file, Oxygen knows the details of what can and cannot be in the XML. You can take advantage of this using Oxygen’s content completion capabilities:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Options Tab &gt; Preferences &gt; Content Completion</li>
+<li>Check the following
+<ul>
+<li>Add Element Content to automatically add required content for any element</li>
+<li>Add Optional Content to automatically add optional content for any element. This can be very helpful at the beginning as you become familiar with the standard but as you gain experience you may want to turn it off.</li>
+<li>Show all entities</li>
+<li>Insert the required attributes - there are only a few required attributes in the ISO standards so this one will seem not to make a difference in most cases.</li>
+</ul></li>
+</ol>
+<h3 id="basics">Basics</h3>
+<ul>
+<li>You can import folders from the desktop or add individual files by creating a Project. Here you can easily organize and edit multiple files.</li>
+<li>Taking advantage of the Outline panel makes it easy to navigate a potentially large file and can help you get to know an unfamiliar standard.</li>
+</ul>
+<h3 id="associating-schemas">Associating Schemas</h3>
+<ol style="list-style-type: decimal">
+<li>Click on: Document &gt; Schema &gt; Associate Schema…</li>
+<li>Under the XML Schema tab, enter the URL: <a href="http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd" class="uri">http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd</a></li>
+</ol>
+<ul>
+<li>You can associate Schematron schemas as well, by entering the URL: <a href="http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch" class="uri">http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch</a> under the Schematron Schema tab.</li>
+</ul>
+<h2 id="editing">Editing</h2>
+<ul>
+<li><a href="/ISO_Namespaces" title="wikilink">ISO Namespaces</a> - One of the first things you need to do is make sure that the metadata is properly attributed with ISO namespace declarations and schema location.</li>
+<li><a href="/ISO_Object_Ordering" title="wikilink">ISO Object Ordering</a> - Ordering of ISO objects</li>
+<li><a href="/ISO_Boilerplate" title="wikilink">ISO Boilerplate</a>- ISO Boilerplate</li>
+</ul>
+<h2 id="components">Components</h2>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="/ISO_Components" title="wikilink">Wiki page about components</a></li>
+<li><a href="http://www.ngdc.noaa.gov/docucomp">Docucomp (Component Service)</a></li>
+<li><a href="https://ngdc.noaa.gov/docucomp/recordServices">Record Services (including Resolver)</a></li>
+</ul>
+<h2 id="transformation">Transformation</h2>
+<p><a href="/Extensible_Stylesheet_Language_Transformation_(XSLT)" title="wikilink">List of XSLTs</a> <a href="/Transform_in_Oxygen_XML_Editor" title="wikilink">How to set transformation in Oxygen</a></p>
+<h2 id="validating">Validating</h2>
+<ul>
+<li><a href="/How_to_Set_Up_Custom_Validation_in_Oxygen" title="wikilink">How to Set Up Custom Validation in Oxygen</a></li>
+<li><a href="/Validation_Error_Guidance" title="wikilink">Validation Error Guidance</a></li>
+</ul>
+<h3 id="resources-1">Resources</h3>
+<ul>
+<li><a href="http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd">19139 Schema URL</a>- supports 19115, 19115-2, 19119 standards</li>
+<li><a href="http://www.ngdc.noaa.gov/metadata/published/xsd/19139.zip">19139 Schema ZIP</a> - for download</li>
+<li><a href="http://www.ngdc.noaa.gov/metadata/published/xsd/schematron/schematronISO.sch">Schematron URL</a> - validation support not available in the basic XSD Schema validation</li>
+</ul>
+<h2 id="user-tips">User Tips</h2>
+<ul>
+<li><a href="/How_to_add_template_text" title="wikilink">How to add template text</a></li>
+<li><a href="/How_to_Import_Codelist_URLs" title="wikilink">How to Import Codelist URLs</a></li>
+<li><a href="/How_to_Edit_Multiple_Files" title="wikilink">How to Edit Multiple Files</a></li>
+<li><a href="/Stack_Overflow_Error" title="wikilink">Stack Overflow Error</a></li>
+<li><a href="/How_to_create_sample_XML" title="wikilink">How to create sample XML</a></li>
+</ul>
+<h2 id="oxygen-in-a-documentation-workflow">Oxygen in a Documentation Workflow</h2>
+<p>A number of metadata managers at NGDC are using Oxygen as their primary metadata creation and maintenance tool in the context of a larger documentation management architecture. Any full featured XML editor could fit into this architecture in the same slot as Oxygen. The expected workflow is:</p>
+<ol style="list-style-type: decimal">
+<li>Authors edit and validate ISO Metadata using a desktop XML editor (Oxygen)</li>
+<li>Save metadata files from Oxygen to a version control system (Subversion). These files may contain xlinks to metadata <a href="/ISO_Components" title="wikilink">components</a> and are therefore called “unresolved” records.</li>
+<li>These files are automatically checked out from Subversion to a Web Accessible Folder (WAF).</li>
+<li>The xlinks in the unresolved files are automatically resolved and the complete files are checked in to a second version control system.</li>
+<li>The complete records are checked out from Subversion to a resolved/published WAF.</li>
+<li>Metadata are harvested to discovery sites.</li>
+</ol>
+<p><a href="/Metadata_Schemas" title="wikilink">Metadata Schemas</a> <a href="/Metadata_Stylesheets" title="wikilink">Metadata Stylesheets</a></p>
+<p><a href="/Category:Metadata_Tools" title="wikilink">Category:Metadata_Tools</a></p>

@@ -1,0 +1,200 @@
+<p><a href="/Category:_Metadata_Tools" title="wikilink">Category: Metadata Tools</a></p>
+<h2 id="geoportal-instances">Geoportal Instances</h2>
+<ul>
+<li><a href="http://data.nodc.noaa.gov/geoportal/">NODC</a></li>
+<li><a href="http://gis.ncdc.noaa.gov/geoportal">NCDC</a></li>
+<li><a href="http://www.ngdc.noaa.gov/geoportal/">NGDC</a></li>
+<li><a href="http://coris.noaa.gov/geoportal/">CoRIS</a></li>
+<li><a href="http://wwwdemo.ngdc.noaa.gov/iocmdemo/">Ocean &amp; Coastal Mapping (IOCM) Inventory (NGDC)</a> (demo)</li>
+<li><a href="http://www.csc.noaa.gov/NOSDataExplorer/catalog/search/search.page">NOS Data Explorer Geoportal</a></li>
+<li><a href="http://www.csc.noaa.gov/secart">Southeastern &amp; Caribbean Regional Data Explorer (SECART DE)</a></li>
+<li><a href="http://service.ncddc.noaa.gov/ecowatch-geoportal/catalog/search/search.page">Gulf of Mexico EcoWatch Catalog (NCDDC)</a></li>
+<li><a href="http://service.ncddc.noaa.gov/oer-geoportal/catalog/search/search.page">Ocean Exploration &amp; Research (OER) Data Explorer (NCDDC)</a> (beta)</li>
+</ul>
+<h2 id="indexes">Indexes</h2>
+<ul>
+<li><a href="http://www.ngdc.noaa.gov/geoportal/rest/index/stats" class="uri">http://www.ngdc.noaa.gov/geoportal/rest/index/stats</a></li>
+<li><a href="http://www.nodc.noaa.gov/geoportal/rest/index/stats" class="uri">http://www.nodc.noaa.gov/geoportal/rest/index/stats</a></li>
+<li><a href="http://service.ncddc.noaa.gov/oer-geoportal/rest/index/stats" class="uri">http://service.ncddc.noaa.gov/oer-geoportal/rest/index/stats</a></li>
+<li><a href="http://service.ncddc.noaa.gov/ecowatch-geoportal/rest/index/stats" class="uri">http://service.ncddc.noaa.gov/ecowatch-geoportal/rest/index/stats</a></li>
+</ul>
+<h2 id="noaa-geoportal-collaborative-documentation">NOAA Geoportal Collaborative Documentation</h2>
+<h3 id="google-docs">Google Docs</h3>
+<p><a href="https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AvllJ1rM2zkRdEZUaE5aWEgybmxZYzRUZXFOUDJ4NWc#gid=0">NOAA Geoportal Server Inventory Matrix on Google Docs</a></p>
+<h3 id="iso-19115-2-support">ISO 19115-2 support</h3>
+<p>To configure GeoPortal to work with ncISO, you need to add ISO 19115-2 support.</p>
+<ul>
+<li>Unzip the linked file <a href="http://www.ngdc.noaa.gov/eds/tds/downloads/NGDC_customizations.zip" class="uri">http://www.ngdc.noaa.gov/eds/tds/downloads/NGDC_customizations.zip</a></li>
+<li>Review the files determine whether the customizations make sense for your geoportal instance! These files contain new property meanings to allow common searching across FGDC and ISO metadata. Custom displays to allow linkages from Geoportal search results to common THREDDS services and other NOAA viewers.</li>
+<li>After your review copy the relevant files to your webapps\geoportal\ folder.</li>
+</ul>
+<!-- -->
+<ul>
+<li>You will need to restart the geoportal web application after adding/updating the files.</li>
+<li>Currently GeoPortal can only support resolved ISO records (no xlinks) and not use nilReason xml attributes for mandatory fields (such as date).</li>
+</ul>
+<p><a href="/File:gptlinks.png" title="wikilink">200px|thumb|right</a></p>
+<p>Image at right is an ISO-2 metadata record with custom links out to OGC Services and NOAA viewer apps.</p>
+<h3 id="steps-to-configure-opendap-viewer-linkage-in-geoportal">Steps to configure OpenDAP Viewer linkage in Geoportal</h3>
+<p>Note this customization and linkages to other THREDDS services and NOAA clients are now included in the NGDC_Customizations.zip file referenced above.</p>
+<p><a href="/GeoPortal_OpenDAP" title="wikilink">GeoPortal_OpenDAP</a></p>
+<h3 id="working-with-custom-locator-services">Working with custom locator services</h3>
+<p>Follow ESRI instructions on creating a locator service for ArcGIS Server: <a href="http://help.arcgis.com/en/arcgisserver/10.0/help/arcgis_server_dotnet_help/index.html#//009300000025000000.htm" class="uri">http://help.arcgis.com/en/arcgisserver/10.0/help/arcgis_server_dotnet_help/index.html#//009300000025000000.htm</a></p>
+<p>Once established you can update your gpt.xml file to point to the new service. See the interactiveMap element e.g.</p>
+<p><code>       locatorUrl=</code>“<a href="http://maps.ngdc.noaa.gov/rest/services/GptGaz/GeocodeServer"><code>http://maps.ngdc.noaa.gov/rest/services/GptGaz/GeocodeServer</code></a>” <code>       locatorSingleFieldParameter = </code>“<code>PlaceName</code>”<code>/&gt;</code></p>
+<p>The NGDC locator service contains world ocean and sea names as well as undersea features.</p>
+<h3 id="customizing-browse-catalog">Customizing browse catalog</h3>
+<p>You can modify the browse tree to display custom searches of your metadata. In some cases, you may want to browse by Web Accessible Folder (WAF), below is an example of a tree node that displays all records in your WAF.</p>
+<p><code>       </code><item> <code>           </code><name resourceKey="catalog.search.filterContentTypes.org.ioos"></name> <code>           </code><query><code>searchText=sys.siteuuid:</code>“<code>{E4949969-468A-4B10-823D-9BF1BF0785B2}</code>”</query> <code>       </code></item></p>
+<p>Be sure to include your resource key text value in the gpt.properties file.</p>
+<h3 id="updating-the-csw-response">Updating the CSW Response</h3>
+<p>Please be sure to update the metadata associated with the CSW GetCapabilities response.</p>
+<p>Updates can be made to cswCapabilities.xml file.</p>
+<p>This file is located here: /geoportal/WEB-INF/classes/gpt/metadata/cswCapabilities.xml</p>
+<h2 id="geoportal-rest-documentation">GeoPortal REST Documentation</h2>
+<h3 id="multibeam-waf">Multibeam WAF</h3>
+<p>Search within the multibeam WAF for records with start date 2009-02-01 to end date 2012-02-01 with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=startDate%3A%5B1800-01-01%20TO%202012-02-01%5D%20AND%20endDate%3A%5B2009-02-01%20TO%202100-01-01%5D%20%20AND%20sys.siteuuid%3A%22%7BE4CE09E6-D441-4C94-BC34-33CB928F6794%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">Multibeam Example1 Link</a></p>
+<p>Search within the multibeam WAF for keywords ‘Elevation’ with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=keywords%3A%20Elevation%20AND%20sys.siteuuid%3A%22%7BE4CE09E6-D441-4C94-BC34-33CB928F6794%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">Multibeam Example2 Link</a></p>
+<p>Search within the multibeam WAF for records within -82.692,32.6969,-67.2573,40.2692 with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local%2C%257BCCF70912-2355-436D-93CE-21126C6E122C%257D%2C%257B4DBF01E8-0BA6-4AFE-80C2-F4D757258F19%257D&amp;searchText=sys.siteuuid%3A%22%7BE4CE09E6-D441-4C94-BC34-33CB928F6794%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-82.692,32.6969,-67.2573,40.2692&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">Multibeam Example3 Link</a></p>
+<h3 id="ioos-wafs">IOOS WAFs</h3>
+<p>See GitHub Repository: <a href="https://github.com/ioos/registry/blob/master/uuid.csv" class="uri">https://github.com/ioos/registry/blob/master/uuid.csv</a> <strong>Date Search Example:</strong> Search within the PacIOOS WAF for records with start date 2009-02-01 to end date 2012-02-01 with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=startDate%3A%5B1800-01-01%20TO%202012-02-01%5D%20AND%20endDate%3A%5B2009-02-01%20TO%202100-01-01%5D%20%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">PacIOOS DateSearchExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;searchText=startDate:[1800-01-01 TO 2012-02-01] AND endDate:[2009-02-01 TO 2100-01-01] AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=10&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson</p>
+<p><strong>Keyword Example:</strong> Search within the PacIOOS WAF for keywords ‘sea_water_salinity’ with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=keywords%3A%20sea_water_salinity%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">PacIOOS KeywordExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;searchText=keywords: sea_water_salinity AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=pjson</p>
+<p><strong>Geographic Search Example:</strong> Search within the PacIOOS WAF for metadata records within -164.9246,16.6012,-149.4899,25.3959 with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;searchText=sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%7D%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">PacIOOS GeoExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;searchText=sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson</p>
+<p><strong>Multi-Criteria Example:</strong> Search within the PacIOOS WAF for metadata records with all of the above with JSON response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=keywords%3A%20sea_water_salinity%20AND%20endDate%3A%5B2009-02-01%20TO%202100-01-01%5D%20AND%20startDate%3A%5B1800-01-01%20TO%202012-02-01%5D%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson">PacIOOS MultiExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;rids=local&amp;searchText=keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;spatialRel=esriSpatialRelWithin&amp;bbox=-164.9246,16.6012,-149.4899,25.3959&amp;maxSearchTimeMilliSec=10000&amp;f=pjson</p>
+<p><strong>WMS Example:</strong> Search within the PacIOOS WAF for metadata records with a WMS service endpoint with GeoRSS response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22%20AND%20wms.resource.url%3A*&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=georss">PacIOOS WMSExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;rids=local&amp;searchText=wms.resource.url:* AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=georss</p>
+<p><strong>WCS Example:</strong> Search within the PacIOOS WAF for metadata records with a WCS service endpoint with html response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=wcs.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html">PacIOOS WCSExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;rids=local&amp;searchText=wcs.resource.url:* AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html</p>
+<p><strong>SOS Example:</strong> Search within the PacIOOS WAF for metadata records with an SOS service endpoint with html response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=sos.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html">PacIOOS SOSExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;rids=local&amp;searchText=sos.resource.url:* AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html</p>
+<p><strong>OPeNDAP Example:</strong> Search within the PacIOOS WAF for metadata records with a OpenDAP service endpoint with html response: <a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?rid=local&amp;ridName=NOAA%27s%20Geophysical%20Data%20Center&amp;rids=local&amp;searchText=odp.resource.url:*%20AND%20sys.siteuuid%3A%22%68FF11D8-D66B-45EE-B33A-21919BB26421%22&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html">PacIOOS OPeNDAPExample Link</a></p>
+<p><em>Decoded Parameters:</em> rid=local&amp;ridName=NOAA’s Geophysical Data Center&amp;rids=local&amp;searchText=odp.resource.url:* AND sys.siteuuid:“{68FF11D8-D66B-45EE-B33A-21919BB26421}”&amp;start=1&amp;max=1000&amp;orderBy=relevance&amp;maxSearchTimeMilliSec=10000&amp;f=html</p>
+<h3 id="esri-api-docs">ESRI API Docs</h3>
+<p><a href="https://sourceforge.net/apps/mediawiki/geoportal/index.php?title=REST_API_Syntax">ESRI Restful Interface Documentation</a></p>
+<h2 id="geoportal-csw-documentation">GeoPortal CSW Documentation</h2>
+<h3 id="ngdc-csw-service-endpoint">NGDC CSW Service Endpoint</h3>
+<p><a href="http://www.ngdc.noaa.gov/geoportal/csw" class="uri">http://www.ngdc.noaa.gov/geoportal/csw</a></p>
+<p>The examples below must be made as an XML POST request.</p>
+<h3 id="pacioos-waf">PacIOOS WAF</h3>
+<p><strong>WMS Search Example:</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt;
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt;
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*wms*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt;
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;</code></pre>
+<p><strong>WCS Search Example:</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt;
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt;
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*wcs*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt;
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;</code></pre>
+<p><strong>OPeNDAP Search Example:</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt;
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt;
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*opendap*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt;
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;</code></pre>
+<p><strong>SOS Search Example:</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot;
+outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot; startPosition=&quot;1&quot; maxRecords=&quot;1000&quot;&gt;
+  &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;&gt;
+  &lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt;
+  &lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+        &lt;ogc:PropertyName&gt;sys.siteuuid&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;{68FF11D8-D66B-45EE-B33A-21919BB26421}&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyIsLike wildCard=&quot;*&quot; escape=&quot;\&quot; singleChar=&quot;?&quot;&gt;
+        &lt;ogc:PropertyName&gt;apiso:ServiceType&lt;/ogc:PropertyName&gt;
+        &lt;ogc:Literal&gt;*sos*&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLike&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt;
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;</code></pre>
+<h3 id="iso-date-modified-search">ISO Date Modified Search</h3>
+<pre><code>&lt;csw:GetRecords xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; version=&quot;2.0.2&quot; service=&quot;CSW&quot; resultType=&quot;results&quot; startPosition=&quot;1&quot; maxRecords=&quot;11&quot; outputSchema=&quot;http://www.isotc211.org/2005/gmd&quot;&gt; &lt;csw:Query typeNames=&quot;csw:Record&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; &gt;
+&lt;csw:ElementSetName&gt;full&lt;/csw:ElementSetName&gt;
+&lt;csw:Constraint version=&quot;1.1.0&quot;&gt;
+  &lt;ogc:Filter&gt;
+    &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;apiso:modified&lt;/ogc:PropertyName&gt; &lt;ogc:Literal&gt;2011-09-30&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;apiso:modified&lt;/ogc:PropertyName&gt; &lt;ogc:Literal&gt;2011-10-02&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+    &lt;/ogc:And&gt;
+  &lt;/ogc:Filter&gt;
+&lt;/csw:Constraint&gt;
+&lt;/csw:Query&gt;
+&lt;/csw:GetRecords&gt;</code></pre>
+<h3 id="esri-csw-docs">ESRI CSW Docs</h3>
+<p><a href="http://sourceforge.net/apps/mediawiki/geoportal/index.php?title=Catalog_Service" class="uri">http://sourceforge.net/apps/mediawiki/geoportal/index.php?title=Catalog_Service</a></p>
+<h2 id="geoportal-opensearch-documentation">GeoPortal OpenSearch Documentation</h2>
+<p><a href="/File:gptopensearch.png" title="wikilink">200px|thumb|right</a> Geoportal’s OpenSearch API support allows you to use your browser to search for metadata. To use OpenSearch from the browser go to a Geoportal website and then from the search option drop down choose add Geoportal Search (see image at right). Next enter a simple text search phrase or leverage lucene search syntax such as where sys.siteuuid refers to IOOS WAF: keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:“{E4949969-468A-4B10-823D-9BF1BF0785B2}”</p>
+<p><a href="/File:gptopensearchrestapi.png" title="wikilink">200px|thumb|right</a> OpenSearch can also be used by client applications using the REST API. For example, the same search above can be submitted as (see image at right):</p>
+<p><strong>Example:</strong> Search within the IOOS WAF with HTML response:</p>
+<p>[<a href="http://www.ngdc.noaa.gov/geoportal/rest/find/document?searchText=keywords%3A+sea_water_salinity+AND+sys.siteuuid%3A%22%7BE4949969-468A-4B10-823D-9BF1BF0785B2%7D%22&amp;start" class="uri">http://www.ngdc.noaa.gov/geoportal/rest/find/document?searchText=keywords%3A+sea_water_salinity+AND+sys.siteuuid%3A%22%7BE4949969-468A-4B10-823D-9BF1BF0785B2%7D%22&amp;start</a>=&amp;max=&amp;bbox=&amp;f=html IOOS Example]</p>
+<p><em>Decoded OpenSearch REST Example:</em> /geoportal/rest/find/document?searchText=keywords: sea_water_salinity AND endDate:[2009-02-01 TO 2100-01-01] AND startDate:[1800-01-01 TO 2012-02-01] AND sys.siteuuid:“{E4949969-468A-4B10-823D-9BF1BF0785B2}”&amp;start=&amp;max=&amp;bbox=&amp;f=html</p>
+<h2 id="noaa-geoportal-presentations">NOAA Geoportal Presentations</h2>
+<ul>
+<li><a href="/NODC_Geoportal_Presentation" title="wikilink">NODC Geoportal Presentation</a></li>
+<li>NODC Geoportal Updates 2012-02-01: <a href="/File:NODC_gpt_DMIT_20120201.pdf" title="wikilink">&lt;File:NODC_gpt_DMIT_20120201.pdf&gt;</a></li>
+</ul>

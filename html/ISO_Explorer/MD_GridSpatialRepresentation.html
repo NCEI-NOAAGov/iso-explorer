@@ -1,0 +1,204 @@
+<table class="wikitable">
+<tr>
+<th colspan="3">
+<p>MD_GridSpatialRepresentation</p>
+</th>
+<th>
+<p><i>Definition and Guidance</i></p>
+</th>
+</tr>
+<tr bgcolor="FFFF99">
+<td>
+<p>1</p>
+</td>
+<td>
+<p><a href="/Integer" title="wikilink">numberOfDimensions</a></p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr bgcolor="CCFFFF">
+<td>
+<p>2</p>
+</td>
+<td>
+<p><a href="/MD_Dimension" title="wikilink">axisDimensionProperties</a></p>
+</td>
+<td>
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr bgcolor="FFFF99">
+<td>
+<p>3</p>
+</td>
+<td>
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_CellGeometryCode" title="wikilink">cellGeometry</a></p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+</td>
+</tr>
+<tr bgcolor="FFFF99">
+<td>
+<p>4</p>
+</td>
+<td>
+<p><a href="/Boolean" title="wikilink">transformationParameterAvailability</a></p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i> indication of whether or not parameters for transformation between image coordinates and geographic or map coordinates exist (are available). Select yes, if the map coordinates are available in the file headers or related dataset documentation have enough information to re-project the data.</i></p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>OR</p>
+</td>
+</tr>
+<tr>
+<th colspan="4">
+<p><a href="/MD_Georeferenceable" title="wikilink">MD_Georeferenceable / MI_Georeferenceable</a></p>
+</th>
+</tr>
+<tr>
+<td colspan="4">
+<p>OR</p>
+</td>
+</tr>
+<tr>
+<th align="left" colspan="4">
+<p><a href="/MD_Georectified" title="wikilink">MD_Georectified / MI_Georectified</a></p>
+</th>
+</tr>
+</table>
+<h3 id="community-requirements"><strong>Community Requirements</strong></h3>
+<p><em>M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion</em></p>
+<p><font color="red">Draft</font></p>
+<table class="wikitable" border="1">
+<tr>
+<th>
+<p>Community</p>
+</th>
+<th>
+<p>Element</p>
+</th>
+<th>
+<p>M/C/R</p>
+</th>
+<th>
+<p>Notes</p>
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>NOAA Completeness Rubric V2</p>
+</td>
+<td>
+<p>numberOfDimensions</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>axisDimensionProperties</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>cellGeometry</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>transformationParameterAvailability</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th colspan="6">
+</th>
+</tr>
+<tr bgcolor="FFFFFF" border="2">
+<td rowspan="4">
+<p>OneStop Project</p>
+</td>
+<td>
+<p>numberOfDimensions</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>axisDimensionProperties</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>cellGeometry</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+<tr bgcolor="FFFFFF">
+<td>
+<p>transformationParameterAvailability</p>
+</td>
+<td align="center">
+</td>
+<td>
+</td>
+</tr>
+</table>
+<h3 id="more-information"><strong>More Information</strong></h3>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/File:MD_SpatialRepresentation.png" title="wikilink">thumb|left</a></p>
+</td>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/ISO_Spatial_Representation" title="wikilink">ISO Spatial Representation</a></li>
+</ul>
+</td>
+</tr>
+</table>

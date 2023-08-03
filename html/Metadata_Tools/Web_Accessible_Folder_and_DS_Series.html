@@ -1,0 +1,71 @@
+<p>Everyone that uses computers is familiar with the idea of using directories or folders to organize information on their disks and in their email systems. This concept extends easily to the practice of using Web Accessible Folders (WAFs) for organizing and accessing metadata content. ISO 19115 also includes a mechanism for grouping related metadata content into collections called DS_Series. Each DS_Series includes two parts: a DS_DataSet that includes any number of MD/MI_Metadata entities and any number of seriesMetadata entities that include metadata that describes the whole collection. The MD/MI_Metadata entities are analogs of files and the seriesMetadata is similar to a readme file that describes the contents of directory.</p>
+<p>The obvious conceptual similarities between WAFs and DS_Series raises the obvious question of how bridges might be built to take advantage of these similarities. This document describes some first steps towards exploring these connections.</p>
+<h1 id="directory-listing-and-ds_series">Directory Listing and DS_Series</h1>
+<p><a href="/File:metadataDirectory.PNG" title="wikilink">thumb|Metadta DirectoryThe</a> first obvious step towards this connection is realizing the equivalence between a WAF and a DS_Dataset. A WAF is a dirfectory that contains a set of related metadata files. Many time these files contain a metadata “record” contained in a single MD/MI_Metadata entity. This Figure shows a directory that includes roughly 300 metadata files for fish surveys conducted at sites across the Pacific Ocean using several techniques and at several times. The techniques shown in these files are “belt_transect” and “blt”. The locations and times are included in the file names after the techniques, e.g. “alamagan_2005” is a survey at Alamagan Island during 2005.</p>
+<p>A DS_Series can be constructed directly from those files using xlinks that provide URLs for full MI_Metadata entities:</p>
+<pre><code>&lt;gmd:DS_Series&gt;
+    &lt;gmd:composedOf&gt;
+        &lt;gmd:DS_DataSet id=&quot;Collection&quot;&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_sarigan_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_stingray_shoals_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_supply_reef_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_swains_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tatsumi_reef_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tau_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tinian_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_tutuila_2004.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_uracus_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_wake_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_belt_transect_zealandia_bank_2003.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_agrihan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_agrihan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_aguijan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_aguijan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_alamagan_2005.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_alamagan_2007.xml&quot;/&gt;
+            &lt;gmd:has xlink:href=&quot;http://www.ngdc.noaa.gov/metadata/cred_rea_fish_blt_arakane_reef_2005.xml&quot;/&gt;
+        &lt;/gmd:DS_DataSet&gt;
+    &lt;/gmd:composedOf&gt;
+    &lt;gmd:seriesMetadata&gt;
+        &lt;gmi:MI_Metadata&gt;...&lt;/gmi:MI_Metadata&gt;
+    &lt;/gmd:seriesMetadata&gt;
+&lt;/gmd:DS_Series&gt;</code></pre>
+<p>When these xlinks are resolved to complete MI_Metadata objects, this block of xml will provide a full and valid version of the metadata that are included in these files. The seriesMetadata object at the bottom of the DS_Dataset describes the whole collection.</p>
+<h1 id="the-createwafseries-stylesheet">The createWAFSeries Stylesheet</h1>
+<p><a href="/File:CreateWAFSeries.PNG" title="wikilink">thumb|Create WAF SeriesThe</a> previous example illustrates an approach that relies on the Web to resolve the content of the xlink:hrefs into complete MI_Metadata entities. A second approach is to use the standard tool for manipulating XML files: eXtensible Style Layer Transforms (XSLT’s). Applying these tools requires a stylesheet (generally referred to as an xsl), and a transform engine that can carry out the instructions included in the stylesheet.</p>
+<p>The createWAFSeries stylesheet operates on a set of files in a directory like the one shown above. It requires two parameters: recordSetPath is the path to the WAF, and fileNamePattern is the pattern used to select files from the WAF. In the example shown below the fileNamePattern is ‘*<em>maui</em>*.xml’ and the recordSetPath is <a href="file:/C:/Documents%20and%20Settings/haber/My%20Documents/NOAA/Metadata/NMFS/CRED/rea/fish/iso/" class="uri">file:/C:/Documents%20and%20Settings/haber/My%20Documents/NOAA/Metadata/NMFS/CRED/rea/fish/iso/</a>, the path to a directory on the machine where the processing is being done. This fileNamePattern selects all of the fish surveys done near Maui. Running the createWAFSeries transform inserts the contents of the selected files verbatim as members of a DS_Series in a file called DS_Series_Complete.xml. Note that these MI_Metadata entities have between 599 and 731 lines each.</p>
+<p><a href="/File:DS_SeriesComplete.PNG" title="wikilink">thumb|Complete WAF SeriesThe</a> seriesMetadata in this case is very simple, it contains only information about the files that were selected and the directory they were selected from:</p>
+<pre><code>&lt;gmd:seriesMetadata&gt;
+   &lt;gmi:MI_Metadata&gt;
+      &lt;gmd:fileIdentifier&gt;
+         &lt;gco:CharacterString&gt;DS_Series for files=
+         &#39;file:/C:/Documents%20and%20Settings/haber/My%20Documents/
+          NOAA/Metadata/NMFS/CRED/rea/fish/iso/*_maui*.xml&#39;
+         &lt;/gco:CharacterString&gt;
+      &lt;/gmd:fileIdentifier&gt;
+      &lt;gmd:contact/&gt;
+      &lt;gmd:dateStamp/&gt;
+      &lt;gmd:identificationInfo/&gt;
+   &lt;/gmi:MI_Metadata&gt;
+&lt;/gmd:seriesMetadata&gt;</code></pre>
+<h1 id="coalescing-the-ds_series">Coalescing the DS_Series</h1>
+<p><a href="/File:CoalesceSeries.PNG" title="wikilink">thumb|Coalesce SeriesAs</a> would be expected, the MI_Metadata entities included in DS_Series_Complete.xml have considerable overlap. XML provides a mechanism for reducing redundancy by including repeated content at one place in an XML file and referring to it from other locations rather than repeating it. For example, many of these metadata records share the same metadata contact:</p>
+<pre><code>&lt;gmd:contact id=&quot;d1e19&quot;&gt;
+    &lt;gmd:CI_ResponsibleParty&gt;
+        &lt;gmd:organisationName&gt;
+            &lt;gco:CharacterString&gt;Coral Reef Ecosystem Division (CRED), Pacific Islands Fisheries Sciences
+            Center, NOAA National Marine Fisheries Service&lt;/gco:CharacterString&gt;
+        &lt;/gmd:organisationName&gt;
+        &lt;gmd:contactInfo&gt;
+        &lt;/gmd:contactInfo&gt;
+        &lt;gmd:role&gt;
+            &lt;gmd:CI_RoleCode
+            codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode
+            codeListValue=&quot;pointOfContact&quot;&gt;pointOfContact&lt;/gmd:CI_RoleCode&gt;
+        &lt;/gmd:role&gt;
+    &lt;/gmd:CI_ResponsibleParty&gt;
+&lt;/gmd:contact&gt;</code></pre>
+<p>The XML referencing capability allows this contact to be defined once and given a unique id (d1e19 in this case) and referenced from other locations in the file as</p>
+<p><gmd:contact xlink:href="#d1e19"/>.</p>
+<p>The stylesheet coalesceSeries.xsl identifies repeated entities of several types, transfers their content to the seriesMetadata entity, and replaces the original content with a reference to the content in the seriesMetadata. This process is illustrated below and is reflected in the sizes of the MI_Metadata entities in the original series (599-731 lines) vs. their sizes in the coalesced series (380-600 lines) and in the increase in zize of the seriesMetadata entity from 9 to 425 lines.</p>
+<p><a href="/Category:ISO_19115" title="wikilink">Category:ISO 19115</a> <a href="/Category:Metadata_Tools" title="wikilink">Category:Metadata Tools</a></p>

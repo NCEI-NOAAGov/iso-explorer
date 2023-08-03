@@ -1,0 +1,135 @@
+<p>The <a href="/Data_Documentation_PD" title="wikilink">NOAA Documentation Directive Directive</a> recognizes the importance of <a href="/Enterprise_Documentation_Architecture" title="wikilink">tools</a> for evaluating NOAA metadata and quantitatively measuring improvements over time. The Environmental Data Management Committee is developing a set of metrics to support that effort. The metrics are calculated over metadata that are available in <a href="/Web_Accessible_Folder" title="wikilink">Web Accessible Folders</a>. Metrics are currently available for metadata completeness scores and for various metadata problems.</p>
+<h1 id="metadata-completeness">Metadata Completeness</h1>
+<p>The metadata completeness scores are calculated using a rubric built on the idea of <a href="/Documentation_Spirals" title="wikilink">Documentation Spirals</a> which break the metadata content into sets of attributes related to common documentation needs. Rubric scores are calculated for each record in a WAF.</p>
+<table>
+<colgroup>
+<col width="68%" />
+<col width="31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The upper bound of the colored area shows the total number of records in the WAF as a function of time.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>gray: count of invalid records</li>
+<li>red: count of records with scores less than 20</li>
+<li>green: count of records with scores between 21 and 24</li>
+<li>blue: count of records with scores between 25 and 41</li>
+</ul>
+<p>This figure shows a WAF with a dramatic improvement in scores late in 2012. See <a href="/Digital_Elevation_Models_Improvement" title="wikilink">Digital Elevation Models Improvement</a> for the story of this metadata improvement. | This plot tracks the minimum, mean and maximum completeness scores across an entire WAF over time. |</p>
+<p>Completion Scores are also available in a text file for each WAF. These files are accessed using the Rubric Scores link in the WAF Table of Contents (<a href="http://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/STP/Solar/iso/reports/isoRubricScores.txt">example</a>). The fields in these files are delimited by | and are:</p>
+<pre><code>rubric version | test date | WAF title | record title | record update date | record identifier | rubric score | maximum possible score</code></pre>
+<h1 id="metadata-problems">Metadata Problems</h1>
+<p>Metadata records are long-lived information resources that are edited as part of on-going documentation improvement projects. As such, they can develop problems related to age or to editing mistakes. A number of these problems are tracked by the system.</p>
+<h2 id="valid-and-invalid-records">Valid and Invalid Records</h2>
+<p>The metadata records managed in EMMA are compliant with the ISO 19115-2 standard. This compliance is checked by the system using the ISO 19139 XML schema for this standard (http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd). As metadata records are edited and new information is added, it is possible that errors are introduced that can result in the record being invalid. All records in the WAFs are checked against the schema and invalid records are listed in the validation report.</p>
+<table>
+<colgroup>
+<col width="42%" />
+<col width="57%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The red line indicates the total count of invalid records over time. The black line indicates the total count of valid records over time.</td>
+<td>This report indicates the most recent total count of invalid records and validation reports for each record. Invalid records do no complete processing and remain in the iso_u directory.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="broken-urls">Broken URLs</h2>
+<p>This report will check all URLs in <strong>//gmd:URL</strong> Xpaths and will list the invalid links. It does not check URLs in <strong>//gco:CharacterString</strong> elements.</p>
+<table>
+<colgroup>
+<col width="61%" />
+<col width="38%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The black line indicates the count of unique URLs. The blue line indicates the total count of all unique URLs reused.</td>
+<td>This report lists each broken URL and the number of times it is reused.</td>
+</tr>
+</tbody>
+</table>
+<p>If the ftp link is to an ftp directory, then there must be a backslash at the end. Note: browsers automatically put a backslash at the end if it is not there, which makes it <em>appear</em> to be valid.</p>
+<ul>
+<li><strong>valid</strong></li>
+</ul>
+<p>ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/SOLAR_UV/</p>
+<ul>
+<li><strong>invalid</strong></li>
+</ul>
+<p>ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/SOLAR_UV</p>
+<h2 id="broken-xlinks">Broken XLinks</h2>
+<p>Many metadata records use the <a href="http://en.wikipedia.org/wiki/XLink">XLink</a> standard to refer to external content located on the Web that needs to be included in the metadata record. This approach to reuse is at the heart of the <a href="/ISO_Components" title="wikilink">component</a> idea supported by the <a href="http://www.ngdc.noaa.gov/docucomp">Docucomp</a> tools. Of course the XLinks are URLs, so they must be checked to ensure that they are resolved correctly.</p>
+<table>
+<colgroup>
+<col width="60%" />
+<col width="39%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The black line indicates the count of unique Broken XLinks. The blue line indicates total count of Broken XLinks reused.</td>
+<td>This report lists each broken XLink and the number of times each is reused.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-xlinks">Other XLinks</h2>
+<p>Other XLinks may represent any type of valid URL found in an xlink:href attribute that does not return well formed XML. If this is purposeful, then also include xlink:actuate=“onRequest” attribute to indicate that it should NOT be a resolve-able component.</p>
+<table>
+<colgroup>
+<col width="61%" />
+<col width="38%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The black line indicates the count of unique Other XLinks. The blue line indicates the total count of Other XLinks reused.</td>
+<td>This report lists the Other XLinks and the number of times each is reused.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="component-countreuse">Component Count/Reuse</h1>
+<p>Metadata collections tend to include the same content in many records. Components support maintaining this content once and reusing it throughout the collection. This approach to reuse is at the heart of the <a href="/ISO_Components" title="wikilink">component</a> idea supported by the <a href="http://www.ngdc.noaa.gov/docucomp">Docucomp</a> tools. EMMA identifies components being used in a collection and counts the number of times each is used.</p>
+<table>
+<colgroup>
+<col width="67%" />
+<col width="32%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>[thumb</td>
+<td>center</td>
+</tr>
+<tr class="even">
+<td>The black line indicates count of unique components. The green line indicates total count of Components reused. The blue line indicates the average reuse of all components.</td>
+<td>This report lists all components and the number of times each is reused.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="metadata-consistency">Metadata Consistency</h1>
+<p>We tend to look at metadata records as single units which works well for evaluating a single record but makes it difficult to identify inconsistencies across a collection. To do that we must be able to look at a particular metadata element in all of the records in the collection to identify inconsistent values. We provide this capability generally for a number of metadata elements and for specific responsibilities in the record.</p>
+<h2 id="consistency-checker-report">Consistency Checker Report</h2>
+<p>The general Consistency Checker Report shows selected content from unique connections (online resources), people, citations, services, service types, keywords, and process steps collected from all records in a WAF. It also lists the number of times each of these unique items are repeated in the collection. This information can be used to assess and improve consistency across the collection. More detailed information is also available about people and organizations referenced from the collection in the <em>Responsible Party Details</em> report.</p>
+<h1 id="visualizing-documentation-progress">Visualizing Documentation Progress</h1>
+<p>Many of the proposed metrics can be viewed as time series and those views are available. We are also exploring displays that demonstrate progress along multiple dimensions simultaneously. One such display plots metadata completeness against the number of records. Increases in either of these measures move points towards the upper-right corner of the plot. <a href="/File:DocumentationMetricLandscape.png" title="wikilink">thumb|center|500px|Metric Landscape</a></p>

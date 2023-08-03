@@ -1,0 +1,39 @@
+---
+title: Enterprise Metadata Tools
+permalink: /Enterprise_Metadata_Tools/
+---
+
+This is a collection of tools that operate on XML files stored in a filesystem or web accessible directory. The tools include translation, validation, reporting and resolving services. Record Service tools operate on a single XML record, whereas Collection Service tools operate on a collection of records contained in a web accessible folder (WAF).
+
+Record Services
+---------------
+
+These services operate on an XML record accessible from a local filesystem or URL. To access an XML record, select the File radio button and browse to the record on your local filesystem, or select the Url radio button and paste a URL into URL text field. To apply a service select a Service Type and click the submit button.
+
+|                |                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Well Formed    | This service checks the structure of the XML to ensure it is well formed. Well formed XML is required for XML processors and browsers to read the file. An error will be returned if the XML is not well formed.                                                                                                                                                                                                         |
+| Resolve XML    | This service resolves an unprocessed XML record. An unprocessed XML record may contain xlink references to XML content stored at an external location. The resolve process replaces the xlink references in the unprocessed record with the external XML content being references by the xlink. The externally referenced content is called a [component](https://geo-ide.noaa.gov/wiki/index.php?title=ISO_Components). |
+| Link Check     | This service checks URL references within ISO CI_OnlineResource elements to ensure the links are valid. If a link is broken an error message is returned.                                                                                                                                                                                                                                                               |
+| ISO Validate   | This service validates ISO metadata records with the ISO 19139 schema. This validation ensures the XML record complies with the structure and rules defined in the ISO 19139 schema.                                                                                                                                                                                                                                     |
+| Schematron     | This service validates ISO metadata records with Schematron. Schematron provides validation checks not possible with XML schema. Schematron enables user defined business rules and custom error messages to be incorporated into the validation. Some examples include checking for empty elements and verifying codelist values are valid.                                                                             |
+| NCML to ISO    | This service transforms NCML XML to ISO 19115-2 XML                                                                                                                                                                                                                                                                                                                                                                      |
+| NCML to Rubric | This service generates a documentation completeness report (Rubric) from NCML XML. The report is based on a series of [documentation spirals](http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals) designed to assist metadata authors with creating and improving scientific documentation.                                                                                                              |
+| ISO to Rubric  | This service generates a documentation completeness report (Rubric) from ISO XML. The report is based on a series of [documentation spirals](http://geo-ide.noaa.gov/wiki/index.php?title=Documentation_Spirals) designed to assist metadata authors with creating and improving scientific documentation.                                                                                                               |
+| NCML to ISO    | This service transforms NCML XML to ISO XML.                                                                                                                                                                                                                                                                                                                                                                             |
+| FGDC to ISO    | This service transforms FGDC XML to ISO XML.                                                                                                                                                                                                                                                                                                                                                                             |
+
+Collection Services
+-------------------
+
+These services operate on a web accessible folder (WAF) containing a collection of ISO metadata records. To access a metadata collection paste the URL of the WAF into the URL text field. To apply a service select a Service Type and click the submit button.
+
+|                          |                                                                                                                                                               |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Display Collection       | This service displays the contents of a web accessible folder                                                                                                 |
+| ISO Validate             | This service validates all records in a WAF with XML schema for ISO-19139. Records that are not valid will be referenced in an error message.                 |
+| Full Report              | This service runs the following diagnostic reports on the WAF collection; ISO Validation, Unique UUIDs, Bad XLINKS, Malformed XML URL's, and Recursive XLINKS |
+| ISO Rubric Report        | This service generates an ISO rubric scores completeness report.                                                                                              |
+| Waf On Demand Processing | Resolve xlinked components, generate rubric and diagnostic reports and Table of Contents for a public WAF.                                                    |
+
+[category:Metadata Tools](/category:Metadata_Tools "wikilink")

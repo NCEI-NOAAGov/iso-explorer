@@ -1,0 +1,104 @@
+<p>MI_CoverageDescription extends MD_CoverageDescription by adding section listed in row 4.</p>
+<table class="wikitable">
+<tr>
+<th valign="top" align="left" colspan="3">
+<p>Elements</p>
+</th>
+<th>
+<p><i>Definition and Recommended Practice</i></p>
+</th>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/RecordType" title="wikilink">attributeDescription</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>General description of the attributes listed in dimension or range. Keep brief. <strong>Example:</strong> <code>Instrument Details</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="FFFF99">
+<p>2</p>
+</td>
+<td bgcolor="FFFF99">
+<p><a href="/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_CoverageContentTypeCode" title="wikilink">contentType</a></p>
+</td>
+<td bgcolor="FFFF99">
+<p>1</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Classification of attributes. Most common code values are ‘thematicClassification’ or ‘physicalMeasurement’. <strong>Example</strong>: <code>physicalMeasurement</code></i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>3</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MD_RangeDimension" title="wikilink">dimension</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td bgcolor="FFFFFF">
+<p><i>Information about attributes that have a measured value. Recommend providing attribute name, minimum value, maximum value and units. <strong>Example:</strong> <code>dimension: (MI_Band) descriptor: Recording Range maxValue: 99 units: (meters) dimension: (MI_Band) descriptor: Number of Beams numberOfValues: 99</code> </i></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="CCFFFF">
+<p>4</p>
+</td>
+<td bgcolor="CCFFFF">
+<p><a href="/MI_RangeElementDescription" title="wikilink">rangeElementDescription</a></p>
+</td>
+<td bgcolor="CCFFFF">
+<p>0..*</p>
+</td>
+<td>
+<p><i>Information about attributes that have enumerative values. Provide name, definition and list of values. <strong>Example:</strong> <code>rangeElementDescription: (MI_RangeElementDescription) name: Beam Type definition: Beam Type Def rangeElement: Split</code></i></p>
+</td>
+</tr>
+</table>
+<p><strong>More Information</strong></p>
+<table class="wikitable">
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:JustCoverage.png" title="wikilink">thumb|left|JustCoverage.png</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>UML</p>
+</th>
+<td bgcolor="FFFFFF">
+<p><a href="/Image:MD_ContentInformation.png" title="wikilink">thumb|left</a></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>Links</p>
+</th>
+<td bgcolor="FFFFFF">
+<ul>
+<li><a href="/Coverages_and_ISO_Metadata" title="wikilink">Coverages and ISO Metadata</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<p>Examples</p>
+</th>
+<td bgcolor="FFFFFF">
+<p>contentInfo: (MI_CoverageDescription) attributeDescription: RecordType: Instrument Details contentType: (MD_CoverageContentTypeCode) physicalMeasurement dimension: (MI_Band) descriptor: Recording Range maxValue: Real: 99 units: BaseUnit: meters1 identifier: meter unitsSystem: dimension: (MI_Band) descriptor: Swath Width maxValue: Real: 99 units: xlink: http://www.example.org#degrees dimension: (MI_Band) descriptor: Number of Beams numberOfValues: 99 rangeElementDescription: (MI_RangeElementDescription) name: Beam Type definition: Beam Type Def rangeElement: Record: Split</p>
+</td>
+</tr>
+</table>
