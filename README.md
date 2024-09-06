@@ -1,7 +1,7 @@
 # ISO 19115-2 Explorer Readme
 
 ## Description
-Comprehensive explorer of ISO 19115 and 19115-2 metadata standards. These pages show the correct order of the elements, links to child element/object, obligation, repeatability and references to more information and examples. The explorer for ISO 19115-1 is also available on the ESIP Wiki.[https://wiki.esipfed.org/MD_Metadata](url)
+Comprehensive explorer of ISO 19115 and 19115-2 metadata standards. These pages show the correct order of the elements, links to child element/object, obligation, repeatability and references to more information and examples. The explorer for ISO 19115-1 is also available on the ESIP Wiki: https://wiki.esipfed.org/MD_Metadata
 
 ## Usage
 The ISO Explorer can be used as an accompanying guide to the ISO 19115-2 metadata standard. 
