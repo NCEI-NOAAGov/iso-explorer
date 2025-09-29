@@ -1,0 +1,601 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>NGDC Wiki</sitename>
+    <dbname>wikingdc</dbname>
+    <base>https://www.ngdc.noaa.gov/wiki/index.php/Main_Page</base>
+    <generator>MediaWiki 1.30.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">NGDC Wiki</namespace>
+      <namespace key="5" case="first-letter">NGDC Wiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MI Metadata</title>
+    <ns>0</ns>
+    <id>2042</id>
+    <revision>
+      <id>5790</id>
+      <parentid>5621</parentid>
+      <timestamp>2020-01-09T21:39:19Z</timestamp>
+      <contributor>
+        <username>Anna.milan</username>
+        <id>13</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="17857">Comprehensive explorer of '''ISO 19115''' and '''19115-2''' metadata standards. These pages show the correct order of the elements, links to child element/object, obligation, repeatability and references to more information and examples. The explorer for '''ISO 19115-1''' is available on the [http://wiki.esipfed.org/index.php/MD_Metadata ESIP wiki].&lt;br&gt;  
+
+&lt;table class=&quot;wikitable&quot;&gt;
+&lt;tr&gt;
+&lt;th colspan=&quot;3&quot;&gt; Elements&lt;/th&gt;
+&lt;th&gt;&lt;i&gt; Definition and Recommended Practice&lt;/i&gt;&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;  [[CharacterString|fileIdentifier]] &lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Value that uniquely identifies this metadata record. This identifer is assigned and maintained by the custodian of the metadata record. Recommended Practice: value of identifier is usually the same as the name of the metadata file - for example C00500. There are two general approaches to ensuring uniqueness for these identifiers: 1. use a universal unique identifier (UUID), to distinguish it from other resources. 2. Include a namespace and a code guarenteed to be unique in that namespace in the identifier. &lt;br /&gt;For example: gov.noaa.class:AERO100. In this case gov.noaa.class is a namespace and AERO100 is a code guaranteed to be unique in that namespace.  &lt;br/&gt;See '''[[fileIdentifier Examples]]'''  and  '''[[ISO_Identifiers#fileIdentifiers_and_parentIdentifiers ISO Identifiers]]''' &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFF99&quot;&gt;
+&lt;td&gt; 2 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|language]]&lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Language of the metadata record composed of as an ISO639-2/T three letter language code is required and an ISO3166-1 three letter country code is recommended. &lt;br &gt;'''Best Practice''': 
+ &lt;code&gt;eng; USA&lt;/code&gt;&lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFF99&quot;&gt;
+&lt;td&gt; 3 &lt;/td&gt;
+&lt;td&gt; [[ISO 19115 and 19115-2 CodeList Dictionaries#MD_CharacterSetCode|characterSet]] &lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; '''Best Practice:''' &lt;code&gt;utf-8&lt;/code&gt;&lt;/i&gt;  &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 4 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|parentIdentifier]] &lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Document a higher level metadata record if it exists. Provide full citation to parent in the [[MD_AggregateInformation]] section. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFF99&quot;&gt;
+&lt;td&gt; 5 &lt;/td&gt;
+&lt;td&gt; [[ISO 19115 and 19115-2 CodeList Dictionaries#MD_ScopeCode|hierarchyLevel]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Scope of resource to which the metadata applies. Most common values to use are the following: 'dataset' for granule level, 'series' for collection level, 'nonGeographicDataset' for space weather, 'fieldSession' for cruises or surveys, 'service' for map services and 'model'. Repeat if more than one scope is applicable to this metadata description. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFF99&quot;&gt;
+&lt;td&gt; 6 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|hierarchyLevelName]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFF99&quot;&gt;
+&lt;td&gt; 7 &lt;/td&gt;
+&lt;td&gt; [[CI ResponsibleParty|contact]] &lt;/td&gt;
+&lt;td&gt; 1..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Individual and/or organization responsible for metadata creation and maintenance. Use roleCode=&quot;pointOfContact&quot;. Provide contact details, such address, phone and email. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFF99&quot;&gt;
+&lt;td&gt; 8 &lt;/td&gt;
+&lt;td&gt; dateStamp 
+''(choose one)'' 
+*[[Date]] 
+*[[DateTime]] &lt;/td&gt;
+&lt;td&gt; 1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt;  Date of last metadata update. Highly recommend revisiting the metadata content annually to ensure that all the information is still relevant. Use ISO 8601 extended format: YYYY-MM-DD or YYYY-MM-DDTHH:MM:SS. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFF99&quot;&gt;
+&lt;td&gt; 9 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|metadataStandardName]] &lt;/td&gt;
+&lt;td&gt; 1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Name of the metadata standard used.&lt;br/&gt; '''Best Practice:''' &lt;code&gt; ISO 19115-2 Geographic Information Metadata  Part 2: Extensions for Imagery and Gridded Data&lt;/code&gt;&lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFF99&quot;&gt;
+&lt;td&gt; 10 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|metadataStandardVersion]] &lt;/td&gt;
+&lt;td&gt; 1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt;  Version of the metadata standard used. &lt;br/&gt;'''Best Practice:''' &lt;code&gt; ISO 19115-2:2009(E)&lt;/code&gt;&lt;/i&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 11 &lt;/td&gt;
+&lt;td&gt; [[CharacterString|dataSetURI]] &lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Not recommended for use: deprecated from ISO 19115-1 &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 12 &lt;/td&gt;
+&lt;td&gt; [[PT Locale|locale]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Other languages used in metadata. Locale is mandatory when more than one language is used in free text descriptions. &lt;/i&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 13 &lt;/td&gt;
+&lt;td&gt; [[MD SpatialRepresentation|spatialRepresentationInfo ]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt;  Digital representation of spatial information in the dataset. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt;  14  &lt;/td&gt;
+&lt;td&gt;[[MD ReferenceSystem|referenceSystemInfo]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Identification of the horizontal projections, vertical datums and temporal reference systems used. Mandatory if spatialRepresentationType in dataIdentification is vector, grid, or tin &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 15 &lt;/td&gt;
+&lt;td&gt; [[MD MetadataExtensionInformation|metadataExtensionInfo]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Information describing metadata extensions.&lt;/i&gt;  &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFF99&quot;&gt;
+&lt;td&gt; 16 &lt;/td&gt;
+&lt;td&gt; identificationInfo  
+*[[MD DataIdentification]] 
+*[[SV ServiceIdentification]] 
+&lt;/td&gt;
+&lt;td&gt; 1..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; one and repeat identificationInfo if needed. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 17 &lt;/td&gt;
+&lt;td&gt; [[MD ContentInformation|contentInfo ]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Information about the feature catalogue, or descriptions of the coverage and the image data characteristics.&lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 18 &lt;/td&gt;
+&lt;td&gt; [[MD Distribution|distributionInfo]] &lt;/td&gt;
+&lt;td&gt; 0..1&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Information about acquiring the resource &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 19 &lt;/td&gt;
+&lt;td&gt; [[DQ DataQuality|dataQualityInfo]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; history and quality of the resource &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 20 &lt;/td&gt;
+&lt;td&gt; [[MD PortrayalCatalogueReference|portrayalCatalogueInfo]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt;  A portrayal catalogue is a collection of defined symbols used to depict humans, features on a map. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 21 &lt;/td&gt;
+&lt;td&gt; [[MD Constraints|metadataConstraints]] &lt;/td&gt;
+&lt;td&gt; 0..*&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt;  The limitations or constraints on the use of or access of the metadata. &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 22 &lt;/td&gt;
+&lt;td&gt; [[MD ApplicationSchemaInformation|applicationSchemaInfo]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;&lt;i&gt; Information about the conceptual schema of the dataset.&lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 23 &lt;/td&gt;
+&lt;td&gt; [[MD MaintenanceInformation|metadataMaintenance]] &lt;/td&gt;
+&lt;td&gt; 0..1 &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Document recent metadata record edits. When the metadata is generated automatically, use this section to document the source and transform tool in the maintenanceNote field.  See '''[[MD_MaintenanceInformation Examples]]''' &lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;CCFFFF&quot;&gt;
+&lt;td&gt; 24 &lt;/td&gt;
+&lt;td&gt; [[MI AcquisitionInformation|acquisitionInformation]] &lt;/td&gt;
+&lt;td&gt; 0..* &lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt; &lt;i&gt; Information about the platforms and instruments collecting the data&lt;/i&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+
+===Community Requirements===
+''M = Mandatory; C = Conditional; R = Recommended; blank cell = user discretion''
+&lt;table class=&quot;wikitable&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Community&lt;/th&gt;
+            &lt;th&gt;Element&lt;/th&gt;
+            &lt;th&gt;M&lt;/th&gt;
+            &lt;th&gt;C&lt;/th&gt;
+            &lt;th&gt;R&lt;/th&gt;
+            &lt;th&gt;Notes&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot; border=&quot;2&quot;&gt;
+            &lt;td rowspan=&quot;24&quot; valign=&quot;top&quot;&gt;
+NOAA Completeness Rubric V2 &lt;br/&gt; All Categories
+    &lt;/td&gt;
+            &lt;td&gt;fileidentifier&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;language&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;3&quot;&gt;Same requirements as the ISO standard&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;characterset&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+  
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;parentIdentifier&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+  
+        &lt;/tr&gt;       
+ &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;hierarchyLevel&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;hierarchyLevelName&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Same requirements as the ISO standard&lt;/td&gt;
+        &lt;/tr&gt;       
+     &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;contact&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dateStamp&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataStandardName&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataStandardVersion&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dataSetURI&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;5&quot;&gt;Same requirements as the ISO standard&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;locale&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+    
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;spatialRepresentationInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+      
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;referenceSystemInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+ 
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataExtensionInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+    
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;identificationInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;contentInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;distributionInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Not required when Resource Hierarchy Level='fieldSession' or Status = 'planned'.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dataQualityInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;portrayalCatalogueInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;3&quot;&gt;Same requirements as the ISO standard&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataConstraints&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+   
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;applicationSchemaInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+       
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataMaintenance&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;R&lt;/td&gt;
+            &lt;td&gt;Extra credit for recommended fields.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;acquisitionInformation&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Recommended for raw or near-raw observations. Required when lineage is not included.&lt;/td&gt;
+        &lt;/tr&gt;  
+&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;FFFFFF&quot; border=&quot;2&quot;&gt;
+            &lt;td rowspan=&quot;24&quot; valign=&quot;top&quot;&gt;
+[[OneStop Project]]
+    &lt;/td&gt;
+            &lt;td&gt;fileidentifier&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;language&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;2&quot;&gt;Same requirements as the ISO standard.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;characterset&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;parentIdentifier&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Not allowed, reserved for granule use only.&lt;/td&gt;
+        &lt;/tr&gt;       
+ &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;hierarchyLevel&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;hierarchyLevelName&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Same requirements as the ISO standard.&lt;/td&gt;
+        &lt;/tr&gt;       
+     &lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;contact&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dateStamp&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataStandardName&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataStandardVersion&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dataSetURI&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;5&quot;&gt;Same requirements as the ISO standard.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;locale&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+        
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;spatialRepresentationInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+        
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;referenceSystemInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+           
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataExtensionInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+          
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;identificationInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;contentInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;distributionInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Not required when Resource Hierarchy Level='fieldSession' or Status = 'planned'.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;dataQualityInfo&lt;/td&gt;
+            &lt;td&gt;M&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;portrayalCatalogueInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td rowspan=&quot;3&quot;&gt;Same requirements as the ISO standard.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataConstraints&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+ 
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;applicationSchemaInfo&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+         
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;metadataMaintenance&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;R&lt;/td&gt;
+            &lt;td&gt;Extra credit for recommended fields.&lt;/td&gt;
+        &lt;/tr&gt;       
+&lt;tr bgcolor=&quot;FFFFFF&quot;&gt;
+            &lt;td&gt;acquisitionInformation&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;Recommended for raw or near-raw observations. Required when lineage is not included.&lt;/td&gt;
+        &lt;/tr&gt;  
+        &lt;/table&gt;
+
+===More Information===
+&lt;table class=&quot;wikitable&quot;&gt;
+&lt;tr&gt;&lt;th&gt;UML&lt;/th&gt;&lt;td bgcolor=&quot;FFFFFF&quot;&gt;
+[[Image:ISO Objects.png|thumb|center|ISO Objects.png]]
+&lt;/td&gt;
+&lt;tr&gt;&lt;th&gt;UML&lt;/th&gt;&lt;td bgcolor=&quot;FFFFFF&quot;&gt;
+ [[Image:MD IdentificationInformation.png|thumb|left]]
+&lt;/td&gt;
+&lt;/table&gt;
+
+
+{{template:isoOrderingFooter}}</text>
+      <sha1>kiuh8pemodlmb8my87w522edyxpu79l</sha1>
+    </revision>
+  </page>
+</mediawiki>
