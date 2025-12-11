@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ISO Spatial Representation - NGDC Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ISO_Spatial_Representation","wgTitle":"ISO Spatial Representation","wgCurRevisionId":5638,"wgRevisionId":5638,"wgArticleId":2092,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with broken file links","ISO 19115"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ISO_Spatial_Representation","wgRelevantArticleId":2092,"wgRequestId":"YJzG4U9j8YzOblykAj2sewAAAAw","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"preview":true,"publish":true}});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@0i524ta",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="NGDC Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.ngdc.noaa.gov/wiki/api.php?action=rsd"/>
+<link rel="license" href="/wiki/index.php/NGDC_Wiki:Copyright"/>
+<link rel="alternate" type="application/atom+xml" title="NGDC Wiki Atom feed" href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ISO_Spatial_Representation rootpage-ISO_Spatial_Representation skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ISO Spatial Representation</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From NGDC Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/index.php/File:MD_SpatialRepresentation.png" class="image"><img alt="" src="/wiki/images/thumb/4/41/MD_SpatialRepresentation.png/300px-MD_SpatialRepresentation.png" width="300" height="225" class="thumbimage" srcset="/wiki/images/thumb/4/41/MD_SpatialRepresentation.png/450px-MD_SpatialRepresentation.png 1.5x, /wiki/images/thumb/4/41/MD_SpatialRepresentation.png/600px-MD_SpatialRepresentation.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/index.php/File:MD_SpatialRepresentation.png" class="internal" title="Enlarge"></a></div>MD_SpatialRepresentation</div></div></div>
+<p>Describing the spatial representation of a dataset is very important for geospatial data. The ISO MD_SpatialRepresentation Object offers several choices. These choices are represented by <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Glossary_of_Unified_Modeling_Language_terms">Abstract Objects</a> in the UML. They can be instantiated in several ways. The MD_SpatialRepresentation Object is abstract, it is implemented either as a MD_GridSpatialRepresentation Object (on the left side of the Figure) or as a MD_VectorSpatialRepresentation Object on the right.
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Vector_Datasets"><span class="tocnumber">1</span> <span class="toctext">Vector Datasets</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Grid_Datasets"><span class="tocnumber">2</span> <span class="toctext">Grid Datasets</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#NetCDF_and_OPeNDAP_Grids"><span class="tocnumber">3</span> <span class="toctext">NetCDF and OPeNDAP Grids</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Describing_Coordinate_Variables"><span class="tocnumber">3.1</span> <span class="toctext">Describing Coordinate Variables</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Georeferenceable_Grids"><span class="tocnumber">3.2</span> <span class="toctext">Georeferenceable Grids</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Vector_Datasets">Vector Datasets</span></h2>
+<p>Vector spatial representations are described using the MD_TopologyLevelCode code list and descriptions of the number of MD_GeometricObjects with types given by the MD_GeometricObjectTypeCode.
+</p>
+<h2><span class="mw-headline" id="Grid_Datasets">Grid Datasets</span></h2>
+<p>The treatment of grids illustrates the typical application of abstract objects in a UML Model. The abstract object MD_GridSpatialRepresentation has the elements that are shared by all grids: dimension and cell geometry information. Details about specific kinds of grids are then described in concrete object that can actually be instantiated. The ISO Standard includes two types of specialized grids. Georectified grids are grid whose cells are regularly
+spaced in a geographic (i.e., lat /long) or map coordinate system defined in the Spatial Referencing System (SRS) so that any cell in the grid can be geolocated given its grid coordinate and the grid origin, cell spacing, and orientation. Georeferenceable grids are grid with cells irregularly spaced in any given geographic/map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone.
+</p>
+<h2><span class="mw-headline" id="NetCDF_and_OPeNDAP_Grids">NetCDF and OPeNDAP Grids</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Special:Upload&amp;wpDestFile=SimpleNetCDF.png" class="new" title="File:SimpleNetCDF.png">File:SimpleNetCDF.png</a>  <div class="thumbcaption">Simple netCDF File</div></div></div>NetCDF and OPeNDAP are used to store and access many multi-dimensional grids. <b>Are these georectified or georeferenceable?</b> The answer is yes. 
+<p>The netCDF <a rel="nofollow" class="external text" href="http://www.unidata.ucar.edu/software/netcdf-java/CDM/">Common Data Model</a> includes the fundamental concept of dimensions and coordinate variables that have the same name as a dimension. The <a rel="nofollow" class="external text" href="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf/Variables.html">convention</a> is that coordinate variables define a physical coordinate corresponding to that dimension. In other words, the coordinate variables give a vector of values for the tics along a coordinate axis. In order to unambiguously know the value for one of those tics, therefore, one must retrieve the coordinate variable and look up the value. This look up operation defines this as a georeferenceable grid. Note that the generality of this approach allows irregular grids to be described in netCDF.
+</p><p>Of course, regular (georectified) grids can also be described using this approach. In that case, the differences between the axis tics is uniform and it probably makes sense to describe the grid as georectified because it allows access to elements of the grid without a lookup.
+</p><p>The Simple netCDF File Figure shows two cases that can be used to explore ISO tools for describing grids. The left side of the Figure shows a two dimensional grid of temperature, a clear candidate for georectified or georeferenceable depending on the spacing of latitude and longitude. The right side shows the same variable in a satellite swath. In this case the latitudes and longitudes of each pixel are provided in two grids that share the i and j axes with the physical measurement. This case is definitely georeferenceable.
+</p><p><i>Note: this example takes advantage of improvements to ISO 19115 that are included in 19115-1. One improvement is changing the name of the role for each layer in a multi-layered coverage from dimension to attribute. In addition, the MD_Band object is generalized to the MD_SampleDimension object.</i>
+</p>
+<h3><span class="mw-headline" id="Describing_Coordinate_Variables">Describing Coordinate Variables</span></h3>
+<p>The coordinate variables are regular variables in the netCDF file with the special characteristic that their names match the names of dimensions. They are accessed as regular variables, so they they need to be in an ISO MD_ContentInformation object. This object has a MD_CoverageContentTypeCode = &quot;referenceInformation&quot; to indicate that it is used as reference information in the file and it has one dimension for each coordinate variable:
+</p>
+<pre>
+&lt;gmd:contentInfo&gt;
+  &lt;gmd:MD_CoverageDescription&gt;
+    &lt;gmd:attributeDescription gco:nilReason=&quot;inapplicable&quot;/&gt;
+    &lt;gmd:contentType&gt;
+      &lt;gmd:MD_CoverageContentTypeCode codeList=&quot;&quot; codeListValue=&quot;referenceInformation&quot;&gt;referenceInformation&lt;/gmd:MD_CoverageContentTypeCode&gt;
+    &lt;/gmd:contentType&gt;
+    &lt;gmd:attribute&gt;
+      &lt;gmd:MD_SampleDimension&gt;
+        &lt;gmd:sequenceIdentifier&gt;
+          &lt;gco:MemberName&gt;
+            &lt;gco:aName&gt;
+              &lt;gco:CharacterString&gt;lat&lt;/gco:CharacterString&gt;
+            &lt;/gco:aName&gt;
+            &lt;gco:attributeType&gt;
+              &lt;gco:TypeName&gt;
+                &lt;gco:aName&gt;
+                  &lt;gco:CharacterString&gt;gco:Real&lt;/gco:CharacterString&gt;
+                &lt;/gco:aName&gt;
+              &lt;/gco:TypeName&gt;
+            &lt;/gco:attributeType&gt;
+          &lt;/gco:MemberName&gt;
+        &lt;/gmd:sequenceIdentifier&gt;
+        &lt;gmd:descriptor&gt;
+          &lt;gco:CharacterString&gt;Latitude Coordinate Variable&lt;/gco:CharacterString&gt;
+        &lt;/gmd:descriptor&gt;
+        &lt;gmd:name&gt;
+          &lt;gmd:MD_Identifier&gt;
+            &lt;gmd:code&gt;
+              &lt;gco:CharacterString&gt;latitude&lt;/gco:CharacterString&gt;
+            &lt;/gmd:code&gt;
+            &lt;gmd:codeSpace&gt;
+              &lt;gco:CharacterString&gt;http://cf-pcmdi.llnl.gov/documents/cf-standard-names/&lt;/gco:CharacterString&gt;
+            &lt;/gmd:codeSpace&gt;
+          &lt;/gmd:MD_Identifier&gt;
+        &lt;/gmd:name&gt;
+        &lt;gmd:maxValue&gt;
+          &lt;gco:Real&gt;90.0&lt;/gco:Real&gt;
+        &lt;/gmd:maxValue&gt;
+        &lt;gmd:minValue&gt;
+          &lt;gco:Real&gt;-90.0&lt;/gco:Real&gt;
+        &lt;/gmd:minValue&gt;
+        &lt;gmd:units xlink:href=&quot;http://someUnitsDictionary#degrees_north&quot;/&gt;
+      &lt;/gmd:MD_SampleDimension&gt;
+    &lt;/gmd:attribute&gt;
+    &lt;gmd:attribute&gt;
+      &lt;gmd:MD_SampleDimension&gt;
+        &lt;gmd:sequenceIdentifier&gt;
+          &lt;gco:MemberName&gt;
+            &lt;gco:aName&gt;
+              &lt;gco:CharacterString&gt;lon&lt;/gco:CharacterString&gt;
+            &lt;/gco:aName&gt;
+            &lt;gco:attributeType&gt;
+              &lt;gco:TypeName&gt;
+                &lt;gco:aName&gt;
+                  &lt;gco:CharacterString&gt;gco:Real&lt;/gco:CharacterString&gt;
+                &lt;/gco:aName&gt;
+              &lt;/gco:TypeName&gt;
+            &lt;/gco:attributeType&gt;
+          &lt;/gco:MemberName&gt;
+        &lt;/gmd:sequenceIdentifier&gt;
+        &lt;gmd:descriptor&gt;
+          &lt;gco:CharacterString&gt;Longitude Coordinate Variable&lt;/gco:CharacterString&gt;
+        &lt;/gmd:descriptor&gt;
+        &lt;gmd:name&gt;
+          &lt;gmd:MD_Identifier&gt;
+            &lt;gmd:code&gt;
+              &lt;gco:CharacterString&gt;longitude&lt;/gco:CharacterString&gt;
+            &lt;/gmd:code&gt;
+            &lt;gmd:codeSpace&gt;
+              &lt;gco:CharacterString&gt;http://cf-pcmdi.llnl.gov/documents/cf-standard-names/&lt;/gco:CharacterString&gt;
+            &lt;/gmd:codeSpace&gt;
+          &lt;/gmd:MD_Identifier&gt;
+        &lt;/gmd:name&gt;
+        &lt;gmd:maxValue&gt;
+          &lt;gco:Real&gt;180&lt;/gco:Real&gt;
+        &lt;/gmd:maxValue&gt;
+        &lt;gmd:minValue&gt;
+          &lt;gco:Real&gt;-180&lt;/gco:Real&gt;
+        &lt;/gmd:minValue&gt;
+        &lt;gmd:units xlink:href=&quot;http://someUnitsDictionary#degrees_east&quot;/&gt;
+      &lt;/gmd:MD_SampleDimension&gt;
+    &lt;/gmd:attribute&gt;
+  &lt;/gmd:MD_CoverageDescription&gt;
+&lt;/gmd:contentInfo&gt;
+&lt;gmd:contentInfo&gt;
+  &lt;gmd:MD_CoverageDescription&gt;
+    &lt;gmd:attributeDescription gco:nilReason=&quot;inapplicable&quot;/&gt;
+    &lt;gmd:contentType&gt;
+      &lt;gmd:MD_CoverageContentTypeCode codeList=&quot;&quot; codeListValue=&quot;physicalMeasurement&quot;&gt;physicalMeasurement&lt;/gmd:MD_CoverageContentTypeCode&gt;
+    &lt;/gmd:contentType&gt;
+    &lt;gmd:attribute&gt;
+      &lt;gmd:MD_SampleDimension&gt;
+        &lt;gmd:sequenceIdentifier&gt;
+          &lt;gco:MemberName&gt;
+            &lt;gco:aName&gt;
+              &lt;gco:CharacterString&gt;temp&lt;/gco:CharacterString&gt;
+            &lt;/gco:aName&gt;
+            &lt;gco:attributeType&gt;
+              &lt;gco:TypeName&gt;
+                &lt;gco:aName&gt;
+                  &lt;gco:CharacterString&gt;gco:Real&lt;/gco:CharacterString&gt;
+                &lt;/gco:aName&gt;
+              &lt;/gco:TypeName&gt;
+            &lt;/gco:attributeType&gt;
+          &lt;/gco:MemberName&gt;
+        &lt;/gmd:sequenceIdentifier&gt;
+        &lt;gmd:descriptor&gt;
+          &lt;gco:CharacterString&gt;Temperature Variable&lt;/gco:CharacterString&gt;
+        &lt;/gmd:descriptor&gt;
+        &lt;gmd:name&gt;
+          &lt;gmd:MD_Identifier&gt;
+            &lt;gmd:code&gt;
+              &lt;gco:CharacterString&gt;air_temperature&lt;/gco:CharacterString&gt;
+            &lt;/gmd:code&gt;
+            &lt;gmd:codeSpace&gt;
+              &lt;gco:CharacterString&gt;http://cf-pcmdi.llnl.gov/documents/cf-standard-names/&lt;/gco:CharacterString&gt;
+            &lt;/gmd:codeSpace&gt;
+          &lt;/gmd:MD_Identifier&gt;
+        &lt;/gmd:name&gt;
+        &lt;gmd:maxValue&gt;
+          &lt;gco:Real&gt;250&lt;/gco:Real&gt;
+        &lt;/gmd:maxValue&gt;
+        &lt;gmd:minValue&gt;
+          &lt;gco:Real&gt;300&lt;/gco:Real&gt;
+        &lt;/gmd:minValue&gt;
+        &lt;gmd:units xlink:href=&quot;http://someUnitsDictionary#K&quot;/&gt;
+      &lt;/gmd:MD_SampleDimension&gt;
+    &lt;/gmd:attribute&gt;
+  &lt;/gmd:MD_CoverageDescription&gt;
+&lt;/gmd:contentInfo&gt;
+&lt;/pre&gt;
+
+This example includes two gmd:contentInformation sections. The one with gmd:MD_CoverageContentTypeCode = referenceInformation describes the coodinate variables (the second describes the physicalMeasurement).  Note that the sequence identifiers in these variable definitions must match the names of the variables in the netCDF file. Their units and CF Names conform to the CF Conventions.
+
+===Georectified (Regular) Grids===
+If the latitude and longitude spacing is uniform, this temperature grid can be described as georectified. This makes sense because it allows access to elements of the grid without a lookup. The MD_SpatialRepresentation object is used to describe this grid:
+&lt;pre&gt;
+&lt;gmd:spatialRepresentationInfo&gt;
+  &lt;gmd:MD_Georectified&gt;
+    &lt;gmd:numberOfDimensions&gt;
+      &lt;gco:Integer&gt;3&lt;/gco:Integer&gt;
+    &lt;/gmd:numberOfDimensions&gt;
+    &lt;gmd:axisDimensionProperties&gt;
+      &lt;gmd:MD_Dimension&gt;
+        &lt;gmd:dimensionName&gt;
+          &lt;gmd:MD_DimensionNameTypeCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode&quot; codeListValue=&quot;vertical&quot;&gt;vertical&lt;/gmd:MD_DimensionNameTypeCode&gt;
+        &lt;/gmd:dimensionName&gt;
+        &lt;gmd:dimensionSize&gt;
+          &lt;gco:Integer&gt;26&lt;/gco:Integer&gt;
+        &lt;/gmd:dimensionSize&gt;
+        &lt;gmd:resolution&gt;
+          &lt;gco:Measure uom=&quot;mbar&quot;&gt;39.6&lt;/gco:Measure&gt;
+        &lt;/gmd:resolution&gt;
+      &lt;/gmd:MD_Dimension&gt;
+    &lt;/gmd:axisDimensionProperties&gt;
+    &lt;gmd:axisDimensionProperties&gt;
+      &lt;gmd:MD_Dimension&gt;
+        &lt;gmd:dimensionName&gt;
+          &lt;gmd:MD_DimensionNameTypeCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode&quot; codeListValue=&quot;row&quot;&gt;row&lt;/gmd:MD_DimensionNameTypeCode&gt;
+        &lt;/gmd:dimensionName&gt;
+        &lt;gmd:dimensionSize&gt;
+          &lt;gco:Integer&gt;180&lt;/gco:Integer&gt;
+        &lt;/gmd:dimensionSize&gt;
+        &lt;gmd:resolution&gt;
+          &lt;gco:Measure uom=&quot;degrees_north&quot;&gt;2.5&lt;/gco:Measure&gt;
+        &lt;/gmd:resolution&gt;
+      &lt;/gmd:MD_Dimension&gt;
+    &lt;/gmd:axisDimensionProperties&gt;
+    &lt;gmd:axisDimensionProperties&gt;
+      &lt;gmd:MD_Dimension&gt;
+        &lt;gmd:dimensionName&gt;
+          &lt;gmd:MD_DimensionNameTypeCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode&quot; codeListValue=&quot;column&quot;&gt;column&lt;/gmd:MD_DimensionNameTypeCode&gt;
+        &lt;/gmd:dimensionName&gt;
+        &lt;gmd:dimensionSize&gt;
+          &lt;gco:Integer&gt;360&lt;/gco:Integer&gt;
+        &lt;/gmd:dimensionSize&gt;
+        &lt;gmd:resolution&gt;
+          &lt;gco:Measure uom=&quot;degrees_east&quot;&gt;1.0&lt;/gco:Measure&gt;
+        &lt;/gmd:resolution&gt;
+      &lt;/gmd:MD_Dimension&gt;
+    &lt;/gmd:axisDimensionProperties&gt;
+    &lt;gmd:cellGeometry&gt;
+      &lt;gmd:MD_CellGeometryCode codeList=&quot;http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CellGeometryCode&quot; codeListValue=&quot;area&quot;&gt;area&lt;/gmd:MD_CellGeometryCode&gt;
+    &lt;/gmd:cellGeometry&gt;
+    &lt;gmd:transformationParameterAvailability&gt;&lt;gco:Boolean&gt;true&lt;/gco:Boolean&gt;&lt;/gmd:transformationParameterAvailability&gt;
+    &lt;gmd:checkPointAvailability/&gt;
+    &lt;gmd:cornerPoints&gt;
+      &lt;gml:Point gml:id=&quot;someUniqueID_1&quot;&gt;
+        &lt;gml:pos&gt;-180 -90&lt;/gml:pos&gt;
+      &lt;/gml:Point&gt;
+    &lt;/gmd:cornerPoints&gt;
+    &lt;gmd:cornerPoints&gt;
+      &lt;gml:Point gml:id=&quot;someUniqueID_2&quot;&gt;
+        &lt;gml:name&gt;upperRight&lt;/gml:name&gt;
+        &lt;gml:pos&gt;180 90&lt;/gml:pos&gt;
+      &lt;/gml:Point&gt;
+    &lt;/gmd:cornerPoints&gt;
+    &lt;gmd:pointInPixel&gt;
+      &lt;gmd:MD_PixelOrientationCode&gt;center&lt;/gmd:MD_PixelOrientationCode&gt;
+    &lt;/gmd:pointInPixel&gt;
+  &lt;/gmd:MD_Georectified&gt;
+&lt;/gmd:spatialRepresentationInfo&gt;
+</pre>
+<h3><span class="mw-headline" id="Georeferenceable_Grids">Georeferenceable Grids</span></h3>
+<p>The Georeferencable case differs from the georectified case because it includes one dimensional coordinate variables i and j as well as two dimensional lat and lon variables in the referenceInformation. This causes a fundamental ambiguity that needs to be resolved. It may be that programatic treatment of referenceInformation needs conventions that depend on the grid type.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20210513062745
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.062 seconds
+Real time usage: 0.112 seconds
+Preprocessor visited node count: 28/1000000
+Preprocessor generated node count: 44/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikingdc:pcache:idhash:2092-0!canonical and timestamp 20210513062745 and revision id 5638
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://www.ngdc.noaa.gov/wiki/index.php?title=ISO_Spatial_Representation&amp;oldid=5638">https://www.ngdc.noaa.gov/wiki/index.php?title=ISO_Spatial_Representation&amp;oldid=5638</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php?title=Category:Pages_with_broken_file_links&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages with broken file links (page does not exist)">Pages with broken file links</a></li><li><a href="/wiki/index.php/Category:ISO_19115" title="Category:ISO 19115">ISO 19115</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=ISO+Spatial+Representation" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="/wiki/index.php/ISO_Spatial_Representation" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/wiki/index.php?title=Talk:ISO_Spatial_Representation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="/wiki/index.php/ISO_Spatial_Representation">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="/wiki/index.php?title=ISO_Spatial_Representation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/wiki/index.php?title=ISO_Spatial_Representation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/wiki/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search NGDC Wiki" title="Search NGDC Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/index.php/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-NGDC-Home"><a href="http://www.ngdc.noaa.gov" rel="nofollow">NGDC Home</a></li><li id="n-Contact-NGDC"><a href="http://www.ngdc.noaa.gov/ngdcinfo/phone.html" rel="nofollow">Contact NGDC</a></li><li id="n-Categories"><a href="/wiki/index.php/Special:Categories">Categories</a></li><li id="n-recentchanges"><a href="/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/index.php/Special:WhatLinksHere/ISO_Spatial_Representation" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/index.php/Special:RecentChangesLinked/ISO_Spatial_Representation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/wiki/index.php?title=ISO_Spatial_Representation&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/wiki/index.php?title=ISO_Spatial_Representation&amp;oldid=5638" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/wiki/index.php?title=ISO_Spatial_Representation&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 December 2019, at 23:22.</li>
+											<li id="footer-info-copyright">Content is available under <a href="/wiki/index.php/NGDC_Wiki:Copyright" title="NGDC Wiki:Copyright">United States government copyright</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wiki/index.php/NGDC_Wiki:Privacy_Policy" title="NGDC Wiki:Privacy Policy">Privacy Policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/index.php/NGDC_Wiki:About" title="NGDC Wiki:About">About NGDC Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/index.php/NGDC_Wiki:General_disclaimer" title="NGDC Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://www.ngdc.noaa.gov/wiki/index.php/NGDC_Wiki:Copyright"><img src="" alt="United States government copyright" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.062","walltime":"0.112","ppvisitednodes":{"value":28,"limit":1000000},"ppgeneratednodes":{"value":44,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210513062745","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":814});});</script>
+	<script id="_fed_an_ua_tag" type="text/javascript" src="/scripts/federated-analytics.js?agency=DOC&subagency=NOAA&pua=UA-44375312-1"></script></body>
+</html>

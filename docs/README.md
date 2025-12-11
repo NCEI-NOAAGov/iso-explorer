@@ -1,10 +1,11 @@
 # ISO 19115-2 Explorer Readme
 
 ## Description
-Comprehensive explorer of ISO 19115 and 19115-2 metadata standards. These pages show the correct order of the elements, links to child element/object, obligation, repeatability and references to more information and examples. The explorer for ISO 19115-1 is also available on the ESIP Wiki.[https://wiki.esipfed.org/MD_Metadata](url)
+Comprehensive explorer of ISO 19115 and 19115-2 metadata standards. These pages show the correct order of the elements, links to child element/object, obligation, repeatability and references to more information and examples. The explorer for ISO 19115-1 is also available on the [ESIP Wiki](https://wiki.esipfed.org/MD_Metadata).
 
 ## Usage
-The ISO Explorer can be used as an accompanying guide to the ISO 19115-2 metadata standard. 
+The ISO Explorer can be used as an accompanying guide to the ISO 19115-2 metadata standard.
+[ISO Explorer](/iso-explorer/CI_OnlineResource.md).
 
 ## Support
 Any issues or suggestions should be directed to Paul Lemieux at paul.lemieux@noaa.gov.
@@ -14,3 +15,7 @@ This is and always shall be a community resource. As such, we welcome edits and 
 
 ## License
 All content is licensed under the CC0 1.0 Universal Public Domain Dedication
+
+
+<link rel="stylesheet" media="all" href="https://www.ncei.noaa.gov/themes/custom/ncei/dist/style.css">
+<link rel="stylesheet" media="all" href="https://www.ncei.noaa.gov/libraries/uswds/css/uswds.min.css">
