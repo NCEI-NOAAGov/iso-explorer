@@ -47,7 +47,7 @@ MD_Georectified
 
 </td>
 <td>
-[cellGeometry](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_CellGeometryCode "wikilink")
+[cellGeometry](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>
@@ -131,7 +131,7 @@ MD_Georectified
 
 </td>
 <td>
-[pointInPixel](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_PixelOrientationCode "wikilink")
+[pointInPixel](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>
@@ -213,7 +213,7 @@ MI_Georectified
 
 </td>
 <td>
-[cellGeometry](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_CellGeometryCode "wikilink")
+[cellGeometry](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>
@@ -297,7 +297,7 @@ MI_Georectified
 
 </td>
 <td>
-[pointInPixel](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_PixelOrientationCode "wikilink")
+[pointInPixel](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>

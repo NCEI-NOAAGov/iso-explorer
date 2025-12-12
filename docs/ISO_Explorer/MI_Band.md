@@ -258,7 +258,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[bandBoundaryDefinition](/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_BandDefinition "wikilink")
+[bandBoundaryDefinition](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">
@@ -294,7 +294,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[transferFunctionType](/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_TransferFunctionTypeCode "wikilink")
+[transferFunctionType](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">
@@ -312,7 +312,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[transmittedPolarisation](/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_PolarizationOrientationCode "wikilink")
+[transmittedPolarisation](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">
@@ -330,7 +330,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[detectedPolarisation](/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_PolarizationOrientationCode "wikilink")
+[detectedPolarisation](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">

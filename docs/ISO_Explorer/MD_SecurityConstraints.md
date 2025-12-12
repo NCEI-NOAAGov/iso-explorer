@@ -30,7 +30,7 @@ MD_SecurityConstraints
 
 </td>
 <td>
-[classification](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ClassificationCode "wikilink")
+[classification](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>

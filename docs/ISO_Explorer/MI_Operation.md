@@ -12,8 +12,8 @@ _Usage: 1 = Mandatory, 0...1 = Optional, 0...* = Optional, can occur more than o
 | 1   | [description](/iso-explorer/CharacterString)                                          | 0...1 |                                     |
 | 2   | [citation](/iso-explorer/CI_Citation)                                                 | 0...1 |                                     |
 | 3   | [identifier](/iso-explorer/MD_Identifier)                                             | 1     |                                     |
-| 4   | [status](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)   | 1     |                                     |
-| 5   | [type](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_GeometryTypeCode) | 0...1 |                                     |
+| 4   | [status](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries)   | 1     |                                     |
+| 5   | [type](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries) | 0...1 |                                     |
 | 6   | parentOperation                                                                       | 1     |                                     |
 | 7   | [platform](/iso-explorer/MI_Platform)                                                 | 0...* |                                     |
 | 8   | [objective](/iso-explorer/MI_Objective)                                               | 0...* |                                     |

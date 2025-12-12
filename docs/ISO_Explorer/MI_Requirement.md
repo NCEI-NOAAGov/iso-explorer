@@ -13,7 +13,7 @@ _Usage: 1 = Mandatory, 0...1 = Optional, 0...* = Optional, can occur more than o
 | 2   | [identifier](/iso-explorer/MD_Identifier)                                             | 1...* |                                     |
 | 3   | [requestor](/iso-explorer/CI_ResponsibleParty)                                        | 1...* |                                     |
 | 4   | [recipient](/iso-explorer/CI_ResponsibleParty)                                        | 1     |                                     |
-| 5   | [priority](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_PriorityCode) | 1     |                                     |
+| 5   | [priority](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries) | 1     |                                     |
 | 6   | [requestedDate](/iso-explorer/MI_RequestedDate)                                       | 1     |                                     |
 | 7   | [expiryDate](/iso-explorer/DateTime)                                                  | 1     |                                     |
 | 8   | [satisifiedPlan](/iso-explorer/MI_Plan)                                               | 0...* |                                     |

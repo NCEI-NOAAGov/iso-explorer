@@ -9,8 +9,8 @@ _Usage: 1 = Mandatory, 0...1 = Optional, 0...* = Optional, can occur more than o
 
 | #   | Element                                                                               | Usage | Definition and Recommended Practice |
 |-----|---------------------------------------------------------------------------------------|-------|-------------------------------------|
-| 1   | [type](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MI_GeometryTypeCode) | 0...1 |                                     |
-| 2   | [status](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)   | 1     |                                     |
+| 1   | [type](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries) | 0...1 |                                     |
+| 2   | [status](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries)   | 1     |                                     |
 | 3   | [citation](/iso-explorer/CI_Citation)                                                 | 1     |                                     |
 | 4   | [operation](/iso-explorer/MI_Operation)                                               | 0...* |                                     |
 | 5   | [satisfiedRequirement](/iso-explorer/MI_Requirement)                                  | 0...* |                                     |
