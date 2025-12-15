@@ -20,7 +20,7 @@ Elements
 
 </td>
 <td bgcolor="FFFF99">
-[spatialRepresentationType](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode "wikilink")
+[spatialRepresentationType](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="FFFF99">

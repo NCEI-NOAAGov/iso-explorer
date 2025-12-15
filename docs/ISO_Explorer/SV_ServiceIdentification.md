@@ -84,7 +84,7 @@ credit
 
 </td>
 <td bgcolor="CCFFFF">
-[status](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode "wikilink")
+[status](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">
@@ -324,7 +324,7 @@ serviceTypeVersion
 
 </td>
 <td bgcolor="FFFF99">
-[couplingType](/ISO_19115_and_19115-2_CodeList_Dictionaries#SV_CouplingType "wikilink")
+[couplingType](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="FFFF99">

@@ -38,7 +38,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[accessConstraints](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_RestrictionCode "wikilink")
+[accessConstraints](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">
@@ -56,7 +56,7 @@ Elements
 
 </td>
 <td bgcolor="CCFFFF">
-[useConstraints](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_RestrictionCode "wikilink")
+[useConstraints](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td bgcolor="CCFFFF">

@@ -16,7 +16,7 @@ MD_Medium
 
 </td>
 <td>
-[name](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_MediumNameCode "wikilink")
+[name](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>
@@ -72,7 +72,7 @@ MD_Medium
 
 </td>
 <td>
-[mediumFormat](/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_MediumFormatCode "wikilink")
+[mediumFormat](/ISO_19115_and_19115-2_CodeList_Dictionaries)
 
 </td>
 <td>

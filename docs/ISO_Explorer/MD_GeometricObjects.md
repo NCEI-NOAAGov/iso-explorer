@@ -6,10 +6,10 @@ permalink: /MD_GeometricObjects/
 # MD_GeometricObjects
 
 
-| #   | Elements                                                                                                    | Usage | Definition and Recommended Practice |
-|-----|-------------------------------------------------------------------------------------------------------------|-------|-------------------------------------|
-| 1   | [geometricObjectType](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_GeometricObjectTypeCode) | 1     |                                     |
-| 2   | [geometricObjectCount](/iso-explorer/Integer)                                                               | 0...1 |                                     |
+| #   | Elements                                                                          | Usage | Definition and Recommended Practice |
+|-----|-----------------------------------------------------------------------------------|-------|-------------------------------------|
+| 1   | [geometricObjectType](/iso-explorer/ISO_19115_and_19115-2_CodeList_Dictionaries)  | 1     |                                     |
+| 2   | [geometricObjectCount](/iso-explorer/Integer)                                     | 0...1 |                                     |
 
 ### **Community Requirements**
 
