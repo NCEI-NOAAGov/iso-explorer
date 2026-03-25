@@ -5,7 +5,7 @@ permalink: /EX_GeographicBoundingBox/
 
 # EX GeographicBoundingBox
 
-Bounding coordinates of the maximum geospatial extent in decimal degrees. Not required resource is non-geospatial and the resource scopeCode = 'nonGeographicDataset'. When there are multiple extents, provide the bounding coordinates at the top with the id attribute of 'boundingGeographicBoundingBox'.
+Bounding coordinates of the maximum geospatial extent in decimal degrees. Not required if the resource is non-geospatial and the resource scopeCode = 'nonGeographicDataset'. When there are multiple extents, provide the bounding coordinates at the top with the id attribute of 'boundingGeographicBoundingBox'.
 
 | #   | Elements                                     | Usage | Definition and Recommended Practice                                                                                                                                                                 |
 |-----|----------------------------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
